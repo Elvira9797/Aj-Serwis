@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/Phone-Mate-v2">
+    <BrowserRouter basename="/Aj-Serwis">
       <App />
     </BrowserRouter>
   </React.StrictMode>
