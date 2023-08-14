@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Aj-Serwis/static/css/main.c33b47b4.css",
+    "main.js": "/Aj-Serwis/static/js/main.00067337.js",
+    "index.html": "/Aj-Serwis/index.html",
+    "main.c33b47b4.css.map": "/Aj-Serwis/static/css/main.c33b47b4.css.map",
+    "main.00067337.js.map": "/Aj-Serwis/static/js/main.00067337.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c33b47b4.css",
+    "static/js/main.00067337.js"
+  ]
+}
