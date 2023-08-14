@@ -1,4 +1,4 @@
-import React from 'react';
+import {} from './Hero.styled';
 
 const Hero = () => {
   return <div>Hero</div>;

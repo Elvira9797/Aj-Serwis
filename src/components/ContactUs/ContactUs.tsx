@@ -1,3 +1,5 @@
+import {} from './ContactUs.styled';
+
 const ContactUs = () => {
   return <div>ContactUs</div>;
 };
