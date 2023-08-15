@@ -5,9 +5,8 @@ import { StyledVacancyList } from './VacancyList.styled';
 function VacanciesList() {
   return (
     <StyledVacancyList>
-      {vacancies.map(vacancy => (
-        <VacancyItem vacancy={vacancy} />
-      ))}
+      {vacancies.length > 0 &&
+        vacancies.map(vacancy => <VacancyItem vacancy={vacancy} />)}
     </StyledVacancyList>
   );
 }
