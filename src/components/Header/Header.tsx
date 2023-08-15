@@ -1,16 +1,20 @@
-import AppBar from './AppBar/AppBar';
-import TopBar from './TopBar/TopBar';
-import { Divider, StyledHeader } from './Header.styled';
+import { NavLink } from 'react-router-dom';
+import {} from './Header.styled';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <StyledHeader>
-      <Divider>
-        <TopBar />
-      </Divider>
-
-      <AppBar />
-    </StyledHeader>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/vacancies">Vacancies</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

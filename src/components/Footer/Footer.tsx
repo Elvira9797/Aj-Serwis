@@ -1,16 +1,7 @@
-import { Container, StyledFooter } from './Footer.styled';
-import FooterContacts from './FooterContacts/FooterContacts';
-import FooterInfoBlock from './FooterInfoBlock/FooterInfoBlock';
+import {} from './Footer.styled';
 
-const Footer: React.FC = () => {
-  return (
-    <StyledFooter>
-      <Container>
-        <FooterInfoBlock />
-        <FooterContacts />
-      </Container>
-    </StyledFooter>
-  );
+const Footer = () => {
+  return <footer>Footer</footer>;
 };
 
 export default Footer;
