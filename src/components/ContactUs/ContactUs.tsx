@@ -1,5 +1,6 @@
 import {} from './ContactUs.styled';
 import Button from '../Button/Button';
+import Form from '../Form/Form';
 
 const ContactUs = () => {
   const onClick = () => {
@@ -9,9 +10,8 @@ const ContactUs = () => {
   return (
     <div>
       ContactUs
-      <Button variant="secondary" size="lg" onClick={onClick}>
-        Click me!
-      </Button>
+        
+      <Form />
     </div>
   );
 };

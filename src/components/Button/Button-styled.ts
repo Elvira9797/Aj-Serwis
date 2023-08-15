@@ -15,7 +15,7 @@ export const StyledBtn = styled.button<StyledButton>(
     alignItems: 'center',
     maxWidth: '100%',
     outline: 'none',
-    borderRadius: '1rem',
+    borderRadius: '0.5rem',
     fontWeight: theme.typography.fontWeight.semiBold,
     transition: theme.transition.basic,
     ...getSize(size),
