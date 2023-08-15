@@ -1,8 +1,8 @@
 import 'swiper/css/effect-coverflow';
 
-import { Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Mousewheel } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,40 +10,51 @@ import 'swiper/css/scrollbar';
 
 import { vacancies } from '../../common/vacanciesArr';
 import VacancyItem from '../VacanciesList/VacancuItem/VacancyItem';
+import { SliderNavBtn } from './SliderButton/SliderNavBtn';
+import { StyledSliderNavWrap, StyledSwiper } from './VacanciesSlider.styled';
 
 const VacanciesSlider = () => {
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
+    <div style={{ maxWidth: '100%' }}>
+      <StyledSwiper
+        mousewheel
+        loop={true}
+        centeredSlides
         slidesPerView={'auto'}
+        effect={'coverflow'}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Scrollbar]}
-        className="mySwiper"
-        style={{ paddingBottom: 12, paddingTop: 12 }}
-        // spaceBetween={20}
-        // navigation
-        // pagination={{ clickable: true }}
-        // scrollbar={{ draggable: true }}
-        // slidesPerView={3}
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={swiper => console.log(swiper)}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
+        modules={[EffectCoverflow, Mousewheel]}
       >
         {vacancies.map(vacancy => (
-          <SwiperSlide style={{ width: '50%' }} key={vacancy.vacancieId}>
+          <SwiperSlide key={vacancy.vacancieId}>
             <VacancyItem vacancy={vacancy} />
           </SwiperSlide>
         ))}
-      </Swiper>
+        <StyledSliderNavWrap>
+          <SliderNavBtn navTo={'prev'} />
+          <SliderNavBtn navTo={'next'} />
+        </StyledSliderNavWrap>
+      </StyledSwiper>
     </div>
   );
 };
