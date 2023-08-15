@@ -8,8 +8,9 @@ const Wraper = styled.div`
 
 export const StyledTopBar = styled(Wraper)`
   justify-content: space-between;
-
-  padding: 4px 0 4px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px 0 1px 0;
 `;
 
 export const StyledNavWrader = styled(Wraper)`

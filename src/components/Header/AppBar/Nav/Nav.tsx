@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { StyledNavList } from './Nav.styled';
 
-function Nav() {
+const Nav: React.FC = () => {
   return (
     <nav>
       <StyledNavList>
@@ -12,14 +12,14 @@ function Nav() {
           <NavLink to="/vacancies">Vacancies</NavLink>
         </li>
         <li>
-          <a href="#">About us</a>
+          <NavLink to="/">About us</NavLink>
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <NavLink to="/">Contacts</NavLink>
         </li>
       </StyledNavList>
     </nav>
   );
-}
+};
 
 export default Nav;

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
-export const StyledLogo = styled.a`
+export const StyledLogo = styled(Link)`
   display: flex;
   flex-direction: row;
   gap: 4px;

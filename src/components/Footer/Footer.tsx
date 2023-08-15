@@ -1,7 +1,12 @@
-// import {} from './Footer.styled';
+import { StyledFooter } from './Footer.styled';
+import FooterInfoBlock from './FooterInfoBlock/FooterInfoBlock';
 
-const Footer = () => {
-  return <footer>Footer</footer>;
+const Footer: React.FC = () => {
+  return (
+    <StyledFooter>
+      <FooterInfoBlock />
+    </StyledFooter>
+  );
 };
 
 export default Footer;

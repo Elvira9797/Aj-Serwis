@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
 export const StyledAppBar = styled.div`
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid gray;
   padding: 16px 0 16px 0;
+  margin: 0 auto;
 `;
 
 export const StyledNavWraper = styled.div`

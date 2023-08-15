@@ -1,13 +1,17 @@
-import AppBar from '../AppBar/AppBar';
-import TopBar from '../TopBar/TopBar';
-// import {} from './Header.styled';
+import AppBar from './AppBar/AppBar';
+import TopBar from './TopBar/TopBar';
+import { Container, StyledHeader } from './Header.styled';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header>
-      <TopBar />
-      <AppBar />
-    </header>
+    <StyledHeader>
+      <Container>
+        <TopBar />
+      </Container>
+      <Container>
+        <AppBar />
+      </Container>
+    </StyledHeader>
   );
 };
 

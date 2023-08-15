@@ -1,3 +1,3 @@
 import styled from '@emotion/styled';
 
-export const Div = styled.div``;
+export const StyledFooter = styled.footer``;
