@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.87d44b9f.css",
-    "main.js": "/Aj-Serwis/static/js/main.886478aa.js",
+    "main.js": "/Aj-Serwis/static/js/main.9f582e0d.js",
     "static/media/LogoHeader.png": "/Aj-Serwis/static/media/LogoHeader.22dc9f317e8b9e43054b.png",
     "static/media/montserrat-latin-400-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-400-normal.0f1794a79a689a577c2a.woff",
     "static/media/montserrat-latin-700-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-700-normal.e8155b435ce17d7f08f9.woff",
@@ -27,20 +27,25 @@
     "static/media/montserrat-cyrillic-700-normal.woff2": "/Aj-Serwis/static/media/montserrat-cyrillic-700-normal.2a599b68747a45fad239.woff2",
     "static/media/montserrat-cyrillic-400-normal.woff2": "/Aj-Serwis/static/media/montserrat-cyrillic-400-normal.e5c5c19c23e370a342c8.woff2",
     "static/media/montserrat-cyrillic-900-normal.woff2": "/Aj-Serwis/static/media/montserrat-cyrillic-900-normal.7950a5546709115a713d.woff2",
+    "static/media/docs.svg": "/Aj-Serwis/static/media/docs.96786165bbc8ecff906d6f6ef6cee354.svg",
     "static/media/montserrat-vietnamese-700-normal.woff": "/Aj-Serwis/static/media/montserrat-vietnamese-700-normal.cf6df43bb337aa9de5f1.woff",
     "static/media/montserrat-vietnamese-400-normal.woff": "/Aj-Serwis/static/media/montserrat-vietnamese-400-normal.f36d8e9e08c584303451.woff",
     "static/media/montserrat-vietnamese-900-normal.woff": "/Aj-Serwis/static/media/montserrat-vietnamese-900-normal.f1f7050682d67675b3b3.woff",
+    "static/media/job.svg": "/Aj-Serwis/static/media/job.4c76bd7680a24953b1a5656a1b7dc123.svg",
+    "static/media/info.svg": "/Aj-Serwis/static/media/info.ec230e5ef2ed5270ba966d97403a926c.svg",
     "static/media/montserrat-vietnamese-700-normal.woff2": "/Aj-Serwis/static/media/montserrat-vietnamese-700-normal.810d24ff481f2abee5c1.woff2",
     "static/media/montserrat-vietnamese-400-normal.woff2": "/Aj-Serwis/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
     "static/media/montserrat-vietnamese-900-normal.woff2": "/Aj-Serwis/static/media/montserrat-vietnamese-900-normal.82410d13778f770e4358.woff2",
+    "static/media/home.svg": "/Aj-Serwis/static/media/home.0c08e48705b72e7cc37667d08bdeddce.svg",
+    "static/media/bus.svg": "/Aj-Serwis/static/media/bus.861d1057070de4afa7d4bade858ba78a.svg",
     "index.html": "/Aj-Serwis/index.html",
     "static/media/rightArrow.svg": "/Aj-Serwis/static/media/rightArrow.e2a6c79f57be3fc6369a0be33e14311d.svg",
     "static/media/leftArrow.svg": "/Aj-Serwis/static/media/leftArrow.4b4b1a144a8a1d944751fb7aeebb7b35.svg",
     "main.87d44b9f.css.map": "/Aj-Serwis/static/css/main.87d44b9f.css.map",
-    "main.886478aa.js.map": "/Aj-Serwis/static/js/main.886478aa.js.map"
+    "main.9f582e0d.js.map": "/Aj-Serwis/static/js/main.9f582e0d.js.map"
   },
   "entrypoints": [
     "static/css/main.87d44b9f.css",
-    "static/js/main.886478aa.js"
+    "static/js/main.9f582e0d.js"
   ]
 }
