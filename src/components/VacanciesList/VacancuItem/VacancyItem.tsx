@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { IVacancieData } from '../../../common/models';
 import {
   StyledVacancyItem,
@@ -8,6 +8,7 @@ import {
   StyledVacancyText,
   StyledVacancyTitle,
 } from './VacancyItem.styled';
+import Button from '../../Button/Button';
 
 interface IVacancyItem {
   vacancy: IVacancieData;
@@ -37,24 +38,50 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         </StyledVacancyText>
       </StyledVacancyLink>
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Link to={`/vacancies/${vacancieId}`} state={{ from: location }}>
-          <button
+        <StyledVacancyLink
+          to={`/vacancies/${vacancieId}`}
+          state={{ from: location }}
+        >
+          <Button
+            variant={'primary'}
+            size={'sm'}
+            type={'button'}
+            style={{
+              textDecoration: 'none',
+              paddingTop: 8,
+              paddingBottom: 8,
+              paddingLeft: 12,
+              paddingRight: 12,
+            }}
             onClick={() => {
               console.log('Navigate to Form');
             }}
           >
             Send resume
-          </button>
-        </Link>
-        <Link to={`/vacancies/${vacancieId}`} state={{ from: location }}>
-          <button
+          </Button>
+        </StyledVacancyLink>
+        <StyledVacancyLink
+          to={`/vacancies/${vacancieId}`}
+          state={{ from: location }}
+        >
+          <Button
+            variant={'primary'}
+            size={'sm'}
+            type={'button'}
+            style={{
+              textDecoration: 'none',
+              paddingTop: 8,
+              paddingBottom: 8,
+              paddingLeft: 12,
+              paddingRight: 12,
+            }}
             onClick={() => {
               console.log('Navigate Vacancy Details');
             }}
           >
             More Info
-          </button>
-        </Link>
+          </Button>
+        </StyledVacancyLink>
       </div>
     </StyledVacancyItem>
   );
