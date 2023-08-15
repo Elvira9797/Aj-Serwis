@@ -1,5 +1,7 @@
+import VacanciesList from '../components/VacanciesList/VacanciesList';
+
 const Vacancies = () => {
-  return <div>vacancies</div>;
+  return <VacanciesList />;
 };
 
 export default Vacancies;
