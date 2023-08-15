@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.87d44b9f.css",
-    "main.js": "/Aj-Serwis/static/js/main.ed48af4d.js",
+    "main.js": "/Aj-Serwis/static/js/main.54e7476c.js",
     "static/media/montserrat-latin-400-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-400-normal.0f1794a79a689a577c2a.woff",
     "static/media/montserrat-latin-700-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-700-normal.e8155b435ce17d7f08f9.woff",
     "static/media/montserrat-latin-900-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-900-normal.61e2e67ef162337671dd.woff",
@@ -33,11 +33,13 @@
     "static/media/montserrat-vietnamese-400-normal.woff2": "/Aj-Serwis/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
     "static/media/montserrat-vietnamese-900-normal.woff2": "/Aj-Serwis/static/media/montserrat-vietnamese-900-normal.82410d13778f770e4358.woff2",
     "index.html": "/Aj-Serwis/index.html",
+    "static/media/rightArrow.svg": "/Aj-Serwis/static/media/rightArrow.e2a6c79f57be3fc6369a0be33e14311d.svg",
+    "static/media/leftArrow.svg": "/Aj-Serwis/static/media/leftArrow.4b4b1a144a8a1d944751fb7aeebb7b35.svg",
     "main.87d44b9f.css.map": "/Aj-Serwis/static/css/main.87d44b9f.css.map",
-    "main.ed48af4d.js.map": "/Aj-Serwis/static/js/main.ed48af4d.js.map"
+    "main.54e7476c.js.map": "/Aj-Serwis/static/js/main.54e7476c.js.map"
   },
   "entrypoints": [
     "static/css/main.87d44b9f.css",
-    "static/js/main.ed48af4d.js"
+    "static/js/main.54e7476c.js"
   ]
 }
