@@ -5,6 +5,7 @@ declare module '@emotion/react' {
       primaryColor: string;
       secondaryColor: string;
       bgColor: string;
+      lightGrey: string;
     };
     section: {
       padding: {
@@ -37,6 +38,7 @@ export const theme = {
     primaryColor: '#1f1f1f',
     secondaryColor: '#ffffff',
     bgColor: '#f7f9fb',
+    lightGrey: 'rgb(130, 130, 130)',
   },
   section: {
     padding: {
