@@ -15,7 +15,7 @@ import { StyledSliderNavWrap, StyledSwiper } from './VacanciesSlider.styled';
 
 const VacanciesSlider = () => {
   return (
-    <div style={{ maxWidth: '100%' }}>
+    <section style={{ maxWidth: '100%' }}>
       <StyledSwiper
         mousewheel
         loop={true}
@@ -55,7 +55,7 @@ const VacanciesSlider = () => {
           <SliderNavBtn navTo={'next'} />
         </StyledSliderNavWrap>
       </StyledSwiper>
-    </div>
+    </section>
   );
 };
 

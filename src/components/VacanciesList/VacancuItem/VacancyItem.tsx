@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { IVacancieData } from '../../../common/models';
+import { IVacancieData } from '../../../common/vacanciesArr';
 import {
   StyledVacancyItem,
   StyledVacancyItemImg,
@@ -20,7 +20,7 @@ const VacancyItem: React.FC<IVacancyItem> = ({
   const location = useLocation();
 
   return (
-    <StyledVacancyItem key={vacancieId}>
+    <StyledVacancyItem>
       <StyledVacancyLink
         to={`/vacancies/${vacancieId}`}
         state={{ from: location }}
