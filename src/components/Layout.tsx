@@ -1,11 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import Hero from './Hero/Hero';
 
 const Layout = () => {
   return (
     <>
       <Header />
+      <Hero />
       <main>
         <div
           style={{
