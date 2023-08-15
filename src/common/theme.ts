@@ -1,3 +1,36 @@
+declare module '@emotion/react' {
+  export interface Theme {
+    colors: {
+      accentColor: string;
+      primaryColor: string;
+      secondaryColor: string;
+      bgColor: string;
+    };
+    section: {
+      padding: {
+        medium: {
+          paddingTop: string;
+          paddingBottom: string;
+        };
+        large: {
+          paddingTop: string;
+          paddingBottom: string;
+        };
+      };
+    };
+    typography: {
+      fontWeight: {
+        regular: string;
+        semiBold: string;
+        bold: string;
+      };
+    };
+    transition: {
+      basic: string;
+    };
+  }
+}
+
 export const theme = {
   colors: {
     accentColor: '#c3a069',
@@ -19,9 +52,12 @@ export const theme = {
   },
   typography: {
     fontWeight: {
-      regular: 400,
-      semiBold: 700,
-      bold: 900,
+      regular: '400',
+      semiBold: '700',
+      bold: '900',
     },
+  },
+  transition: {
+    basic: 'all 250ms ease-in-out',
   },
 };
