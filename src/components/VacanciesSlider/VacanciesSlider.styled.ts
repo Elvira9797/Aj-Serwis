@@ -12,13 +12,13 @@ export const StyledSwiper = styled(Swiper)`
 export const StyledSliderNavWrap = styled.div`
   width: 100%;
   left: 50%;
-  bottom: 76px;
+  bottom: 150px;
   transform: translateX(-50%);
 
   position: absolute;
   margin: 0px auto;
   max-width: 1200px;
-  height: 70px;
+  height: 0px;
   display: flex;
   justify-content: space-between;
 `;

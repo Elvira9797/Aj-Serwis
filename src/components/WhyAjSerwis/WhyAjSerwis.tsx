@@ -1,7 +1,11 @@
-import {} from './WhyAjSerwis.styled';
+import BenefitsList from './BenefitsList/BenefitsList';
 
-const WhyAjSerwis = () => {
-  return <div>WhyAjSerwis</div>;
+const WhyAjSerwis: React.FC = () => {
+  return (
+    <section>
+      <BenefitsList />
+    </section>
+  );
 };
 
 export default WhyAjSerwis;

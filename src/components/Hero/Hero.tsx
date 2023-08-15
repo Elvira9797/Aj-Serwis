@@ -1,22 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
-import {
-  HeroTitle,
-  HeroUnderTitle,
-  Overlay,
-  SocialLink,
-  SocialList,
-  SocialListItem,
-} from './Hero.styled';
+import { HeroTitle, HeroUnderTitle, Overlay } from './Hero.styled';
 import { theme } from '../../common/theme';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTelegramPlane,
-  FaWhatsapp,
-} from 'react-icons/fa';
+import SocialMediaLink from '../SocialMediaLink/SocialMediaLink';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -48,31 +36,7 @@ const Hero = () => {
       >
         Переглянути вакансії
       </Button>
-      <SocialList>
-        <SocialListItem>
-          <SocialLink
-            href="https://www.facebook.com/Vasyl.moiseiko"
-            target="_blank"
-          >
-            <FaFacebookF size={22} color="white" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink href="#">
-            <FaTelegramPlane size={22} color="white" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink href="#">
-            <FaWhatsapp size={22} color="white" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink href="#">
-            <FaInstagram size={22} color="white" />
-          </SocialLink>
-        </SocialListItem>
-      </SocialList>
+      <SocialMediaLink />
     </Overlay>
   );
 };
