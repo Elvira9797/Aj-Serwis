@@ -38,20 +38,19 @@ const getVariant = (variant: StyledButton['variant'], { colors }: Theme) => {
   switch (variant) {
     case 'primary':
       return {
-        backgroundColor: colors.primaryColor,
-        border: `1px ${colors.primaryColor} solid`,
+        backgroundColor: colors.accentColor,
+        border: `1px ${colors.accentColor} solid`,
         color: colors.secondaryColor,
         '&:hover': {
-          backgroundColor: colors.accentColor,
-          color: colors.secondaryColor,
-          borderColor: colors.accentColor,
+          backgroundColor: colors.secondaryColor,
+          color: colors.accentColor,
         },
       };
     case 'secondary':
       return {
         backgroundColor: 'transparent',
-        border: `1px ${colors.primaryColor} solid`,
-        color: colors.primaryColor,
+        border: `1px ${colors.accentColor} solid`,
+        color: colors.accentColor,
         '&:hover': {
           backgroundColor: colors.accentColor,
           color: colors.secondaryColor,

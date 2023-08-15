@@ -1,30 +1,41 @@
-import { ChangeEventHandler, FC, LegacyRef, forwardRef } from 'react';
-import { StyledInput } from './Input-styled';
+import { ChangeEventHandler, FC, LegacyRef, forwardRef, useState } from 'react';
+import { InputWrapper, StyledInput, StyledLabel } from './Input-styled';
 
 interface InputProps {
   type: 'text' | 'email' | 'password' | 'tel';
   name: string;
+  value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   autoComplete?: 'on' | 'off';
+  label: string;
   placeholder?: string;
   style?: {};
 }
 
 const Input: FC<InputProps> = forwardRef(
   (
-    { type, name, onChange, autoComplete = 'off', placeholder, style },
+    { type, name, onChange, autoComplete = 'off', placeholder, style, value, label },
     ref: LegacyRef<HTMLInputElement>
   ) => {
+    const [focus, setFocus] = useState(false);
+
     return (
-      <StyledInput
-        ref={ref}
-        style={style}
-        autoComplete={autoComplete}
-        type={type}
-        onChange={onChange}
-        name={name}
-        placeholder={placeholder}
-      />
+      <InputWrapper>
+        <StyledInput
+          ref={ref}
+          style={style}
+          autoComplete={autoComplete}
+          type={type}
+          onFocus={() => setFocus(true)}
+          onBlur={() => setFocus(false)}
+          onChange={onChange}
+          name={name}
+          placeholder={placeholder}
+        />
+        <StyledLabel focus={focus} value={value}>
+          {label}
+        </StyledLabel>
+      </InputWrapper>
     );
   }
 );
