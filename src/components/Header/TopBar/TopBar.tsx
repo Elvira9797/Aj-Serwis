@@ -1,41 +1,31 @@
-import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
-import { FaTelegramPlane } from 'react-icons/fa';
-import {
-  StyledNavWrader,
-  StyledSocLinkWraper,
-  StyledTopBar,
-} from './TopBar.styled';
+import { useEffect, useState } from 'react';
+
+import { StyledNavWrader, StyledTopBar } from './TopBar.styled';
+import Soclink from '../../Soclink/Soclink';
 
 const TopBar: React.FC = () => {
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsTop(true);
+      } else {
+        setIsTop(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <StyledTopBar>
+    <StyledTopBar isVisible={isTop}>
       <StyledNavWrader>
         <a href="mailto:aj.serwis.spzoo@gmail.com">aj.serwis.spzoo@gmail.com</a>
       </StyledNavWrader>
-
-      <StyledSocLinkWraper>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillInstagram aria-label="Instagram" />
-        </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillFacebook aria-label="Facebook" />
-        </a>
-        <a
-          href="https://telegram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTelegramPlane aria-label="Telegram" />
-        </a>
-      </StyledSocLinkWraper>
+      <Soclink />
     </StyledTopBar>
   );
 };

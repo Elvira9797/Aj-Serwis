@@ -1,10 +1,14 @@
-import { StyledFooter } from './Footer.styled';
+import { Container, StyledFooter } from './Footer.styled';
+import FooterContacts from './FooterContacts/FooterContacts';
 import FooterInfoBlock from './FooterInfoBlock/FooterInfoBlock';
 
 const Footer: React.FC = () => {
   return (
     <StyledFooter>
-      <FooterInfoBlock />
+      <Container>
+        <FooterInfoBlock />
+        <FooterContacts />
+      </Container>
     </StyledFooter>
   );
 };

@@ -1,22 +1,38 @@
 import styled from '@emotion/styled';
 
-const Wraper = styled.div`
+interface StyledTopBarProps {
+  isVisible: boolean;
+}
+
+export const StyledTopBar = styled.div<StyledTopBarProps>`
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  transition: height 0.3s, opacity 0.3s;
+  height: ${props => (props.isVisible ? 'auto' : '0')};
+  opacity: ${props => (props.isVisible ? 1 : 0)};
+  overflow: hidden;
+`;
+
+export const StyledNavWrader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-export const StyledTopBar = styled(Wraper)`
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1px 0 1px 0;
-`;
-
-export const StyledNavWrader = styled(Wraper)`
+  font-size: 0.7rem;
   gap: 4px;
-`;
 
-export const StyledSocLinkWraper = styled(Wraper)`
-  gap: 4px;
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.primaryColor};
+    transition: ${props => props.theme.transition.basic};
+  }
+
+  a:hover {
+    color: ${props => props.theme.colors.accentColor};
+  }
 `;
