@@ -6,16 +6,24 @@ const Nav: React.FC = () => {
     <nav>
       <StyledNavList>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            }
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/vacancies">Vacancies</NavLink>
-        </li>
-        <li>
-          <NavLink to="/">About us</NavLink>
-        </li>
-        <li>
-          <NavLink to="/">Contacts</NavLink>
+          <NavLink
+            to="/vacancies"
+            className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            }
+          >
+            Vacancies
+          </NavLink>
         </li>
       </StyledNavList>
     </nav>

@@ -8,27 +8,33 @@ export const StyledTopBar = styled.div<StyledTopBarProps>`
   display: flex;
   align-items: center;
 
+  color: ${props => props.theme.colors.lightGrey};
+  font-size: 0.9rem;
+
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1232px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem 0 1rem;
   transition: height 0.3s, opacity 0.3s;
   height: ${props => (props.isVisible ? 'auto' : '0')};
   opacity: ${props => (props.isVisible ? 1 : 0)};
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const StyledNavWrader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.7rem;
   gap: 4px;
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.primaryColor};
+    color: ${props => props.theme.colors.lightGrey};
     transition: ${props => props.theme.transition.basic};
   }
 
