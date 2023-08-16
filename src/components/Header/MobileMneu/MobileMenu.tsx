@@ -103,19 +103,19 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 
           <div>
             <ContactWraper>
-              <span>MOISEIKO VASYL</span>{' '}
+              {/* <span>MOISEIKO VASYL</span>{' '} */}
               <a href="tel:+48539649808">
                 <FaPhone /> +48 539 649 808
               </a>
             </ContactWraper>
             <ContactWraper>
-              <span>KORNACKI JAKUB</span>{' '}
+              {/* <span>KORNACKI JAKUB</span>{' '} */}
               <a href="tel:+48797993183">
                 <FaPhone /> +48 797 993 183
               </a>
             </ContactWraper>
             <ContactWraper>
-              <span>ALEKSANDER ARTEMJEW</span>{' '}
+              {/* <span>ALEKSANDER ARTEMJEW</span>{' '} */}
               <a href="tel:+48777777777">
                 <FaPhone /> +48 777 777 777
               </a>
