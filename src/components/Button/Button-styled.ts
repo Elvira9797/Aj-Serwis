@@ -15,7 +15,7 @@ export const StyledBtn = styled.button<StyledButton>(
     alignItems: 'center',
     maxWidth: '100%',
     outline: 'none',
-    borderRadius: '1rem',
+    borderRadius: '0.5rem',
     fontWeight: theme.typography.fontWeight.semiBold,
     transition: theme.transition.basic,
     ...getSize(size),
@@ -38,24 +38,26 @@ const getVariant = (variant: StyledButton['variant'], { colors }: Theme) => {
   switch (variant) {
     case 'primary':
       return {
-        backgroundColor: colors.primaryColor,
-        border: `1px ${colors.primaryColor} solid`,
+        backgroundColor: colors.accentColor,
+        border: `1px ${colors.accentColor} solid`,
         color: colors.secondaryColor,
         '&:hover': {
-          backgroundColor: colors.accentColor,
-          color: colors.secondaryColor,
-          borderColor: colors.accentColor,
+          backgroundColor: colors.secondaryColor,
+          color: colors.accentColor,
+          // boxShadow: '0px 5px 40px -10px rgba(195,160,105,0.48)',
+          transform: 'scale(1.02)',
         },
       };
     case 'secondary':
       return {
         backgroundColor: 'transparent',
-        border: `1px ${colors.primaryColor} solid`,
-        color: colors.primaryColor,
+        border: `1px ${colors.accentColor} solid`,
+        color: colors.accentColor,
         '&:hover': {
           backgroundColor: colors.accentColor,
           color: colors.secondaryColor,
           borderColor: colors.accentColor,
+          transform: 'scale(1.02)',
         },
       };
   }
