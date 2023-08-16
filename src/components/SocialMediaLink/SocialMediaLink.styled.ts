@@ -21,6 +21,7 @@ export const SocialListItem = styled.li`
   border-radius: 4px 0 0 4px;
   @media (max-width: 450px) {
     padding: 6px;
+    border-radius: 4px;
   }
 `;
 

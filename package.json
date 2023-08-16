@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/lodash.throttle": "^4.1.7",
     "typescript": "^4.9.5"
   }
 }

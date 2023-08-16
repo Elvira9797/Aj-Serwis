@@ -1,10 +1,10 @@
 import throttle from 'lodash.throttle';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ReactComponent as ButtonToTop } from '../../img/chevron-up.svg';
 import { BtnToTop } from './ScrollToTopButton.styled';
 
-const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState();
+const ScrollToTopButton: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -13,10 +13,11 @@ const ScrollToTopButton = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', throttle(handleScroll, 300));
+    const throttledHandleScroll = throttle(handleScroll, 300);
+    window.addEventListener('scroll', throttledHandleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', throttledHandleScroll);
     };
   }, []);
 

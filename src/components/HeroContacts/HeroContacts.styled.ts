@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import desktopBgImage from '../../img/desktopBgImage.jpg';
+import desktopBgContacts from '../../img/desktopBgContacts.jpg';
 
 export const Overlay = styled.section`
   position: relative;
@@ -17,7 +17,7 @@ export const Overlay = styled.section`
       rgba(6, 7, 7, 0.8),
       rgba(34, 32, 32, 0.2)
     ),
-    url(${desktopBgImage});
+    url(${desktopBgContacts});
   background-size: cover;
 
   background-position: center;
@@ -39,6 +39,7 @@ export const HeroTitle = styled.h1`
   margin-bottom: 15px;
   color: ${({ theme }) => theme.colors.secondaryColor};
   font-weight: 700;
+  text-align: start;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -75,4 +76,41 @@ export const HeroUnderTitle = styled.p`
   @media (min-width: 768px) {
     font-size: 22px;
   }
+`;
+
+export const ButtonStyled = styled.button`
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: ${({ theme }) => theme.colors.accentColor};
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  &:hover:before {
+    width: 100%;
+    background: ${({ theme }) => theme.colors.accentColor};
+  }
+`;
+
+export const TextButton = styled.span`
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.colors.secondaryColor};
 `;
