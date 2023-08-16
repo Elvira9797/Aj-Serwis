@@ -19,7 +19,11 @@ const Header: React.FC = () => {
       <Divider>
         <TopBar />
       </Divider>
-      <AppBar isOpenModal={isOpenModal} modalToggle={modalToggle} />
+      <AppBar
+        isOpenModal={isOpenModal}
+        modalToggle={modalToggle}
+        theme={theme}
+      />
       {openModal && (
         <MobileMenu
           modalToggle={modalToggle}

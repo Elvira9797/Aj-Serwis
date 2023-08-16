@@ -8,7 +8,7 @@ import {
   ContactInfoItem,
 } from './ContactInfoList.styled';
 
-const ContactInfoList = () => {
+const ContactInfoList: React.FC = () => {
   return (
     <SectionStyled>
       <TitleContactInfoList>Connect with us</TitleContactInfoList>
@@ -34,8 +34,10 @@ const ContactInfoList = () => {
         <ContactInfoItem>
           <BsFillClockFill size={45} color="#c3a069" />
           <h3>Working hours</h3>
-          <p>mon - fri</p>
-          <p>10:00 - 18:00</p>
+          <p>
+            Mon - Fri:
+            <br /> 8:00 AM - 7:00 PM
+          </p>
         </ContactInfoItem>
       </ContactInfoListStyled>
     </SectionStyled>

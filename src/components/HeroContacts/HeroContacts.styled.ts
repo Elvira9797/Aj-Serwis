@@ -9,7 +9,6 @@ export const Overlay = styled.section`
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
   padding-left: 20px;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -30,7 +29,6 @@ export const Overlay = styled.section`
   }
 
   @media (min-width: 1200px) {
-    max-width: 1440px;
     padding-top: 238px;
     padding-bottom: 238px;
     padding-left: 100px;

@@ -7,7 +7,6 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/montserrat": "^5.0.8",
-    "@react-google-maps/api": "^2.19.2",
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^3.2.0",
     "@reduxjs/toolkit": "^1.9.5",
