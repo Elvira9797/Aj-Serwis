@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { theme } from '../../../common/theme';
 
 export const StyledBenefitsList = styled.ul`
   display: flex;
@@ -26,6 +27,7 @@ export const StyledBenefitIcoContainer = styled.div`
   justify-content: center;
   width: 50px;
   height: 50px;
+  border: 1px solid ${theme.colors.accentColor};
 `;
 
 export const StyledBenefitText = styled.p`
