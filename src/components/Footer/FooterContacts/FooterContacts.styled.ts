@@ -8,7 +8,7 @@ export const ContactsContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 `;
 
 export const ContactWraper = styled.div`
@@ -16,7 +16,12 @@ export const ContactWraper = styled.div`
   justify-content: space-between;
   gap: 1rem;
 
+  span {
+    color: ${props => props.theme.colors.lightGrey};
+  }
+
   a {
+    color: ${props => props.theme.colors.lightGrey};
     transition: ${props => props.theme.transition.basic};
   }
 

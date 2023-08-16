@@ -6,6 +6,10 @@ export const StyledNavList = styled.ul`
   justify-content: center;
   gap: 1rem;
 
+  .active {
+    color: ${props => props.theme.colors.accentColor};
+  }
+
   a {
     font-weight: ${props => props.theme.typography.fontWeight.semiBold};
     font-size: 1rem;

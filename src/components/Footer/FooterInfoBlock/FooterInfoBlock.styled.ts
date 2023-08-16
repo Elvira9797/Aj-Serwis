@@ -10,13 +10,6 @@ export const StyledFooterInfoBlock = styled.div`
 
   padding: 0.5rem;
 
+  color: ${props => props.theme.colors.lightGrey};
   font-weight: ${props => props.theme.typography.fontWeight.regular};
-
-  a {
-    transition: ${props => props.theme.transition.basic};
-  }
-
-  a:hover {
-    color: ${props => props.theme.colors.accentColor};
-  }
 `;
