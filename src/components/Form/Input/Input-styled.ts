@@ -24,7 +24,7 @@ export const StyledInput = styled.input<StyledInputProps>`
   transition: ${({ theme }) => theme.transition.basic};
   outline: none;
   background-color: transparent;
-  color: ${({theme}) => theme.colors.secondaryColor};
+  color: ${({ theme }) => theme.colors.secondaryColor};
   border-bottom: 1px
     ${props =>
       props.inputValue
@@ -64,7 +64,12 @@ const getFloatLabel = (
       color: theme.colors.accentColor,
     };
   } else {
-    return { top: '50%', transform: 'translateY(-50%)', left: '10px', color: theme.colors.secondaryColor};
+    return {
+      top: '50%',
+      transform: 'translateY(-50%)',
+      left: '10px',
+      color: theme.colors.secondaryColor,
+    };
   }
 };
 

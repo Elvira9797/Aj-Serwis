@@ -44,6 +44,8 @@ const getVariant = (variant: StyledButton['variant'], { colors }: Theme) => {
         '&:hover': {
           backgroundColor: colors.secondaryColor,
           color: colors.accentColor,
+          // boxShadow: '0px 5px 40px -10px rgba(195,160,105,0.48)',
+          transform: 'scale(1.02)',
         },
       };
     case 'secondary':
@@ -55,6 +57,7 @@ const getVariant = (variant: StyledButton['variant'], { colors }: Theme) => {
           backgroundColor: colors.accentColor,
           color: colors.secondaryColor,
           borderColor: colors.accentColor,
+          transform: 'scale(1.02)',
         },
       };
   }
