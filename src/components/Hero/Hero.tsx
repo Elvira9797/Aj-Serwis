@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           border: 'none',
         }}
       >
-        Переглянути вакансії
+        View job vacancies
       </Button>
       <SocialMediaLink />
     </Overlay>

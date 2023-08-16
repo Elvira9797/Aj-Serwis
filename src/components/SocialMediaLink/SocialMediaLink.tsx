@@ -27,17 +27,29 @@ const SocialMediaLink: React.FC<SocialMediaProps> = ({ iconSize = 22 }) => {
         </SocialLink>
       </SocialListItem>
       <SocialListItem>
-        <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLink
+          href="https://t.me/Martin0975"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTelegramPlane size={iconSize} color="white" />
         </SocialLink>
       </SocialListItem>
       <SocialListItem>
-        <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLink
+          href="https://wa.me/+48539649808"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaWhatsapp size={iconSize} color="white" />
         </SocialLink>
       </SocialListItem>
       <SocialListItem>
-        <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLink
+          href="https://instagram.com/aj_serwis_sp_z_o_o?igshid=MzRlODBiNWFlZA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram size={iconSize} color="white" />
         </SocialLink>
       </SocialListItem>

@@ -2,12 +2,14 @@ import { Outlet } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Hero from './Hero/Hero';
+import HeroContacts from './HeroContacts/HeroContacts';
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <Hero />
+      {/* <Hero /> */}
+      <HeroContacts />
       <main>
         <div
           style={{
