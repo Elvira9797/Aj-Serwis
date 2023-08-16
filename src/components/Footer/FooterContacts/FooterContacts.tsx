@@ -1,11 +1,34 @@
 import { FaPhone } from 'react-icons/fa';
 import { ContactWraper, ContactsContainer } from './FooterContacts.styled';
-import Soclink from '../../Soclink/Soclink';
+import { BsPhoneVibrateFill } from 'react-icons/bs';
+import { BiMailSend } from 'react-icons/bi';
 
-const FooterContacts: React.FC = () => {
+interface FooterContactsProps {
+  theme: {
+    colors: {
+      accentColor: string;
+      lightGrey: string;
+    };
+  };
+}
+
+const FooterContacts: React.FC<FooterContactsProps> = props => {
   return (
     <ContactsContainer>
-      <h4 id="contacts">CONTACTS</h4>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <BsPhoneVibrateFill
+          size={36}
+          style={{ color: props.theme.colors.accentColor }}
+        />
+        <span
+          style={{
+            color: props.theme.colors.lightGrey,
+            fontSize: '0.6rem',
+          }}
+        >
+          Mon-Fri from 8:00 AM to 7:00 PM.
+        </span>
+      </div>
       <div>
         <ContactWraper>
           <span>MOISEIKO VASYL</span>{' '}
@@ -26,7 +49,21 @@ const FooterContacts: React.FC = () => {
           </a>
         </ContactWraper>
       </div>
-      <Soclink iconSize={32} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <BiMailSend
+          size={36}
+          style={{ color: props.theme.colors.accentColor }}
+        />
+        <a
+          href="mailto:aj.serwis.spzoo@gmail.com"
+          style={{
+            color: props.theme.colors.accentColor,
+            fontSize: '1rem',
+          }}
+        >
+          aj.serwis.spzoo@gmail.com
+        </a>
+      </div>
     </ContactsContainer>
   );
 };
