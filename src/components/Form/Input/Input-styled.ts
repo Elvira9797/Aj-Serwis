@@ -1,11 +1,14 @@
 import { Theme } from '@emotion/react';
-import { theme } from './../../../common/theme';
 import styled from '@emotion/styled';
-// import {BsCheck} from 'react'
+import checked from '../../../assets/svg/checked.svg';
 
 interface StyledLabelProps {
   focus: boolean;
-  value: string;
+  inputValue: string;
+}
+
+interface StyledInputProps {
+  inputValue: string;
 }
 
 export const InputWrapper = styled.div`
@@ -13,34 +16,37 @@ export const InputWrapper = styled.div`
   position: relative;
 `;
 
-export const StyledInput = styled.input`
+export const StyledInput = styled.input<StyledInputProps>`
   width: 100%;
   padding: 0.8rem;
   padding-bottom: 0.2rem;
   border: none;
-  border-bottom: 1px ${({ theme }) => theme.colors.primaryColor} solid;
   transition: ${({ theme }) => theme.transition.basic};
-  /* border-radius: 0.5rem; */
   outline: none;
-
+  background-color: transparent;
+  color: ${({theme}) => theme.colors.secondaryColor};
+  border-bottom: 1px
+    ${props =>
+      props.inputValue
+        ? props.theme.colors.accentColor
+        : props.theme.colors.secondaryColor}
+    solid;
   &:focus {
     border-color: ${({ theme }) => theme.colors.accentColor};
-    border-width: 1px;
-    /* background-color: rgba(195, 160, 105, 0.3); */
   }
 `;
 
 export const StyledLabel = styled.label<StyledLabelProps>(
-  ({ focus, value, theme }) => ({
+  ({ focus, inputValue, theme }) => ({
     position: 'absolute',
     transition: theme.transition.basic,
-    ...getFloatLabel(focus, value, theme),
+    ...getFloatLabel(focus, inputValue, theme),
   })
 );
 
 const getFloatLabel = (
   focus: StyledLabelProps['focus'],
-  value: StyledLabelProps['value'],
+  inputValue: StyledLabelProps['inputValue'],
   theme: Theme
 ) => {
   if (focus) {
@@ -50,7 +56,7 @@ const getFloatLabel = (
       fontSize: '0.8rem',
       color: theme.colors.accentColor,
     };
-  } else if (!focus && value) {
+  } else if (!focus && inputValue) {
     return {
       top: '-10px',
       left: '10px',
@@ -58,7 +64,7 @@ const getFloatLabel = (
       color: theme.colors.accentColor,
     };
   } else {
-    return { top: '50%', transform: 'translateY(-50%)', left: '10px' };
+    return { top: '50%', transform: 'translateY(-50%)', left: '10px', color: theme.colors.secondaryColor};
   }
 };
 
@@ -68,11 +74,25 @@ export const StyledCheckbox = styled.input`
     content: '';
     display: block;
     width: 1rem;
-    height: 1rem;
-    border: 1px #000 solid;
+    height: 1.2em;
+    padding: 0.2rem;
+    border: 1px #fff solid;
+    cursor: pointer;
   }
   &:checked::before {
-    background-color: ${({ theme }) => theme.colors.accentColor};
-    border: 1px ${({ theme }) => theme.colors.accentColor};
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    background-image: url(${checked});
+    background-position: center;
+    background-repeat: no-repeat;
   }
+`;
+
+export const StyledErrorMessage = styled.small`
+  font-size: 0.8rem;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  color: red;
 `;
