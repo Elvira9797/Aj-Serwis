@@ -8,7 +8,6 @@ const Header: React.FC = () => {
       <Divider>
         <TopBar />
       </Divider>
-
       <AppBar />
     </StyledHeader>
   );
