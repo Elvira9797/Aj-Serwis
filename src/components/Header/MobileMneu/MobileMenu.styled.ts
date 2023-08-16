@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 
 const slideAnimation = keyframes`
   from {
-    transform: translateY(-100%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateY(0);
+    transform: translateX(43%);
   }
 `;
 
 const slideOutAnimation = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateX(43%);
   }
   to {
-    transform: translateY(-100%);
+    transform: translateX(100%);
   }
 `;
 
@@ -27,7 +27,8 @@ export const Overlay = styled.div`
   height: 100vh;
   display: flex;
   align-items: flex-start;
-  z-index: 9999;
+  z-index: 999;
+  background-color: 'black';
   transition: ${props => props.theme.transition.basic};
 `;
 
@@ -38,11 +39,11 @@ export const ModalMobileMenu = styled.div<{ isOpen: boolean }>`
   flex-direction: column;
   gap: 1rem;
 
-  width: 100vw;
+  width: 70vw;
   height: 70vh;
 
   background-color: ${props => props.theme.colors.bgColor};
-  padding: 3rem;
+  padding: 4px;
 
   animation: ${props =>
     props.isOpen
@@ -52,7 +53,8 @@ export const ModalMobileMenu = styled.div<{ isOpen: boolean }>`
       : css`
           ${slideOutAnimation} 0.5s ease-in-out
         `};
-  transform: ${props => (props.isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  transform: ${props =>
+    props.isOpen ? 'translatex(43%)' : 'translatex(100%)'};
 `;
 
 export const StyledNavList = styled.ul`

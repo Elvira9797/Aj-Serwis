@@ -8,9 +8,12 @@ import { GrClose } from 'react-icons/gr';
 interface AppBarProps {
   isOpenModal: boolean;
   modalToggle: () => void;
+  theme: {
+    colors: { primaryColor: string };
+  };
 }
 
-const AppBar: React.FC<AppBarProps> = ({ isOpenModal, modalToggle }) => {
+const AppBar: React.FC<AppBarProps> = ({ isOpenModal, modalToggle, theme }) => {
   return (
     <StyledAppBar>
       <Logo loc="header" size="md" />
@@ -19,7 +22,14 @@ const AppBar: React.FC<AppBarProps> = ({ isOpenModal, modalToggle }) => {
         <LangSelect />
       </StyledNavWraper>
       <BurgerButton onClick={modalToggle} type="button">
-        {isOpenModal ? <GrClose size={30} /> : <GiHamburgerMenu size={30} />}
+        {isOpenModal ? (
+          <GrClose size={30} style={{ color: theme.colors.primaryColor }} />
+        ) : (
+          <GiHamburgerMenu
+            size={30}
+            style={{ color: theme.colors.primaryColor }}
+          />
+        )}
       </BurgerButton>
     </StyledAppBar>
   );
