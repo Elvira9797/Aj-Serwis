@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.87d44b9f.css",
-    "main.js": "/Aj-Serwis/static/js/main.261cd0e6.js",
+    "main.js": "/Aj-Serwis/static/js/main.3b76d8af.js",
     "static/media/desktopBgImage.jpg": "/Aj-Serwis/static/media/desktopBgImage.d80fbc4de7f9b4ad65b0.jpg",
     "static/media/LogoHeader.png": "/Aj-Serwis/static/media/LogoHeader.22dc9f317e8b9e43054b.png",
     "static/media/montserrat-latin-400-normal.woff": "/Aj-Serwis/static/media/montserrat-latin-400-normal.0f1794a79a689a577c2a.woff",
@@ -44,10 +44,10 @@
     "static/media/leftArrow.svg": "/Aj-Serwis/static/media/leftArrow.4b4b1a144a8a1d944751fb7aeebb7b35.svg",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
     "main.87d44b9f.css.map": "/Aj-Serwis/static/css/main.87d44b9f.css.map",
-    "main.261cd0e6.js.map": "/Aj-Serwis/static/js/main.261cd0e6.js.map"
+    "main.3b76d8af.js.map": "/Aj-Serwis/static/js/main.3b76d8af.js.map"
   },
   "entrypoints": [
     "static/css/main.87d44b9f.css",
-    "static/js/main.261cd0e6.js"
+    "static/js/main.3b76d8af.js"
   ]
 }
