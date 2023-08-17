@@ -52,6 +52,7 @@ const Input: FC<InputProps> = forwardRef(
             onChange={onChange}
             name={name}
             placeholder={placeholder}
+            focus={focus}
           />
           <StyledLabel htmlFor={id} focus={focus} inputValue={value}>
             {label}
