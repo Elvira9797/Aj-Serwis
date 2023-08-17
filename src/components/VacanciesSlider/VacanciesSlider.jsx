@@ -30,11 +30,11 @@ const VacanciesSlider = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 35,
+              spaceBetween: 40,
             },
             1200: {
               slidesPerView: 3,
-              spaceBetween: 35,
+              spaceBetween: 40,
             },
           }}
           modules={[Navigation, Pagination]}

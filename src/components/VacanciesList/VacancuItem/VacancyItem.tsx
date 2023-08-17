@@ -1,6 +1,9 @@
 import { useLocation } from 'react-router-dom';
 import { IVacancieData } from '../../../common/vacanciesArr';
 import {
+  StyledGradientWrap,
+  StyledImgGradient,
+  StyledTextContainer,
   StyledVacancyItem,
   StyledVacancyItemImg,
   StyledVacancyLink,
@@ -9,6 +12,7 @@ import {
   StyledVacancyTitle,
 } from './VacancyItem.styled';
 import Button from '../../Button/Button';
+import { theme } from '../../../common/theme';
 
 interface IVacancyItem {
   vacancy: IVacancieData;
@@ -25,64 +29,48 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         to={`/vacancies/${vacancieId}`}
         state={{ from: location }}
       >
-        <StyledVacancyItemImg src={image} alt={shortInfo} />
-        <StyledVacancyShortInfo>{shortInfo}</StyledVacancyShortInfo>
-        <StyledVacancyText>
-          <StyledVacancyTitle>City:</StyledVacancyTitle> {city}
-        </StyledVacancyText>
-        <StyledVacancyText>
-          <StyledVacancyTitle>Position:</StyledVacancyTitle> {position}
-        </StyledVacancyText>
-        <StyledVacancyText>
-          <StyledVacancyTitle>Salary:</StyledVacancyTitle> {salary}
-        </StyledVacancyText>
+        <StyledGradientWrap>
+          <StyledVacancyItemImg src={image} alt={shortInfo} />
+          <StyledImgGradient>
+            <StyledVacancyShortInfo>{shortInfo}</StyledVacancyShortInfo>
+          </StyledImgGradient>
+        </StyledGradientWrap>
+
+        <StyledTextContainer>
+          <StyledVacancyText>
+            <StyledVacancyTitle>City:</StyledVacancyTitle> {city}
+          </StyledVacancyText>
+          <StyledVacancyText>
+            <StyledVacancyTitle>Position:</StyledVacancyTitle> {position}
+          </StyledVacancyText>
+          <StyledVacancyText>
+            <StyledVacancyTitle>Salary:</StyledVacancyTitle> {salary}
+          </StyledVacancyText>
+        </StyledTextContainer>
       </StyledVacancyLink>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <StyledVacancyLink
-          to={`/vacancies/${vacancieId}`}
-          state={{ from: location }}
+
+      <StyledVacancyLink
+        to={`/vacancies/${vacancieId}`}
+        state={{ from: location }}
+      >
+        <Button
+          variant={'secondary'}
+          size={'md'}
+          type={'button'}
+          style={{
+            textDecoration: 'none',
+            width: '100%',
+            backgroundColor: `${theme.colors.primaryColor}`,
+            borderColor: `${theme.colors.primaryColor}`,
+            borderRadius: 4,
+          }}
+          onClick={() => {
+            console.log('Navigate Vacancy Details');
+          }}
         >
-          <Button
-            variant={'primary'}
-            size={'sm'}
-            type={'button'}
-            style={{
-              textDecoration: 'none',
-              paddingTop: 8,
-              paddingBottom: 8,
-              paddingLeft: 12,
-              paddingRight: 12,
-            }}
-            onClick={() => {
-              console.log('Navigate to Form');
-            }}
-          >
-            Send resume
-          </Button>
-        </StyledVacancyLink>
-        <StyledVacancyLink
-          to={`/vacancies/${vacancieId}`}
-          state={{ from: location }}
-        >
-          <Button
-            variant={'primary'}
-            size={'sm'}
-            type={'button'}
-            style={{
-              textDecoration: 'none',
-              paddingTop: 8,
-              paddingBottom: 8,
-              paddingLeft: 12,
-              paddingRight: 12,
-            }}
-            onClick={() => {
-              console.log('Navigate Vacancy Details');
-            }}
-          >
-            More Info
-          </Button>
-        </StyledVacancyLink>
-      </div>
+          More Info
+        </Button>
+      </StyledVacancyLink>
     </StyledVacancyItem>
   );
 };

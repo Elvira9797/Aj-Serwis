@@ -4,7 +4,7 @@ import { theme } from '../../common/theme';
 export const StyledSwiper = styled(Swiper)`
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-top: 20px;
 
   & .swiper-wrapper {
