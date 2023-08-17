@@ -5,6 +5,7 @@ export const StyledSwiper = styled(Swiper)`
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
+  padding-top: 20px;
 
   & .swiper-wrapper {
     z-index: -1;
@@ -12,7 +13,7 @@ export const StyledSwiper = styled(Swiper)`
 
   & .swiper-button-prev,
   .swiper-button-next {
-    color: ${props => props.theme.colors.accentColor};
+    color: ${theme.colors.primaryColor};
     top: 50%;
   }
 
@@ -28,7 +29,7 @@ export const StyledSwiper = styled(Swiper)`
   }
 
   & .swiper-pagination-bullet-active {
-    background-color: #333;
+    background-color: ${theme.colors.primaryColor};
   }
 `;
 
@@ -47,6 +48,7 @@ export const StyledSliderNavWrap = styled.div`
 `;
 
 export const StyledSliderSection = styled.section`
-  padding-top: ${theme.section.padding.large.paddingTop};
-  /* padding-bottom: ${theme.section.padding.large.paddingBottom}; */
+  padding-top: ${theme.section.padding.medium.paddingTop};
+  padding-bottom: ${theme.section.padding.medium.paddingBottom};
+  background-color: #a59f983d;
 `;

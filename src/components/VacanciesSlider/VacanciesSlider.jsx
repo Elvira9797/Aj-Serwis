@@ -22,16 +22,7 @@ const VacanciesSlider = () => {
           navigation
           mousewheel
           loop={true}
-          // centeredSlides
           slidesPerView={'auto'}
-          // effect={'coverflow'}
-          // coverflowEffect={{
-          //   rotate: 0,
-          //   stretch: 0,
-          //   depth: 100,
-          //   modifier: 2,
-          //   slideShadows: false,
-          // }}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -39,7 +30,7 @@ const VacanciesSlider = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 35,
             },
             1200: {
               slidesPerView: 3,
