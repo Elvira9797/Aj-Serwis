@@ -5,22 +5,26 @@ const validationSchema = yup.object({
     .string()
     .required('Name is required')
     .min(2, 'Name must be at least 2 characters long')
-    .max(35, 'Name must be no more than 35 characters long'),
+    .max(35, 'Name must be no more than 35 characters long')
+    .trim(),
   surname: yup
     .string()
     .required('Surname is required')
     .min(2, 'Surname must be at least 2 characters long')
-    .max(35, 'Surname must be no more than 35 characters long'),
+    .max(35, 'Surname must be no more than 35 characters long')
+    .trim(),
   phone: yup
     .string()
     .required('Phone number is required')
     .min(6, 'Phone number must be at least 6 characters long')
-    .max(18, 'Phone number must be no more than 18 characters long'),
+    .max(18, 'Phone number must be no more than 18 characters long')
+    .trim(),
   comment: yup
     .string()
     .required('Comment or review is required')
     .min(10, 'Comment or review must be at least 10 characters long')
-    .max(250, 'Comment or review must be no more than 250 characters long'),
+    .max(250, 'Comment or review must be no more than 250 characters long')
+    .trim(),
 
   policy: yup.boolean().required(),
 });

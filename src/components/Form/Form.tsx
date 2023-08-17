@@ -95,14 +95,14 @@ const Form = () => {
           id={inputIds.policy}
           {...register('policy')}
         ></StyledCheckbox>
-        <label htmlFor={inputIds.policy} style={{ fontSize: '0.8rem', color: '#fff' }}>
+        <label htmlFor={inputIds.policy} style={{ fontSize: '0.8rem', color: '#fff', cursor: 'pointer' }}>
           I consent to the processing of the personal data provided by me in the
           contact form for the purposes of recruiting for the agency AJ Serwis
         </label>
       </div>
       <Button
         type="submit"
-        variant="secondary"
+        variant="primary"
         size="lg"
         style={{
           margin: '0 auto',

@@ -9,6 +9,7 @@ interface StyledLabelProps {
 
 interface StyledInputProps {
   inputValue: string;
+  focus: boolean;
 }
 
 export const InputWrapper = styled.div`
@@ -19,12 +20,20 @@ export const InputWrapper = styled.div`
 export const StyledInput = styled.input<StyledInputProps>`
   width: 100%;
   padding: 0.8rem;
-  padding-bottom: 0.2rem;
+  height: 48px;
+  padding-bottom: 0.5rem;
+  font-size: ${props =>
+    props.focus
+      ? '1rem'
+      : '1.2rem'};
   border: none;
   transition: ${({ theme }) => theme.transition.basic};
   outline: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.secondaryColor};
+  color: ${props =>
+    !props.focus
+      ? props.theme.colors.accentColor
+      : props.theme.colors.secondaryColor};
   border-bottom: 1px
     ${props =>
       props.inputValue
@@ -78,6 +87,7 @@ export const StyledCheckbox = styled.input`
   &::before {
     content: '';
     display: block;
+    outline: none;
     width: 1rem;
     height: 1.2em;
     padding: 0.2rem;
