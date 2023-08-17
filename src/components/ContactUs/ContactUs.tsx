@@ -1,6 +1,6 @@
 import Form from '../Form/Form';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { Container, Section, SubTitle, Title } from './ContactUs.styled';
+import { Section, SubTitle, Title } from './ContactUs.styled';
 
 const ContactUs = () => {
   return (
