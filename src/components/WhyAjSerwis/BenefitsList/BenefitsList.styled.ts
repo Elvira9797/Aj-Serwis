@@ -15,17 +15,18 @@ export const StyledBenefitItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 `;
 
 export const StyledBenefitIcoContainer = styled.div`
   padding: 30px;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border: 2px solid ${theme.colors.accentColor};
   border-radius: 50%;
 `;
 
 export const StyledBenefitText = styled.p`
   color: rgb(130, 130, 130);
-  font-size: 15px;
+  font-size: 16px;
 `;

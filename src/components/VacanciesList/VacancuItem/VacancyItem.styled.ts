@@ -9,17 +9,14 @@ export const StyledVacancyLink = styled(Link)`
 export const StyledVacancyItem = styled.li`
   transition: ${theme.transition.basic};
   border-radius: 4px;
-  background: #f1f0f0;
-  box-shadow: -0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.2),
-    0px 0.5px 4px 4px rgba(0, 0, 0, 0.14),
-    0.5px 0.5px 4px 6px rgba(0, 0, 0, 0.12);
+  background: ${theme.colors.secondaryColor};
 
   &:hover,
   :focus {
     transform: scale(1.03);
     cursor: pointer;
-    box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.2),
-      0px 4px 4px 4px rgba(0, 0, 0, 0.14), 1px 2px 4px 6px rgba(0, 0, 0, 0.12);
+    box-shadow: 3px 6px 4px 1px rgba(0, 0, 0, 0.2),
+      1px 2px 4px 4px rgba(0, 0, 0, 0.12);
   }
 `;
 
