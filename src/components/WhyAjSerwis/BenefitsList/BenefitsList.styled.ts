@@ -27,5 +27,5 @@ export const StyledBenefitIcoContainer = styled.div`
 
 export const StyledBenefitText = styled.p`
   color: rgb(130, 130, 130);
-  font-size: 13px;
+  font-size: 15px;
 `;
