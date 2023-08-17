@@ -1,10 +1,14 @@
+import SectionContainer from '../SectionContainer/SectionContainer';
 import BenefitsList from './BenefitsList/BenefitsList';
+import { StyledWhyAjSection } from './WhyAjSerwis.styled';
 
 const WhyAjSerwis: React.FC = () => {
   return (
-    <section>
-      <BenefitsList />
-    </section>
+    <StyledWhyAjSection>
+      <SectionContainer>
+        <BenefitsList />
+      </SectionContainer>
+    </StyledWhyAjSection>
   );
 };
 

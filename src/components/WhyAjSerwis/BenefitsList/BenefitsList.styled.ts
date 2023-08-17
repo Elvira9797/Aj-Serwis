@@ -10,27 +10,22 @@ export const StyledBenefitsList = styled.ul`
 `;
 
 export const StyledBenefitItem = styled.li`
-  border-radius: 7px;
-  width: 150px;
+  width: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.5px solid #c3a069;
-  border-radius: 5;
-  padding: 5px 25px;
 `;
 
 export const StyledBenefitIcoContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border: 1px solid ${theme.colors.accentColor};
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid ${theme.colors.accentColor};
+  border-radius: 50%;
 `;
 
 export const StyledBenefitText = styled.p`
   color: rgb(130, 130, 130);
-  font-size: 12px;
+  font-size: 13px;
 `;

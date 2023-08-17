@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <VacanciesSlider />
       <AboutUs />
+      <VacanciesSlider />
       <WhyAjSerwis />
       <ContactUs />
       <ScrollToTopButton />
