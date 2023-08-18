@@ -15,7 +15,7 @@ export const StyledTopBar = styled.div<StyledTopBarProps>`
   align-items: center;
   max-width: 1232px;
   margin: 0 auto;
-  padding: 0 1rem 0 1rem;
+  padding: 0.1rem 1rem;
   transition: height 0.3s, opacity 0.3s;
   height: ${props => (props.isVisible ? 'auto' : '0')};
   opacity: ${props => (props.isVisible ? 1 : 0)};

@@ -8,9 +8,14 @@ export const Container = styled.div`
   max-width: 1232px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
+
+  @media (max-width: 910px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 `;

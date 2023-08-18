@@ -5,20 +5,21 @@ import { BiMailSend } from 'react-icons/bi';
 
 const TopBar: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setIsTop(true);
-      } else {
-        setIsTop(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
+    const handleScroll = () =>
+      window.scrollY === 0 ? setIsTop(true) : setIsTop(false);
+
+    window.scrollY > 100 ? setVisible(false) : setVisible(true);
+
+    const cleanScroll = () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+    window.addEventListener('scroll', handleScroll);
+
+    return cleanScroll;
+  }, [visible]);
 
   return (
     <StyledTopBar isVisible={isTop}>

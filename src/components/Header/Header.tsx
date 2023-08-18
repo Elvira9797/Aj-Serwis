@@ -1,36 +1,58 @@
 import AppBar from './AppBar/AppBar';
 import TopBar from './TopBar/TopBar';
-import { Divider, StyledHeader } from './Header.styled';
 import MobileMenu from './MobileMneu/MobileMenu';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { theme } from '../../common/theme';
+import { StyledHeader } from './Header.styled';
 
 const Header: React.FC = () => {
-  const [openModal, setOpenModal] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [headerStyle, setHeaderStyle] = useState({});
 
-  const modalToggle = () => {
-    setOpenModal(prevState => !prevState);
-    setIsOpenModal(prevState => !prevState);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    setIsOpenModal(true);
   };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setIsOpenModal(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      const scrollingDown = prevScrollPosition < currentScrollPosition;
+
+      setScrolling(scrollingDown);
+      setPrevScrollPosition(currentScrollPosition);
+
+      const headerStyleAfterScroll = {
+        transition: 'transform 1s ease-in-out',
+        transform: scrollingDown ? 'translateY(-100%)' : 'translateY(0)',
+      };
+
+      setHeaderStyle(headerStyleAfterScroll);
+    };
+
+    const cleanupScroll = () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return cleanupScroll;
+  }, [prevScrollPosition, scrolling]);
+
   return (
-    <StyledHeader>
-      <Divider>
-        <TopBar />
-      </Divider>
-      <AppBar
-        isOpenModal={isOpenModal}
-        modalToggle={modalToggle}
-        theme={theme}
-      />
-      {openModal && (
-        <MobileMenu
-          modalToggle={modalToggle}
-          theme={theme}
-          isOpen={isOpenModal}
-        />
-      )}
+    <StyledHeader style={headerStyle}>
+      <TopBar />
+      <AppBar onClick={openModal} isOpenModal={isOpenModal} theme={theme} />
+      <MobileMenu isOpen={isModalOpen} onClose={closeModal} theme={theme} />
     </StyledHeader>
   );
 };
