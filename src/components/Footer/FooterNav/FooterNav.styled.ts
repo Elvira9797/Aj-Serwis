@@ -4,7 +4,8 @@ export const StyledNavList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
 
   .active {
     color: ${props => props.theme.colors.accentColor};

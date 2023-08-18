@@ -1,38 +1,19 @@
-import { keyframes, css } from '@emotion/react';
 import styled from '@emotion/styled';
-
-const slideAnimation = keyframes`
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(43%);
-  }
-`;
-
-const slideOutAnimation = keyframes`
-  from {
-    transform: translateX(43%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-`;
 
 export const Overlay = styled.div`
   position: fixed;
-  top: 68px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: flex-start;
   z-index: 999;
-  background-color: 'black';
-  transition: ${props => props.theme.transition.basic};
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const ModalMobileMenu = styled.div<{ isOpen: boolean }>`
+export const ModalMobileMenu = styled.div`
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,21 +21,17 @@ export const ModalMobileMenu = styled.div<{ isOpen: boolean }>`
   gap: 1rem;
 
   width: 70vw;
-  height: 70vh;
+  height: 90vh;
 
-  background-color: ${props => props.theme.colors.bgColor};
-  padding: 4px;
+  background: linear-gradient(
+    to left,
+    rgba(17, 17, 17, 1),
+    rgba(17, 17, 17, 0.9)
+  );
 
-  animation: ${props =>
-    props.isOpen
-      ? css`
-          ${slideAnimation} 0.5s ease-in-out
-        `
-      : css`
-          ${slideOutAnimation} 0.5s ease-in-out
-        `};
-  transform: ${props =>
-    props.isOpen ? 'translatex(43%)' : 'translatex(100%)'};
+  border-radius: 6px;
+
+  padding: 1.1rem 4px 5rem 4px;
 `;
 
 export const StyledNavList = styled.ul`
@@ -72,7 +49,7 @@ export const StyledNavList = styled.ul`
     font-weight: ${props => props.theme.typography.fontWeight.semiBold};
     font-size: 1rem;
     text-decoration: none;
-    color: ${props => props.theme.colors.primaryColor};
+    color: ${props => props.theme.colors.secondaryColor};
     transition: ${props => props.theme.transition.basic};
     position: relative;
   }
@@ -111,6 +88,7 @@ export const StyledNavWrader = styled.div`
     text-decoration: none;
     color: ${props => props.theme.colors.lightGrey};
     transition: ${props => props.theme.transition.basic};
+    margin-bottom: 5px;
   }
 
   a:hover {
@@ -139,4 +117,13 @@ export const ContactWraper = styled.div`
   a:hover {
     color: ${props => props.theme.colors.accentColor};
   }
+`;
+
+export const CloseButton = styled.button`
+  margin-left: auto;
+  margin-right: 12px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 `;

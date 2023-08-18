@@ -1,7 +1,7 @@
+import { StyledNavList } from './FooterNav.styled';
 import { NavLink } from 'react-router-dom';
-import { StyledNavList } from './Nav.styled';
 
-const Nav: React.FC = () => {
+const FooterNav: React.FC = () => {
   return (
     <nav>
       <StyledNavList>
@@ -17,7 +17,7 @@ const Nav: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to="/vacancies"
+            to="/vacancies "
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
@@ -40,4 +40,4 @@ const Nav: React.FC = () => {
   );
 };
 
-export default Nav;
+export default FooterNav;

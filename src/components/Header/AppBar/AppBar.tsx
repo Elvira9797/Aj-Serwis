@@ -3,17 +3,16 @@ import Logo from '../../Logo/Logo';
 import Nav from './Nav/Nav';
 import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { GrClose } from 'react-icons/gr';
 
 interface AppBarProps {
   isOpenModal: boolean;
-  modalToggle: () => void;
+  onClick: () => void;
   theme: {
-    colors: { primaryColor: string };
+    colors: { accentColor: string };
   };
 }
 
-const AppBar: React.FC<AppBarProps> = ({ isOpenModal, modalToggle, theme }) => {
+const AppBar: React.FC<AppBarProps> = ({ isOpenModal, onClick, theme }) => {
   return (
     <StyledAppBar>
       <Logo loc="header" size="md" />
@@ -21,13 +20,11 @@ const AppBar: React.FC<AppBarProps> = ({ isOpenModal, modalToggle, theme }) => {
         <Nav />
         <LangSelect />
       </StyledNavWraper>
-      <BurgerButton onClick={modalToggle} type="button">
-        {isOpenModal ? (
-          <GrClose size={30} style={{ color: theme.colors.primaryColor }} />
-        ) : (
+      <BurgerButton onClick={onClick} type="button">
+        {!isOpenModal && (
           <GiHamburgerMenu
             size={30}
-            style={{ color: theme.colors.primaryColor }}
+            style={{ color: theme.colors.accentColor }}
           />
         )}
       </BurgerButton>

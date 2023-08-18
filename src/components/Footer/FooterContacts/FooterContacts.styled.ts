@@ -23,6 +23,7 @@ export const ContactWraper = styled.div`
   a {
     color: ${props => props.theme.colors.lightGrey};
     transition: ${props => props.theme.transition.basic};
+    margin-bottom: 6px;
   }
 
   a:hover {

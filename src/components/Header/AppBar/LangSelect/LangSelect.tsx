@@ -1,13 +1,14 @@
-import { StyledSelectLang } from './LangSelect.styled';
+import Select from 'react-select';
+
+
+const options = [
+  { value: 'eng', label: 'ENG' },
+  { value: 'pl', label: 'PL' },
+  { value: 'ua', label: 'UA' },
+];
 
 const LangSelect: React.FC = () => {
-  return (
-    <StyledSelectLang>
-      <option value="uk">UA</option>
-      <option value="pl">PL</option>
-      <option value="en">EN</option>
-    </StyledSelectLang>
-  );
+  return <Select options={options} />;
 };
 
 export default LangSelect;
