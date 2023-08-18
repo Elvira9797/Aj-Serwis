@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const BtnToTop = styled.button`
   position: fixed;
+  z-index: 3;
   right: 20px;
   bottom: 25px;
   width: 45px;
