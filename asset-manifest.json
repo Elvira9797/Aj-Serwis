@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Aj-Serwis/static/css/main.87d44b9f.css",
-    "main.js": "/Aj-Serwis/static/js/main.baf149c0.js",
+    "main.css": "/Aj-Serwis/static/css/main.9e1b7248.css",
+    "main.js": "/Aj-Serwis/static/js/main.0d03246c.js",
     "static/media/contactUS-bg.jpg": "/Aj-Serwis/static/media/contactUS-bg.964ce887ed4134f981eb.jpg",
     "static/media/desktopBgImage.jpg": "/Aj-Serwis/static/media/desktopBgImage.d80fbc4de7f9b4ad65b0.jpg",
     "static/media/contacts-img.jpg": "/Aj-Serwis/static/media/contacts-img.9db711baf33168b4e48a.jpg",
@@ -46,11 +46,11 @@
     "static/media/checked.svg": "/Aj-Serwis/static/media/checked.5f7970170b73befe11fa45029393cc6b.svg",
     "index.html": "/Aj-Serwis/index.html",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
-    "main.87d44b9f.css.map": "/Aj-Serwis/static/css/main.87d44b9f.css.map",
-    "main.baf149c0.js.map": "/Aj-Serwis/static/js/main.baf149c0.js.map"
+    "main.9e1b7248.css.map": "/Aj-Serwis/static/css/main.9e1b7248.css.map",
+    "main.0d03246c.js.map": "/Aj-Serwis/static/js/main.0d03246c.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d44b9f.css",
-    "static/js/main.baf149c0.js"
+    "static/css/main.9e1b7248.css",
+    "static/js/main.0d03246c.js"
   ]
 }
