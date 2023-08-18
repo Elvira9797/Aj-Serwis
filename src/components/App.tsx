@@ -12,7 +12,7 @@ export const App: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="vacancies" element={<Vacancies />} />
-        <Route path="vacancies/:vacanciesId" element={<VacanciesDetails />} />
+        <Route path="vacancies/:vacancieId" element={<VacanciesDetails />} />
         <Route path="contacts" element={<Contacts />} />
       </Route>
       <Route path="*" element={<NotFound />} />

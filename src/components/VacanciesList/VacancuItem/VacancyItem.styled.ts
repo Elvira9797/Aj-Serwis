@@ -9,32 +9,30 @@ export const StyledVacancyLink = styled(Link)`
 export const StyledVacancyItem = styled.li`
   transition: ${theme.transition.basic};
   border-radius: 4px;
-  background: #f1f0f0;
-  box-shadow: -0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.2),
-    0px 0.5px 4px 4px rgba(0, 0, 0, 0.14),
-    0.5px 0.5px 4px 6px rgba(0, 0, 0, 0.12);
+  background: ${theme.colors.secondaryColor};
 
-  &:hover,
-  :focus {
+  &:hover img {
     transform: scale(1.03);
-    cursor: pointer;
-    box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.2),
-      0px 4px 4px 4px rgba(0, 0, 0, 0.14), 1px 2px 4px 6px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+    filter: brightness(100%);
   }
 `;
 
 export const StyledVacancyItemImg = styled.img`
+  filter: brightness(70%);
+
   position: relative;
   z-index: 2;
   width: 100%;
   height: 260px;
   object-fit: cover;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(
-    180deg,
-    rgba(29, 22, 0, 1) 8%,
-    rgba(255, 255, 255, 0) 40%
-  );
+
+  &:hover {
+    cursor: pointer;
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+  }
 `;
 export const StyledImgGradient = styled.div`
   background: linear-gradient(

@@ -6,6 +6,7 @@ export interface IVacancieData {
   salary: string;
   contract: string;
   shortInfo: string;
+  fullInfo: string;
 }
 
 export const vacancies: IVacancieData[] = [
@@ -18,6 +19,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Packaging of toys and candies Lublin',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
 
   {
@@ -29,6 +32,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Packaging of toys and candies Lublin',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
   {
     image: 'https://www.acceptrec.co.uk/images/factory_job_leicester.png',
@@ -38,6 +43,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Packaging of toys and candies Lublin',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
   {
     image:
@@ -48,6 +55,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Packaging of toys and candies Lublin',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
   {
     image: 'https://www.oeffa.org/graphics/farmjobs.jpg',
@@ -57,6 +66,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Work at the production of jams in Lublin',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
   {
     image:
@@ -67,6 +78,8 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Assistant for the production of metal products',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
   {
     image:
@@ -77,5 +90,7 @@ export const vacancies: IVacancieData[] = [
     salary: '23,50 - 40 zł/h',
     contract: 'contract',
     shortInfo: 'Leoni Automobile Plant - Romania. With children!',
+    fullInfo:
+      'The company is engaged in the packaging of finished products, namely candies and toys. Work at the production line (conveyor), 1, 2, 3 shifts (6-14, 14-22, 22-6). EASY MANUAL WORK! JOB ALSO FOR PEOPLE FROM UKRAINE / BELARUS / MOLDOVA. We are happy to hire employees with the status of a student, a trainee from the age of 18. Ability to work 3-4 days a week.',
   },
 ];
