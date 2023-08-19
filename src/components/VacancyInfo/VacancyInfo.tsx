@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { IVacancieData } from '../../common/vacanciesArr';
 import {
   VacancyContainer,
+  VacancyImg,
   VacancyItem,
   VacancyList,
   VacancyTitle,
@@ -15,11 +16,7 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
   return (
     <>
       <VacancyContainer>
-        <img
-          src={vacancy?.image}
-          style={{ maxWidth: '50%', height: '100%' }}
-          alt={vacancy?.position}
-        />
+        <VacancyImg src={vacancy?.image} alt={vacancy?.position} />
         <VacancyList>
           <VacancyItem>
             <VacancyTitle>

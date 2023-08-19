@@ -3,6 +3,11 @@ import { vacancies } from '../common/vacanciesArr';
 import SectionContainer from '../components/SectionContainer/SectionContainer';
 import Form from '../components/Form/Form';
 import VacancyInfo from '../components/VacancyInfo/VacancyInfo';
+import {
+  VacancyFormContainer,
+  VacancyFormInfo,
+  VacancySection,
+} from '../components/VacancyInfo/VacancyInfo-styled';
 
 const VacanciesDetails = () => {
   const { vacancieId } = useParams();
@@ -15,41 +20,18 @@ const VacanciesDetails = () => {
 
   return (
     <>
-      <section style={{ padding: '8rem 0 90px 0' }}>
+      <VacancySection>
         <SectionContainer>
           <VacancyInfo vacancy={currentVacancy} />
         </SectionContainer>
-      </section>
-      <section style={{ backgroundColor: '#f7f9fb', padding: '90px' }}>
+      </VacancySection>
+      <VacancySection style={{ backgroundColor: '#f7f9fb' }}>
         <SectionContainer>
-          <div
-            style={{
-              display: 'flex',
-              gap: '3rem',
-            }}
-          >
-            <div
-              style={{
-                flexBasis: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-
-                flexDirection: 'column',
-              }}
-            >
-              <h2
-                style={{
-                  textAlign: 'start',
-                  marginBottom: '2rem',
-                  fontSize: '2rem',
-                }}
-              >
-                Respond to the vacancy by filling out the form!
-              </h2>
-              <p style={{ textAlign: 'start', fontSize: '1.2rem' }}>
-                Please provide only your valid contact details
-              </p>
-            </div>
+          <VacancyFormContainer>
+            <VacancyFormInfo>
+              <h2>Respond to the vacancy by filling out the form!</h2>
+              <p>Please provide only your valid contact details</p>
+            </VacancyFormInfo>
             <Form
               lightTheme={true}
               style={{
@@ -58,9 +40,9 @@ const VacanciesDetails = () => {
                 backgroundColor: '#e5eef7',
               }}
             />
-          </div>
+          </VacancyFormContainer>
         </SectionContainer>
-      </section>
+      </VacancySection>
     </>
   );
 };

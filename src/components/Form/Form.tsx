@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import Input from './Input/Input';
 import Button from '../Button/Button';
-import { StyledForm } from './Form-styled';
+import { StyledForm, Wrapper } from './Form-styled';
 import { StyledCheckbox } from './Input/Input-styled';
 import { yupResolver } from '@hookform/resolvers/yup';
 import validationSchema from './validationSchema';
@@ -49,7 +49,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
 
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)} style={style}>
-      <div style={{ display: 'flex', gap: '2rem' }}>
+      <Wrapper style={{ display: 'flex', gap: '2rem' }}>
         <Input
           id={inputIds.name}
           value={allFieldsValue.name}
@@ -70,7 +70,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           errors={errors}
           lightTheme={lightTheme}
         />
-      </div>
+      </Wrapper>
       <Input
         id={inputIds.phone}
         type="tel"
