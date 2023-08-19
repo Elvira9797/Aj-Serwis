@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import Navigation from '../../Navigation/Navigation';
 import ContactsDisplay from '../../ContactsDisplay/ContactsDisplay';
-import LangSelect from '../AppBar/LangSelect/LangSelect';
+import LangSelect from '../../LangSelect/LangSelect';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { VscChromeClose } from 'react-icons/vsc';

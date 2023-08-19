@@ -1,4 +1,4 @@
-import LangSelect from './LangSelect/LangSelect';
+import LangSelect from '../../LangSelect/LangSelect';
 import Navigation from '../../Navigation/Navigation';
 import Logo from '../../Logo/Logo';
 
