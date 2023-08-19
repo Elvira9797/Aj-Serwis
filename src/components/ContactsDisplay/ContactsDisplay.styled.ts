@@ -1,8 +1,11 @@
 import styled from '@emotion/styled';
 
+interface ContactsDisplayProps {
+  displayName: 'visible' | 'none';
+}
+
 export const ContactsContainer = styled.div`
   max-width: 32rem;
-  min-width: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,12 +14,13 @@ export const ContactsContainer = styled.div`
   font-size: 0.7rem;
 `;
 
-export const ContactWraper = styled.div`
+export const ContactWraper = styled.li<ContactsDisplayProps>`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 
   span {
+    display: ${({ displayName }) => displayName || 'none'};
     color: ${props => props.theme.colors.lightGrey};
   }
 
@@ -29,4 +33,10 @@ export const ContactWraper = styled.div`
   a:hover {
     color: ${props => props.theme.colors.accentColor};
   }
+`;
+
+export const ContactBox = styled.ul`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 `;

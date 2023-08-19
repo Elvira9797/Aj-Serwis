@@ -1,11 +1,15 @@
 import styled from '@emotion/styled';
 
-export const StyledNavList = styled.ul`
+interface StyledNavListProps {
+  flexDirection: 'row' | 'column';
+}
+
+export const StyledNavList = styled.ul<StyledNavListProps>`
   display: flex;
+  flex-direction: ${({ flexDirection }) => flexDirection || 'row'};
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 
   .active {
     color: ${props => props.theme.colors.accentColor};
