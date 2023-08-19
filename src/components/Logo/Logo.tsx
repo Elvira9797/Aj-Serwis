@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/LogoHeader.png';
+import logo from '../../assets/png/LogoHeader.png';
 import { StyledImg, StyledLogo, StyledLogoText } from './Logo.styled';
 
 interface LogoProps {
