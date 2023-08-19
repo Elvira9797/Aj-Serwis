@@ -1,5 +1,5 @@
-import React from 'react';
 import { StyledFooterBottomBar } from './FooterBottomBar.styled';
+
 import { BiCopyright } from 'react-icons/bi';
 
 const FooterBottomBar: React.FC = () => {

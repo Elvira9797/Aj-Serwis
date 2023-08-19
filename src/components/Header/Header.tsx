@@ -1,7 +1,9 @@
+import { useEffect, useState } from 'react';
+
 import AppBar from './AppBar/AppBar';
 import TopBar from './TopBar/TopBar';
 import MobileMenu from './MobileMneu/MobileMenu';
-import { useEffect, useState } from 'react';
+
 import { theme } from '../../common/theme';
 import { StyledHeader } from './Header.styled';
 
@@ -10,23 +12,14 @@ const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [headerStyle, setHeaderStyle] = useState({});
-
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-    setIsOpenModal(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setIsOpenModal(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      const scrollingDown = prevScrollPosition < currentScrollPosition;
+      const scrollingDown =
+        prevScrollPosition < currentScrollPosition &&
+        currentScrollPosition > 100;
 
       setScrolling(scrollingDown);
       setPrevScrollPosition(currentScrollPosition);
@@ -47,6 +40,16 @@ const Header: React.FC = () => {
 
     return cleanupScroll;
   }, [prevScrollPosition, scrolling]);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    setIsOpenModal(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setIsOpenModal(false);
+  };
 
   return (
     <StyledHeader style={headerStyle}>
