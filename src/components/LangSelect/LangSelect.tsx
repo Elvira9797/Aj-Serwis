@@ -41,7 +41,7 @@ const LangSelect = () => {
       ></CustomSelectImage>
       <Select value={selectedValue} onChange={handleSelectChange}>
         <SelectOption value="1">ENG</SelectOption>
-        <SelectOption value="2">PLA</SelectOption>
+        <SelectOption value="2">POL</SelectOption>
         <SelectOption value="3">UKR</SelectOption>
       </Select>
     </CustomSelectContainer>
