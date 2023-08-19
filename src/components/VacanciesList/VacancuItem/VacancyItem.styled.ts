@@ -56,8 +56,11 @@ export const StyledGradientWrap = styled.div`
 `;
 
 export const StyledVacancyText = styled.p`
+  display: flex;
+  align-items: center;
   text-align: start;
   color: black;
+  gap: 8px;
 `;
 export const StyledVacancyShortInfo = styled.p`
   text-align: start;
@@ -74,5 +77,8 @@ export const StyledVacancyTitle = styled.span`
 `;
 
 export const StyledTextContainer = styled.div`
-  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px 16px;
 `;
