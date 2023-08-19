@@ -1,23 +1,40 @@
 import styled from '@emotion/styled';
 
 export const SectionStyled = styled.section`
-  padding-top: ${({ theme }) => theme.section.padding.medium.paddingTop};
-  padding-bottom: ${({ theme }) => theme.section.padding.medium.paddingBottom};
+  padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
+  padding-bottom: ${({ theme }) => theme.section.padding.small.paddingBottom};
+  @media (min-width: 1236px) {
+    padding-top: ${({ theme }) => theme.section.padding.medium.paddingTop};
+    padding-bottom: ${({ theme }) =>
+      theme.section.padding.medium.paddingBottom};
+  }
 `;
 
 export const Title = styled.h2`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 30px;
   &::after {
     content: '';
-    width: 300px;
+    width: 240px;
     height: 2px;
     background-color: #ffffff;
     display: block;
     margin-top: 10px;
     margin-bottom: 20px;
     background-color: #c3a069;
+  }
+  @media (min-width: 1100px) {
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1190px) {
+    &::after {
+      width: 300px;
+    }
   }
 `;
 
