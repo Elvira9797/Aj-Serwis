@@ -1,9 +1,10 @@
 import LangSelect from './LangSelect/LangSelect';
+import Navigation from '../../Navigation/Navigation';
 import Logo from '../../Logo/Logo';
-import Nav from './Nav/Nav';
-import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
+
 import { GiHamburgerMenu } from 'react-icons/gi';
 
+import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
 interface AppBarProps {
   isOpenModal: boolean;
   onClick: () => void;
@@ -16,10 +17,13 @@ const AppBar: React.FC<AppBarProps> = ({ isOpenModal, onClick, theme }) => {
   return (
     <StyledAppBar>
       <Logo loc="header" size="md" />
+
       <StyledNavWraper>
-        <Nav />
+        <Navigation flexDirection="row" />
+
         <LangSelect />
       </StyledNavWraper>
+
       <BurgerButton onClick={onClick} type="button">
         {!isOpenModal && (
           <GiHamburgerMenu

@@ -13,3 +13,7 @@ export const StyledFooterInfoBlock = styled.div`
   color: ${props => props.theme.colors.lightGrey};
   font-weight: ${props => props.theme.typography.fontWeight.regular};
 `;
+
+export const Spacer = styled.div`
+  height: 1.5rem;
+`;

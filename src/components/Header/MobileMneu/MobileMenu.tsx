@@ -1,19 +1,13 @@
 import { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import {
-  ContactWraper,
-  ModalMobileMenu,
-  StyledNavList,
-  StyledNavWrader,
-  CloseButton,
-  Overlay,
-} from './MobileMenu.styled';
-import { NavLink } from 'react-router-dom';
-import { BsPhoneVibrateFill } from 'react-icons/bs';
-import { FaPhone } from 'react-icons/fa';
+
+import Navigation from '../../Navigation/Navigation';
+import ContactsDisplay from '../../ContactsDisplay/ContactsDisplay';
 import LangSelect from '../AppBar/LangSelect/LangSelect';
-import { BiMailSend } from 'react-icons/bi';
+
+import { motion, AnimatePresence } from 'framer-motion';
 import { VscChromeClose } from 'react-icons/vsc';
+
+import { ModalMobileMenu, CloseButton, Overlay } from './MobileMenu.styled';
 
 interface ModalProps {
   isOpen: boolean;
@@ -52,6 +46,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
       onClose();
     }
   };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -78,89 +73,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                     style={{ color: theme.colors.accentColor }}
                   />
                 </CloseButton>
-                <nav>
-                  <StyledNavList>
-                    <li>
-                      <NavLink
-                        to="/"
-                        onClick={onClose}
-                        className={({ isActive, isPending }) =>
-                          isPending ? 'pending' : isActive ? 'active' : ''
-                        }
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/vacancies "
-                        onClick={onClose}
-                        className={({ isActive, isPending }) =>
-                          isPending ? 'pending' : isActive ? 'active' : ''
-                        }
-                      >
-                        Vacancies
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/contacts "
-                        onClick={onClose}
-                        className={({ isActive, isPending }) =>
-                          isPending ? 'pending' : isActive ? 'active' : ''
-                        }
-                      >
-                        Contacts
-                      </NavLink>
-                    </li>
-                  </StyledNavList>
-                </nav>
-
-                <StyledNavWrader>
-                  <a href="mailto:aj.serwis.spzoo@gmail.com">
-                    <BiMailSend style={{ marginRight: '4px' }} />
-                    aj.serwis.spzoo@gmail.com
-                  </a>
-
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '1rem',
-                    }}
-                  >
-                    <BsPhoneVibrateFill
-                      size={36}
-                      style={{ color: theme.colors.accentColor }}
-                    />
-                    <span
-                      style={{
-                        color: theme.colors.lightGrey,
-                        fontSize: '0.6rem',
-                      }}
-                    >
-                      Mon-Fri from 8:00 AM to 7:00 PM.
-                    </span>
-                  </div>
-
-                  <div>
-                    <ContactWraper>
-                      <a href="tel:+48539649808">
-                        <FaPhone /> +48 539 649 808
-                      </a>
-                    </ContactWraper>
-                    <ContactWraper>
-                      <a href="tel:+48797993183">
-                        <FaPhone /> +48 797 993 183
-                      </a>
-                    </ContactWraper>
-                    <ContactWraper>
-                      <a href="tel:+48777777777">
-                        <FaPhone /> +48 777 777 777
-                      </a>
-                    </ContactWraper>
-                  </div>
-                </StyledNavWrader>
+                <Navigation flexDirection="column" />
+                <ContactsDisplay displayName="none" />
                 <LangSelect />
               </ModalMobileMenu>
             </motion.div>

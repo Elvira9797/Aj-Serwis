@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 
 import { StyledNavWrader, StyledTopBar } from './TopBar.styled';
+
 import { BiMailSend } from 'react-icons/bi';
+
+import { workEmail, workingTime } from '../../../common/dataContacts';
 
 const TopBar: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
@@ -25,9 +28,9 @@ const TopBar: React.FC = () => {
     <StyledTopBar isVisible={isTop}>
       <StyledNavWrader>
         <BiMailSend />
-        <a href="mailto:aj.serwis.spzoo@gmail.com">aj.serwis.spzoo@gmail.com</a>
+        <a href={`mailto:${workEmail}`}>{workEmail}</a>
       </StyledNavWrader>
-      <p>Working hours: Mon-Fri from 8:00 AM to 7:00 PM.</p>
+      <p>Working time: {workingTime}</p>
     </StyledTopBar>
   );
 };
