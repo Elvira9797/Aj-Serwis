@@ -5,16 +5,22 @@ import checked from '../../../assets/svg/checked.svg';
 interface StyledLabelProps {
   focus: boolean;
   inputValue: string;
+  lightTheme: boolean;
 }
 
 interface StyledInputProps {
   inputValue: string;
   focus: boolean;
+  lightTheme: boolean;
 }
 
-export const InputWrapper = styled.div`
+export const InputWrapper = styled.div<{ lightTheme: boolean }>`
   width: 100%;
   position: relative;
+  color: ${({ lightTheme, theme }) =>
+    lightTheme === true
+      ? theme.colors.primaryColor
+      : theme.colors.secondaryColor};
 `;
 
 export const StyledInput = styled.input<StyledInputProps>`
@@ -28,12 +34,14 @@ export const StyledInput = styled.input<StyledInputProps>`
   outline: none;
   background-color: transparent;
   color: ${props =>
-    !props.focus ? 'rgba(195, 160, 105, 0.7)' : props.theme.colors.secondaryColor};
+    !props.focus ? props.theme.colors.accentColor : 'inherit'};
   border-bottom: 1px
-    ${props =>
-      props.inputValue
-        ? props.theme.colors.accentColor
-        : props.theme.colors.secondaryColor}
+    ${({ lightTheme, inputValue, theme }) =>
+      !inputValue
+        ? lightTheme
+          ? theme.colors.primaryColor
+          : theme.colors.secondaryColor
+        : theme.colors.accentColor}
     solid;
   &:focus {
     border-color: ${({ theme }) => theme.colors.accentColor};
@@ -72,12 +80,12 @@ const getFloatLabel = (
       top: '50%',
       transform: 'translateY(-50%)',
       left: '10px',
-      color: theme.colors.secondaryColor,
+      color: 'inherit',
     };
   }
 };
 
-export const StyledCheckbox = styled.input`
+export const StyledCheckbox = styled.input<{ lightTheme: boolean }>`
   appearance: none;
   &::before {
     content: '';
@@ -86,7 +94,12 @@ export const StyledCheckbox = styled.input`
     width: 1rem;
     height: 1.2em;
     padding: 0.2rem;
-    border: 1px #fff solid;
+    border: 1px
+      ${({ lightTheme, theme }) =>
+        lightTheme === true
+          ? theme.colors.primaryColor
+          : theme.colors.secondaryColor}
+      solid;
     cursor: pointer;
   }
   &:checked::before {

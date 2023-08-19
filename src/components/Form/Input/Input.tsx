@@ -1,4 +1,12 @@
-import { ChangeEventHandler, FC, LegacyRef, forwardRef, useState } from 'react';
+import {
+  CSSProperties,
+  ChangeEventHandler,
+  FC,
+  HTMLInputTypeAttribute,
+  LegacyRef,
+  forwardRef,
+  useState,
+} from 'react';
 import {
   InputWrapper,
   StyledInput,
@@ -8,16 +16,17 @@ import {
 import { ErrorMessage } from '@hookform/error-message';
 
 interface InputProps {
-  type: 'text' | 'email' | 'password' | 'tel';
+  id: string;
+  type: HTMLInputTypeAttribute;
   name: string;
   value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
-  id: string;
+  lightTheme: boolean;
   errors: {};
   autoComplete?: 'on' | 'off';
   label: string;
   placeholder?: string;
-  style?: {};
+  style?: CSSProperties;
 }
 
 const Input: FC<InputProps> = forwardRef(
@@ -33,13 +42,14 @@ const Input: FC<InputProps> = forwardRef(
       label,
       errors,
       id,
+      lightTheme,
     },
     ref: LegacyRef<HTMLInputElement>
   ) => {
     const [focus, setFocus] = useState(false);
     return (
       <>
-        <InputWrapper>
+        <InputWrapper lightTheme={lightTheme}>
           <StyledInput
             id={id}
             ref={ref}
@@ -53,8 +63,14 @@ const Input: FC<InputProps> = forwardRef(
             name={name}
             placeholder={placeholder}
             focus={focus}
+            lightTheme={lightTheme}
           />
-          <StyledLabel htmlFor={id} focus={focus} inputValue={value}>
+          <StyledLabel
+            htmlFor={id}
+            focus={focus}
+            lightTheme={lightTheme}
+            inputValue={value}
+          >
             {label}
           </StyledLabel>
           <ErrorMessage

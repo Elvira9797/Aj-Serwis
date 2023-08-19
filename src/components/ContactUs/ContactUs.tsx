@@ -10,7 +10,14 @@ const ContactUs = () => {
         <SubTitle>
           We will be glad if you leave your info to contact with us!
         </SubTitle>
-        <Form />
+        <Form
+          style={{
+            padding: '2rem',
+            borderRadius: '2rem',
+            backgroundColor: '  rgba(34, 32, 32, 0.4)',
+            backdropFilter: 'blur(10px)',
+          }}
+        />
       </SectionContainer>
     </Section>
   );
