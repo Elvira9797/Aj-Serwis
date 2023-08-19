@@ -4,7 +4,7 @@ export const CustomSelectContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90px;
+  width: 80px;
 `;
 
 export const Select = styled.select`
@@ -21,8 +21,8 @@ export const SelectOption = styled.option`
 `;
 
 export const CustomSelectImage = styled.div`
-  width: 35px;
-  height: 30px;
+  width: 25px;
+  height: 20px;
   background-size: cover;
   background-position: center;
 `;
