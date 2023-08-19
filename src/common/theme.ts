@@ -13,7 +13,7 @@ declare module '@emotion/react' {
           paddingTop: string;
           paddingBottom: string;
         };
-        large: {
+        small: {
           paddingTop: string;
           paddingBottom: string;
         };
@@ -46,9 +46,9 @@ export const theme = {
         paddingTop: '90px',
         paddingBottom: '90px',
       },
-      large: {
-        paddingTop: '110px',
-        paddingBottom: '110px',
+      small: {
+        paddingTop: '70px',
+        paddingBottom: '70px',
       },
     },
   },
