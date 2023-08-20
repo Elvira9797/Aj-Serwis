@@ -6,7 +6,7 @@ export const Section = styled.section`
   padding: 90px 0;
   background-color: ${({ theme }) => theme.colors.primaryColor};
   background-image: linear-gradient(
-      to top ,
+      to top,
       rgba(6, 7, 7, 0.8),
       rgba(34, 32, 32, 0.4)
     ),
@@ -23,12 +23,12 @@ export const Container = styled.div`
     rgba(34, 32, 32, 0.4)
   );
   padding: 0 1rem;
-
 `;
 
 export const Title = styled.h2`
   text-align: start;
   font-size: 2rem;
+
   color: #fff;
   &::after {
     content: '';
