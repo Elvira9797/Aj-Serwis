@@ -5,15 +5,16 @@ import Logo from '../../Logo/Logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
+import { useAppContext } from '../../../context/AppContext';
 interface AppBarProps {
-  isOpenModal: boolean;
-  onClick: () => void;
   theme: {
     colors: { accentColor: string };
   };
 }
 
-const AppBar: React.FC<AppBarProps> = ({ isOpenModal, onClick, theme }) => {
+const AppBar: React.FC<AppBarProps> = ({ theme }) => {
+  const { openModal, isOpenModal } = useAppContext();
+
   return (
     <StyledAppBar>
       <Logo loc="header" size="md" />
@@ -24,7 +25,7 @@ const AppBar: React.FC<AppBarProps> = ({ isOpenModal, onClick, theme }) => {
         <LangSelect />
       </StyledNavWraper>
 
-      <BurgerButton onClick={onClick} type="button">
+      <BurgerButton onClick={openModal} type="button">
         {!isOpenModal && (
           <GiHamburgerMenu
             size={30}
