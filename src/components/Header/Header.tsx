@@ -8,11 +8,9 @@ import { theme } from '../../common/theme';
 import { StyledHeader } from './Header.styled';
 
 const Header: React.FC = () => {
-  const [isOpenModal, setIsOpenModal] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [headerStyle, setHeaderStyle] = useState({});
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,21 +39,17 @@ const Header: React.FC = () => {
     return cleanupScroll;
   }, [prevScrollPosition, scrolling]);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-    setIsOpenModal(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setIsOpenModal(false);
-  };
+ 
 
   return (
     <StyledHeader style={headerStyle}>
       <TopBar />
-      <AppBar onClick={openModal} isOpenModal={isOpenModal} theme={theme} />
-      <MobileMenu isOpen={isModalOpen} onClose={closeModal} theme={theme} />
+      <AppBar
+        theme={theme}
+      />
+      <MobileMenu
+        theme={theme}
+      />
     </StyledHeader>
   );
 };

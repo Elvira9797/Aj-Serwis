@@ -8,6 +8,7 @@ import '@fontsource/montserrat/900.css';
 import './index.css';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './common/theme';
+import AppProvider from './context/AppProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,9 +16,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter basename="/Aj-Serwis">
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>
+      <AppProvider>
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </AppProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

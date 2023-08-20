@@ -8,10 +8,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { VscChromeClose } from 'react-icons/vsc';
 
 import { ModalMobileMenu, CloseButton, Overlay } from './MobileMenu.styled';
+import { useAppContext } from '../../../context/AppContext';
 
 interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
   theme: {
     colors: {
       accentColor: string;
@@ -20,14 +19,16 @@ interface ModalProps {
   };
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
+const Modal: React.FC<ModalProps> = ({ theme }) => {
+  const { closeModal, isOpenModal } = useAppContext();
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === 'Escape') {
-        onClose();
+        closeModal();
       }
     };
-    if (isOpen) {
+    if (isOpenModal) {
       document.body.classList.add('modal-open');
     } else {
       document.body.classList.remove('modal-open');
@@ -39,17 +40,17 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
       document.body.classList.remove('modal-open');
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onClose, isOpen]);
+  }, [closeModal, isOpenModal]);
 
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
-      onClose();
+      closeModal();
     }
   };
 
   return (
     <AnimatePresence>
-      {isOpen && (
+      {isOpenModal && (
         <Overlay>
           <motion.div
             onClick={handleOverlayClick}
@@ -67,7 +68,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
               transition={{ duration: 0.3, ease: 'easeInOut' }}
             >
               <ModalMobileMenu>
-                <CloseButton type="button" onClick={onClose}>
+                <CloseButton type="button" onClick={closeModal}>
                   <VscChromeClose
                     size={32}
                     style={{ color: theme.colors.accentColor }}
