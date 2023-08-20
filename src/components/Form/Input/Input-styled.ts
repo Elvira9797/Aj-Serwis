@@ -91,8 +91,8 @@ export const StyledCheckbox = styled.input<{ lightTheme: boolean }>`
     content: '';
     display: block;
     outline: none;
-    width: 1rem;
-    height: 1.2em;
+    width: 16px;
+    height: 16px;
     padding: 0.2rem;
     border: 1px
       ${({ lightTheme, theme }) =>
@@ -105,6 +105,7 @@ export const StyledCheckbox = styled.input<{ lightTheme: boolean }>`
   &:checked::before {
     background-color: transparent;
     border: none;
+
     fill: #fff;
     background-image: url(${checked});
     background-position: center;

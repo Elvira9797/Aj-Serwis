@@ -6,8 +6,9 @@ export const StyledForm = styled.form`
     rgba(6, 7, 7, 0.6),
     rgba(34, 32, 32, 0.4)
   ); */
-  width: 100%;
+  max-width: 100%;
   display: flex;
+  padding: 1rem;
   flex-direction: column;
   justify-content: center;
   row-gap: 3rem;
