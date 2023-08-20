@@ -67,7 +67,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           {...register('surname')}
           label="Surname"
           value={allFieldsValue.surname}
-          errors={errors}
+          errors={errors} 
           lightTheme={lightTheme}
         />
       </Wrapper>

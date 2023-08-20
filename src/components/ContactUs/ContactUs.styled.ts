@@ -35,9 +35,9 @@ export const Title = styled.h2`
     display: block;
     width: 28%;
     margin-top: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     height: 1px;
-    background-color: ${({ theme }) => theme.colors.secondaryColor};
+    background-color: ${({ theme }) => theme.colors.accentColor};
   }
 `;
 
@@ -45,5 +45,5 @@ export const SubTitle = styled.h3`
   color: #fff;
   text-align: start;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 2em;
 `;
