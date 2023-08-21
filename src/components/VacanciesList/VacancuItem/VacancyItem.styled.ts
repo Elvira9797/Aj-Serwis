@@ -10,10 +10,11 @@ export const StyledVacancyItem = styled.li`
   transition: ${theme.transition.basic};
   border-radius: 4px;
   background: ${theme.colors.secondaryColor};
+  overflow: hidden;
 
   &:hover img {
     transform: scale(1.03);
-    transition: transform 0.5s, filter 1.5s ease-in-out;
+    transition: all 500ms, filter 500ms ease-in-out;
     filter: brightness(100%);
   }
 `;
@@ -26,11 +27,11 @@ export const StyledVacancyItemImg = styled.img`
   width: 100%;
   height: 260px;
   object-fit: cover;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     cursor: pointer;
-    transition: transform 0.5s, filter 1.5s ease-in-out;
+    transition: all 500ms ease-in-out;
     filter: grayscale(100%);
   }
 `;
@@ -47,7 +48,7 @@ export const StyledImgGradient = styled.div`
   height: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 6px;
+  padding: 10px 16px;
 `;
 
 export const StyledGradientWrap = styled.div`
@@ -60,7 +61,8 @@ export const StyledVacancyText = styled.p`
   align-items: center;
   text-align: start;
   color: black;
-  gap: 8px;
+  gap: 12px;
+  font-size: 18px;
 `;
 export const StyledVacancyShortInfo = styled.p`
   text-align: start;
@@ -79,6 +81,6 @@ export const StyledVacancyTitle = styled.span`
 export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 6px 16px;
+  gap: 16px;
+  padding: 20px;
 `;

@@ -5,8 +5,8 @@ export const StyledBenefitsList = styled.ul`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 30px;
+  row-gap: 50px;
 `;
 
 export const StyledBenefitItem = styled.li`
@@ -20,8 +20,8 @@ export const StyledBenefitItem = styled.li`
 
 export const StyledBenefitIcoContainer = styled.div`
   padding: 30px;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border: 2px solid ${theme.colors.accentColor};
   border-radius: 50%;
 `;
