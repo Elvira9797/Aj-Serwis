@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 
 const Layout = () => {
@@ -15,7 +15,9 @@ const Layout = () => {
     <>
       <Header />
       <main>
-        <Outlet />
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
       </main>
       <ScrollToTopButton />
       <Footer />
