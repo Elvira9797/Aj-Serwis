@@ -7,7 +7,7 @@ const FooterBottomBar: React.FC = () => {
     <StyledFooterBottomBar>
       2023 <BiCopyright />
       Created by
-      <a href="/home">SevenTy inc</a>
+      <a href="/home">SevenTy</a>
     </StyledFooterBottomBar>
   );
 };

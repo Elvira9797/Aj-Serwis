@@ -11,4 +11,4 @@ export const dataContacts: ContactsArr[] = [
 
 export const workEmail = 'aj.serwis.spzoo@gmail.com';
 
-export const workingTime = 'Mon-Fri from 8:00 AM to 7:00 PM';
+export const workingTime = 'Working hours: Mon-Fri from 8:00 AM to 7:00 PM';

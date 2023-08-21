@@ -39,17 +39,11 @@ const Header: React.FC = () => {
     return cleanupScroll;
   }, [prevScrollPosition, scrolling]);
 
- 
-
   return (
     <StyledHeader style={headerStyle}>
       <TopBar />
-      <AppBar
-        theme={theme}
-      />
-      <MobileMenu
-        theme={theme}
-      />
+      <AppBar theme={theme} />
+      <MobileMenu theme={theme} />
     </StyledHeader>
   );
 };
