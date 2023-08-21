@@ -60,6 +60,6 @@ export const theme = {
     },
   },
   transition: {
-    basic: 'all 250ms ease-in-out',
+    basic: 'all 250ms ease-in-out ',
   },
 };

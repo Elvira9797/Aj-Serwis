@@ -1,19 +1,17 @@
-import { FC, ReactNode } from 'react';
+import { CSSProperties, FC, ReactNode } from 'react';
 import { StyledBtn } from './Button-styled';
 
 interface ButtonProps {
   children: ReactNode;
   variant: 'primary' | 'secondary';
-  size: 'sm' | 'md' | 'lg';
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
-  style?: {};
+  style?: CSSProperties;
 }
 
 const Button: FC<ButtonProps> = ({
   children,
   variant,
-  size,
   type = 'button',
   onClick,
   style,
@@ -24,10 +22,9 @@ const Button: FC<ButtonProps> = ({
         style={style}
         type={type}
         variant={variant}
-        size={size}
         onClick={onClick}
       >
-        {children}
+        <span>{children}</span>
       </StyledBtn>
     </>
   );

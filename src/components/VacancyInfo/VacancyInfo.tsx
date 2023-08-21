@@ -7,6 +7,7 @@ import {
   VacancyList,
   VacancyTitle,
 } from './VacancyInfo-styled';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface VacansyInfoProps {
   vacancy: IVacancieData | undefined;

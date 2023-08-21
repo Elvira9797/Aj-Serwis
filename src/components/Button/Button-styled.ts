@@ -1,64 +1,95 @@
 import styled from '@emotion/styled';
-import { Theme } from '@emotion/react';
+import { Theme, css } from '@emotion/react';
 
 interface StyledButton {
   variant: 'primary' | 'secondary';
-  size: 'sm' | 'md' | 'lg';
 }
 
 export const StyledBtn = styled.button<StyledButton>(
-  ({ theme, size, variant }) => ({
-    fontFamily: 'inherit',
-    cursor: 'pointer',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    maxWidth: '100%',
-    outline: 'none',
-    borderRadius: '0.5rem',
-    fontWeight: theme.typography.fontWeight.semiBold,
-    transition: theme.transition.basic,
-    ...getSize(size),
-    ...getVariant(variant, theme),
-  })
+  ({ theme, variant }) => css`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: ${theme.colors.secondaryColor};
+    cursor: pointer;
+    border: none;
+    font-size: 0.8rem;
+    background-color: transparent;
+    font-weight: ${theme.typography.fontWeight.regular};
+    transition: ${theme.transition.basic};
+    transition-delay: 75ms;
+    text-transform: uppercase;
+
+    ${getVariantStyles(variant, theme)}
+  `
 );
 
-const getSize = (size: StyledButton['size']) => {
-  switch (size) {
-    case 'sm':
-      return { padding: '0.5rem 2rem' };
-    case 'md':
-      return { padding: '0.6rem 4rem' };
-    case 'lg':
-      return { padding: '0.7rem 6rem' };
-  }
-};
-
-const getVariant = (variant: StyledButton['variant'], { colors }: Theme) => {
+const getVariantStyles = (variant: StyledButton['variant'], theme: Theme) => {
   switch (variant) {
     case 'primary':
-      return {
-        backgroundColor: colors.accentColor,
-        border: `1px ${colors.accentColor} solid`,
-        color: colors.secondaryColor,
-        '&:hover': {
-          backgroundColor: colors.secondaryColor,
-          color: colors.accentColor,
-          // boxShadow: '0px 5px 40px -10px rgba(195,160,105,0.48)',
-          transform: 'scale(1.02)',
-        },
-      };
+      return css`
+        padding: 0.4rem 1rem;
+        padding-left: 1.5rem;
+        &:before {
+          content: '';
+          background-color: ${theme.colors.accentColor};
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          border-radius: 50px;
+          display: block;
+          width: 45px;
+          height: 45px;
+          transition: ${theme.transition.basic};
+          transition-delay: 75ms;
+        }
+        &:hover {
+          padding-left: 1rem;
+        }
+        span {
+          position: relative;
+          transition: ${theme.transition.basic};
+          transition-delay: 75ms;
+        }
+
+        &:hover:before {
+          width: 100%;
+          background-color: ${theme.colors.secondaryColor};
+        }
+        &:hover span {
+          color: ${theme.colors.primaryColor};
+          font-weight: ${theme.typography.fontWeight.semiBold};
+        }
+        @media (max-width: 768px) {
+          &:before {
+            display: none;
+          }
+          padding: 0.8rem 2rem;
+          background-color: ${theme.colors.accentColor};
+          border-radius: 0.5rem;
+          &:hover {
+            padding-left: 2rem;
+            span {
+              color: ${theme.colors.secondaryColor};
+            }
+          }
+        }
+      `;
     case 'secondary':
-      return {
-        backgroundColor: 'transparent',
-        border: `1px ${colors.accentColor} solid`,
-        color: colors.accentColor,
-        '&:hover': {
-          backgroundColor: colors.accentColor,
-          color: colors.secondaryColor,
-          borderColor: colors.accentColor,
-          transform: 'scale(1.02)',
-        },
-      };
+      return css`
+        width: 100%;
+        background-color: ${theme.colors.primaryColor};
+        border-color: ${theme.colors.primaryColor};
+        border-radius: 4;
+        padding: 0.6rem 4rem;
+        &:hover {
+          color: ${theme.colors.accentColor};
+          transform: scale(1.01);
+          font-weight: ${theme.typography.fontWeight.regular};
+        }
+      `;
   }
 };

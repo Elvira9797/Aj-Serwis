@@ -27,6 +27,7 @@ export const StyledInput = styled.input<StyledInputProps>`
   width: 100%;
   padding: 0.8rem;
   height: 48px;
+  border-radius: 0;
   padding-bottom: 0.5rem;
   font-size: ${props => (props.focus ? '1rem' : '1.2rem')};
   border: none;
