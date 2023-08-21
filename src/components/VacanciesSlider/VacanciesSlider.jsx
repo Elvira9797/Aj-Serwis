@@ -12,11 +12,16 @@ import { vacancies } from '../../common/vacanciesArr';
 import VacancyItem from '../VacanciesList/VacancuItem/VacancyItem';
 import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
+import { Title } from '../ContactUs/ContactUs.styled';
+import { theme } from '../../common/theme';
 
 const VacanciesSlider = () => {
   return (
     <StyledSliderSection>
       <SectionContainer>
+        <Title style={{ color: `${theme.colors.primaryColor}` }}>
+          Vacancies
+        </Title>
         <StyledSwiper
           pagination={{ clickable: true }}
           navigation
