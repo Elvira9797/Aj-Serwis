@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.734a605d.css",
-    "main.js": "/Aj-Serwis/static/js/main.e1755076.js",
+    "main.js": "/Aj-Serwis/static/js/main.51d046ec.js",
     "static/js/385.1b5b9861.chunk.js": "/Aj-Serwis/static/js/385.1b5b9861.chunk.js",
     "static/js/398.853a0763.chunk.js": "/Aj-Serwis/static/js/398.853a0763.chunk.js",
     "static/js/193.61681512.chunk.js": "/Aj-Serwis/static/js/193.61681512.chunk.js",
@@ -59,7 +59,7 @@
     "index.html": "/Aj-Serwis/index.html",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
     "main.734a605d.css.map": "/Aj-Serwis/static/css/main.734a605d.css.map",
-    "main.e1755076.js.map": "/Aj-Serwis/static/js/main.e1755076.js.map",
+    "main.51d046ec.js.map": "/Aj-Serwis/static/js/main.51d046ec.js.map",
     "385.1b5b9861.chunk.js.map": "/Aj-Serwis/static/js/385.1b5b9861.chunk.js.map",
     "398.853a0763.chunk.js.map": "/Aj-Serwis/static/js/398.853a0763.chunk.js.map",
     "193.61681512.chunk.js.map": "/Aj-Serwis/static/js/193.61681512.chunk.js.map",
@@ -73,6 +73,6 @@
   },
   "entrypoints": [
     "static/css/main.734a605d.css",
-    "static/js/main.e1755076.js"
+    "static/js/main.51d046ec.js"
   ]
 }
