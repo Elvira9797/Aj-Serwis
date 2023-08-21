@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 import Navigation from '../../Navigation/Navigation';
 import ContactsDisplay from '../../ContactsDisplay/ContactsDisplay';
@@ -8,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { VscChromeClose } from 'react-icons/vsc';
 
 import { ModalMobileMenu, CloseButton, Overlay } from './MobileMenu.styled';
+
 import { useAppContext } from '../../../context/AppContext';
 
 interface ModalProps {
@@ -22,17 +24,18 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ theme }) => {
   const { closeModal, isOpenModal } = useAppContext();
 
+  const swipeHandlers = useSwipeable({ onSwipedRight: () => closeModal() });
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === 'Escape') {
         closeModal();
       }
     };
-    if (isOpenModal) {
-      document.body.classList.add('modal-open');
-    } else {
-      document.body.classList.remove('modal-open');
-    }
+
+    isOpenModal
+      ? document.body.classList.add('modal-open')
+      : document.body.classList.remove('modal-open');
 
     window.addEventListener('keydown', handleKeyDown);
 
@@ -59,6 +62,7 @@ const Modal: React.FC<ModalProps> = ({ theme }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
+            {...swipeHandlers}
           >
             <motion.div
               className="modal-content"

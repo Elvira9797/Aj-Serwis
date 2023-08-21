@@ -30,7 +30,7 @@ const TopBar: React.FC = () => {
         <BiMailSend />
         <a href={`mailto:${workEmail}`}>{workEmail}</a>
       </StyledNavWrader>
-      <p>Working time: {workingTime}</p>
+      <p>{workingTime}</p>
     </StyledTopBar>
   );
 };

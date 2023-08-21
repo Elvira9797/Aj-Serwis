@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   CustomSelectContainer,
   CustomSelectImage,
@@ -6,31 +6,24 @@ import {
   SelectOption,
 } from './LangSelect.styled';
 
-import uaFlag from '../../assets/png/ua.png';
-import plFlag from '../../assets/png/pl.png';
-import engFlag from '../../assets/png/eng.png';
+import { dataLang } from '../../common/dataLang';
 
 const LangSelect = () => {
   const [selectedValue, setSelectedValue] = useState<string>(
-    localStorage.getItem('selectedLang') || '1'
+    localStorage.getItem('selectedLang') || `${dataLang[0]}`
   );
 
   useEffect(() => {
     localStorage.setItem('selectedLang', selectedValue);
   }, [selectedValue]);
 
+  const selectedImage = dataLang.find(
+    lang => lang.key === selectedValue
+  )?.value;
+
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedValue(event.target.value);
   };
-
-  let selectedImage;
-  if (selectedValue === '1') {
-    selectedImage = engFlag;
-  } else if (selectedValue === '2') {
-    selectedImage = plFlag;
-  } else if (selectedValue === '3') {
-    selectedImage = uaFlag;
-  }
 
   return (
     <CustomSelectContainer>
@@ -40,9 +33,11 @@ const LangSelect = () => {
         }}
       ></CustomSelectImage>
       <Select value={selectedValue} onChange={handleSelectChange}>
-        <SelectOption value="1">ENG</SelectOption>
-        <SelectOption value="2">POL</SelectOption>
-        <SelectOption value="3">UKR</SelectOption>
+        {dataLang.map(lang => (
+          <SelectOption key={lang.key} value={lang.key}>
+            {lang.key}
+          </SelectOption>
+        ))}
       </Select>
     </CustomSelectContainer>
   );
