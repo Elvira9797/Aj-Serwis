@@ -52,7 +52,12 @@ export const StyledSliderNavWrap = styled.div`
 `;
 
 export const StyledSliderSection = styled.section`
-  padding-top: ${theme.section.padding.medium.paddingTop};
-  padding-bottom: ${theme.section.padding.medium.paddingBottom};
+  padding-top: ${theme.section.padding.small.paddingTop};
+  padding-bottom: ${theme.section.padding.small.paddingBottom};
   background-color: ${theme.colors.bgColor};
+
+  @media (min-width: 768px) {
+    padding-top: ${theme.section.padding.medium.paddingTop};
+    padding-bottom: ${theme.section.padding.medium.paddingBottom};
+  }
 `;
