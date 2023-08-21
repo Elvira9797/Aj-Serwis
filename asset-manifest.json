@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.734a605d.css",
-    "main.js": "/Aj-Serwis/static/js/main.51d046ec.js",
-    "static/js/385.1b5b9861.chunk.js": "/Aj-Serwis/static/js/385.1b5b9861.chunk.js",
+    "main.js": "/Aj-Serwis/static/js/main.f601f0fe.js",
+    "static/js/575.28dfbb0d.chunk.js": "/Aj-Serwis/static/js/575.28dfbb0d.chunk.js",
     "static/js/398.853a0763.chunk.js": "/Aj-Serwis/static/js/398.853a0763.chunk.js",
     "static/js/193.61681512.chunk.js": "/Aj-Serwis/static/js/193.61681512.chunk.js",
-    "static/js/25.2dd941d0.chunk.js": "/Aj-Serwis/static/js/25.2dd941d0.chunk.js",
+    "static/js/25.1042fa29.chunk.js": "/Aj-Serwis/static/js/25.1042fa29.chunk.js",
     "static/js/588.aff8b39a.chunk.js": "/Aj-Serwis/static/js/588.aff8b39a.chunk.js",
     "static/js/203.85f8628c.chunk.js": "/Aj-Serwis/static/js/203.85f8628c.chunk.js",
-    "static/js/567.364d2da8.chunk.js": "/Aj-Serwis/static/js/567.364d2da8.chunk.js",
+    "static/js/253.9d11cde3.chunk.js": "/Aj-Serwis/static/js/253.9d11cde3.chunk.js",
     "static/css/830.7da58adc.chunk.css": "/Aj-Serwis/static/css/830.7da58adc.chunk.css",
     "static/js/830.3c1d8a25.chunk.js": "/Aj-Serwis/static/js/830.3c1d8a25.chunk.js",
     "static/js/680.3e85f76b.chunk.js": "/Aj-Serwis/static/js/680.3e85f76b.chunk.js",
@@ -17,6 +17,7 @@
     "static/media/contacts-img.jpg": "/Aj-Serwis/static/media/contacts-img.9db711baf33168b4e48a.jpg",
     "static/media/desktopBgContacts.jpg": "/Aj-Serwis/static/media/desktopBgContacts.0c40b9d15fff7f93b9f4.jpg",
     "static/media/aboutUs.jpg": "/Aj-Serwis/static/media/aboutUs.5184d49d5e643a1857c5.jpg",
+    "static/media/page-not-found.png": "/Aj-Serwis/static/media/page-not-found.efcbde62549d79829c57.png",
     "static/media/LogoHeader.png": "/Aj-Serwis/static/media/LogoHeader.22dc9f317e8b9e43054b.png",
     "static/media/eng.png": "/Aj-Serwis/static/media/eng.527810a57f4b352166f5.png",
     "static/media/ua.png": "/Aj-Serwis/static/media/ua.f7d68364d14b08f6b03d.png",
@@ -59,20 +60,20 @@
     "index.html": "/Aj-Serwis/index.html",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
     "main.734a605d.css.map": "/Aj-Serwis/static/css/main.734a605d.css.map",
-    "main.51d046ec.js.map": "/Aj-Serwis/static/js/main.51d046ec.js.map",
-    "385.1b5b9861.chunk.js.map": "/Aj-Serwis/static/js/385.1b5b9861.chunk.js.map",
+    "main.f601f0fe.js.map": "/Aj-Serwis/static/js/main.f601f0fe.js.map",
+    "575.28dfbb0d.chunk.js.map": "/Aj-Serwis/static/js/575.28dfbb0d.chunk.js.map",
     "398.853a0763.chunk.js.map": "/Aj-Serwis/static/js/398.853a0763.chunk.js.map",
     "193.61681512.chunk.js.map": "/Aj-Serwis/static/js/193.61681512.chunk.js.map",
-    "25.2dd941d0.chunk.js.map": "/Aj-Serwis/static/js/25.2dd941d0.chunk.js.map",
+    "25.1042fa29.chunk.js.map": "/Aj-Serwis/static/js/25.1042fa29.chunk.js.map",
     "588.aff8b39a.chunk.js.map": "/Aj-Serwis/static/js/588.aff8b39a.chunk.js.map",
     "203.85f8628c.chunk.js.map": "/Aj-Serwis/static/js/203.85f8628c.chunk.js.map",
-    "567.364d2da8.chunk.js.map": "/Aj-Serwis/static/js/567.364d2da8.chunk.js.map",
+    "253.9d11cde3.chunk.js.map": "/Aj-Serwis/static/js/253.9d11cde3.chunk.js.map",
     "830.7da58adc.chunk.css.map": "/Aj-Serwis/static/css/830.7da58adc.chunk.css.map",
     "830.3c1d8a25.chunk.js.map": "/Aj-Serwis/static/js/830.3c1d8a25.chunk.js.map",
     "680.3e85f76b.chunk.js.map": "/Aj-Serwis/static/js/680.3e85f76b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.734a605d.css",
-    "static/js/main.51d046ec.js"
+    "static/js/main.f601f0fe.js"
   ]
 }
