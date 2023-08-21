@@ -11,15 +11,17 @@ import {
   ForTablet,
   Wrapper,
   Title,
+  ContactLink,
 } from './ContactInfoList.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import contactsImg from '../../img/contacts-img.jpg';
+import { Link } from 'react-scroll';
 
 const ContactInfoList: React.FC = () => {
   return (
     <SectionStyled>
       <SectionContainer>
-        <Title>Contact us</Title>
+        <Title>Contacts us</Title>
       </SectionContainer>
       <BackgroundStyled>
         <SectionContainer>
@@ -29,25 +31,33 @@ const ContactInfoList: React.FC = () => {
 
           <ContactInfoListStyled>
             <ContactInfoItem>
-              <MdLocationOn size={60} color="#c3a069" />
+              <Link to="contactUs" smooth={true} duration={1000}>
+                <MdLocationOn size={60} color="#c3a069" />
 
-              <h3>Address</h3>
-              <p>
-                ul. Kościelnicka 29,
-                <br /> 99-210 Uniejów
-              </p>
+                <h3>Address</h3>
+                <p>
+                  ul. Kościelnicka 29,
+                  <br /> 99-210 Uniejów
+                </p>
+              </Link>
             </ContactInfoItem>
 
             <ContactInfoItem>
-              <BsTelephoneFill size={60} color="#c3a069" />
-              <h3>Call today</h3>
-              <p>+48 777 777 777</p>
+              <ContactLink href="tel:+487979931830">
+                <BsTelephoneFill size={60} color="#c3a069" />
+                <h3>Call today</h3>
+                <p>+48 797 993 183</p>
+              </ContactLink>
             </ContactInfoItem>
+
             <ContactInfoItem>
-              <MdEmail size={60} color="#c3a069" />
-              <h3>Email</h3>
-              <p>biuro@ajserwis.com</p>
+              <ContactLink href="mailto:biuro@ajserwis.com">
+                <MdEmail size={60} color="#c3a069" />
+                <h3>Email</h3>
+                <p>biuro@ajserwis.com</p>
+              </ContactLink>
             </ContactInfoItem>
+
             <ContactInfoItem>
               <BsFillClockFill size={60} color="#c3a069" />
               <h3>Working hours</h3>

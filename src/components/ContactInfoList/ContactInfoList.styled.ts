@@ -86,6 +86,12 @@ export const ContactInfoItem = styled.li`
   }
 `;
 
+export const ContactLink = styled.a`
+    text-decoration: none;
+    color: currentColor;
+}
+`;
+
 export const ImgContainer = styled.div`
   @media (min-width: 1100px) {
     position: relative;

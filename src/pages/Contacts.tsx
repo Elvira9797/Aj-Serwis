@@ -8,8 +8,9 @@ const Contacts: React.FC = () => {
     <>
       <HeroContacts />
       <ContactInfoList />
-      <ContactsFormSection />
-      <Element name="contactUs" className="section"></Element>
+      <Element name="contactUs" className="section">
+        <ContactsFormSection />
+      </Element>
     </>
   );
 };
