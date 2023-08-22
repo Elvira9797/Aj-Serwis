@@ -4,6 +4,7 @@ interface ContactsArr {
 }
 
 export const dataContacts: ContactsArr[] = [
+  { name: 'NR BIURO', tel: '575-872-762' },
   { name: 'MOISEIKO VASYL', tel: '+48 539 649 808' },
   { name: 'KORNACKI JAKUB', tel: '+48 797 993 183' },
   { name: 'ALEKSANDER ARTEMJEW', tel: '+48 777 777 777' },
@@ -11,4 +12,7 @@ export const dataContacts: ContactsArr[] = [
 
 export const workEmail = 'aj.serwis.spzoo@gmail.com';
 
-export const workingTime = 'Working hours: Mon-Fri from 8:00 AM to 7:00 PM';
+export const workingTime = {
+  workH: 'Working hours:',
+  time: 'Mon-Fri from 8:00 AM to 7:00 PM',
+};
