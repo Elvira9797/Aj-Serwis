@@ -34,7 +34,7 @@ const ContactsDisplay: React.FC<ContactsDisplayProps> = ({ displayName }) => {
             fontSize: '0.6rem',
           }}
         >
-          {workingTime}
+          {workingTime.time}
         </span>
       </div>
       <ContactBox>
