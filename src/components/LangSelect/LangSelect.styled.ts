@@ -8,7 +8,6 @@ export const CustomSelectContainer = styled.div`
 `;
 
 export const Select = styled.select`
-  -webkit-select: none;
   border: none;
   background: transparent;
   color: white;
@@ -17,8 +16,6 @@ export const Select = styled.select`
 `;
 
 export const SelectOption = styled.option`
-  -webkit-appearance: none;
-  appearance: none;
   background: rgba(0, 0, 0, 0.5);
   color: white;
 `;
