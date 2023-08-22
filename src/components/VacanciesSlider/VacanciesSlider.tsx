@@ -15,7 +15,7 @@ import SectionContainer from '../SectionContainer/SectionContainer';
 import { Title } from '../ContactUs/ContactUs.styled';
 import { theme } from '../../common/theme';
 
-const VacanciesSlider = () => {
+const VacanciesSlider: React.FC = () => {
   return (
     <StyledSliderSection>
       <SectionContainer>
@@ -26,7 +26,7 @@ const VacanciesSlider = () => {
           pagination={{ clickable: true }}
           navigation
           mousewheel
-          loop={true}
+          loop
           slidesPerView={'auto'}
           breakpoints={{
             320: {

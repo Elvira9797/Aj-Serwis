@@ -81,6 +81,6 @@ export const StyledVacancyTitle = styled.span`
 export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 20px;
+  gap: 5px;
+  padding: 16px;
 `;
