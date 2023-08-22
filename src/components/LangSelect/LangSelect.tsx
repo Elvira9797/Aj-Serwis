@@ -10,7 +10,7 @@ import { dataLang } from '../../common/dataLang';
 
 const LangSelect = () => {
   const [selectedValue, setSelectedValue] = useState<string>(
-    localStorage.getItem('selectedLang') || `${dataLang[0]}`
+    localStorage.getItem('selectedLang') || dataLang[0].key
   );
 
   useEffect(() => {
