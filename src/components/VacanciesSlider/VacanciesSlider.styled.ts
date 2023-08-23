@@ -1,11 +1,39 @@
 import styled from '@emotion/styled';
-import { Swiper } from 'swiper/react';
+import { Swiper, SwiperProps } from 'swiper/react';
 import { theme } from '../../common/theme';
-export const StyledSwiper = styled(Swiper)`
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 60px;
-  padding-top: 20px;
+
+interface ExtendedStyledSwiperProps extends SwiperProps {
+  pagination?: {
+    clickable: boolean;
+  };
+  navigation: boolean;
+  mousewheel: boolean;
+  loop: boolean;
+  slidesPerView: number | 'auto' | undefined;
+  modules: any;
+  breakpoints: {
+    320: {
+      slidesPerView: number;
+      spaceBetween: number;
+    };
+    768: {
+      slidesPerView: number;
+      spaceBetween: number;
+    };
+    1200: {
+      slidesPerView: number;
+      spaceBetween: number;
+    };
+  };
+}
+
+export const StyledSwiper = styled(Swiper)<ExtendedStyledSwiperProps>`
+  &.swiper-initialized.swiper-horizontal {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
 
   & .swiper-wrapper {
     z-index: -1;
