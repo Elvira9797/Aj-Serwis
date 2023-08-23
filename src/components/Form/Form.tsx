@@ -67,7 +67,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           {...register('surname')}
           label="Surname"
           value={allFieldsValue.surname}
-          errors={errors} 
+          errors={errors}
           lightTheme={lightTheme}
         />
       </Wrapper>
@@ -121,12 +121,12 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
       <Button
         type="submit"
         variant="primary"
-        size="lg"
+        lightTheme={lightTheme}
         style={{
           margin: '0 auto',
         }}
       >
-        Submit
+        Submit Form
       </Button>
     </StyledForm>
   );

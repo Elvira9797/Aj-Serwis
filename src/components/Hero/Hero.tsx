@@ -3,7 +3,6 @@ import { useSpring, animated } from 'react-spring';
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 import { HeroTitle, HeroUnderTitle, Overlay } from './Hero.styled';
-import { theme } from '../../common/theme';
 import SocialMediaLink from '../SocialMediaLink/SocialMediaLink';
 
 const Hero: React.FC = () => {
@@ -46,18 +45,11 @@ const Hero: React.FC = () => {
       <animated.div style={buttonSpring}>
         <Button
           variant="primary"
-          size="md"
           type="button"
           onClick={handleButtonClick}
           style={{
-            backgroundColor: theme.colors.accentColor,
-            color: 'white',
-            fontSize: '16px',
-            paddingLeft: '30px',
-            paddingRight: '30px',
-            paddingTop: '15px',
-            paddingBottom: '15px',
-            borderRadius: '8px',
+            // backgroundColor: theme.colors.accentColor,
+            // color: 'white',
             border: 'none',
           }}
         >

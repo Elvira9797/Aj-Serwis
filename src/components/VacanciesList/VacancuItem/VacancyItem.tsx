@@ -12,7 +12,6 @@ import {
   StyledVacancyTitle,
 } from './VacancyItem.styled';
 import Button from '../../Button/Button';
-import { theme } from '../../../common/theme';
 import { FaLocationDot } from 'react-icons/fa6';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { GiCash } from 'react-icons/gi';
@@ -61,15 +60,16 @@ const VacancyItem: React.FC<IVacancyItem> = ({
       >
         <Button
           variant={'secondary'}
-          size={'md'}
           type={'button'}
-          style={{
-            textDecoration: 'none',
-            width: '100%',
-            backgroundColor: `${theme.colors.primaryColor}`,
-            borderColor: `${theme.colors.primaryColor}`,
-            borderRadius: 4,
-          }}
+          style={
+            {
+              // textDecoration: 'none',
+              // width: '100%',
+              // backgroundColor: `${theme.colors.primaryColor}`,
+              // borderColor: `${theme.colors.primaryColor}`,
+              // borderRadius: 4,
+            }
+          }
           onClick={() => {
             console.log('Navigate Vacancy Details');
           }}

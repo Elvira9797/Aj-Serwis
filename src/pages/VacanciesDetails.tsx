@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { vacancies } from '../common/vacanciesArr';
 import SectionContainer from '../components/SectionContainer/SectionContainer';
 import Form from '../components/Form/Form';
@@ -8,10 +8,11 @@ import {
   VacancyFormInfo,
   VacancySection,
 } from '../components/VacancyInfo/VacancyInfo-styled';
+import GoBackBtn from '../components/GoBackBtn/GoBackBtn';
 
 const VacanciesDetails = () => {
   const { vacancieId } = useParams();
-
+  const navigate = useNavigate();
   const getCurrentVacancy = () => {
     return vacancies.find(vacancy => vacancy.vacancieId === vacancieId);
   };
@@ -22,6 +23,12 @@ const VacanciesDetails = () => {
     <>
       <VacancySection>
         <SectionContainer>
+          <GoBackBtn
+            style={{ marginBottom: '2rem' }}
+            onClick={() => navigate(-1)}
+          >
+            Go Back
+          </GoBackBtn>
           <VacancyInfo vacancy={currentVacancy} />
         </SectionContainer>
       </VacancySection>
