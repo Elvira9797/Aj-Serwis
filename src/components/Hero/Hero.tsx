@@ -49,17 +49,17 @@ const Hero: React.FC = () => {
           size="md"
           type="button"
           onClick={handleButtonClick}
-          style={{
-            backgroundColor: theme.colors.accentColor,
-            color: 'white',
-            fontSize: '16px',
-            paddingLeft: '30px',
-            paddingRight: '30px',
-            paddingTop: '15px',
-            paddingBottom: '15px',
-            borderRadius: '8px',
-            border: 'none',
-          }}
+          // style={{
+          //   backgroundColor: theme.colors.accentColor,
+          //   color: 'white',
+          //   fontSize: '16px',
+          //   paddingLeft: '30px',
+          //   paddingRight: '30px',
+          //   paddingTop: '15px',
+          //   paddingBottom: '15px',
+          //   borderRadius: '8px',
+          //   border: 'none',
+          // }}
         >
           View job vacancies
         </Button>
