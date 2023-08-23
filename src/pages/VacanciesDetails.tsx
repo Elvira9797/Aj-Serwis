@@ -8,7 +8,7 @@ import {
   VacancyFormInfo,
   VacancySection,
 } from '../components/VacancyInfo/VacancyInfo-styled';
-import Button from '../components/Button/Button';
+import GoBackBtn from '../components/GoBackBtn/GoBackBtn';
 
 const VacanciesDetails = () => {
   const { vacancieId } = useParams();
@@ -23,9 +23,12 @@ const VacanciesDetails = () => {
     <>
       <VacancySection>
         <SectionContainer>
-          <Button variant="primary" onClick={() => navigate(-1)}>
+          <GoBackBtn
+            style={{ marginBottom: '2rem' }}
+            onClick={() => navigate(-1)}
+          >
             Go Back
-          </Button>
+          </GoBackBtn>
           <VacancyInfo vacancy={currentVacancy} />
         </SectionContainer>
       </VacancySection>

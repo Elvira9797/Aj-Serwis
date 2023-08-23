@@ -3,10 +3,11 @@ import { Theme, css } from '@emotion/react';
 
 interface StyledButton {
   variant: 'primary' | 'secondary';
+  lightTheme?: boolean;
 }
 
 export const StyledBtn = styled.button<StyledButton>(
-  ({ theme, variant }) => css`
+  ({ theme, variant, lightTheme }) => css`
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,12 +22,17 @@ export const StyledBtn = styled.button<StyledButton>(
     transition: ${theme.transition.basic};
     transition-delay: 75ms;
     text-transform: uppercase;
-
-    ${getVariantStyles(variant, theme)}
+    
+    
+    ${getVariantStyles(variant, theme, lightTheme)}
   `
 );
 
-const getVariantStyles = (variant: StyledButton['variant'], theme: Theme) => {
+const getVariantStyles = (
+  variant: StyledButton['variant'],
+  theme: Theme,
+  lightTheme: StyledButton['lightTheme']
+) => {
   switch (variant) {
     case 'primary':
       return css`
@@ -51,16 +57,23 @@ const getVariantStyles = (variant: StyledButton['variant'], theme: Theme) => {
         }
         span {
           position: relative;
+          color: ${lightTheme
+            ? theme.colors.primaryColor
+            : theme.colors.secondaryColor};
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
         }
 
         &:hover:before {
           width: 100%;
-          background-color: ${theme.colors.secondaryColor};
+          background-color: ${lightTheme
+            ? theme.colors.primaryColor
+            : theme.colors.secondaryColor};
         }
         &:hover span {
-          color: ${theme.colors.primaryColor};
+          color: ${lightTheme
+            ? theme.colors.secondaryColor
+            : theme.colors.primaryColor};
           font-weight: ${theme.typography.fontWeight.semiBold};
         }
         @media (max-width: 768px) {
@@ -87,7 +100,6 @@ const getVariantStyles = (variant: StyledButton['variant'], theme: Theme) => {
         padding: 0.6rem 4rem;
         &:hover {
           color: ${theme.colors.accentColor};
-          transform: scale(1.01);
           font-weight: ${theme.typography.fontWeight.regular};
         }
       `;

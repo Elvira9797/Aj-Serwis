@@ -121,6 +121,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
       <Button
         type="submit"
         variant="primary"
+        lightTheme={lightTheme}
         style={{
           margin: '0 auto',
         }}

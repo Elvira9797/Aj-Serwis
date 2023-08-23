@@ -7,6 +7,7 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
   style?: CSSProperties;
+  lightTheme?: boolean;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -15,11 +16,14 @@ const Button: FC<ButtonProps> = ({
   type = 'button',
   onClick,
   style,
+  lightTheme,
 }) => {
+  console.log('lightTheme: ', lightTheme);
   return (
     <>
       <StyledBtn
         style={style}
+        lightTheme={lightTheme}
         type={type}
         variant={variant}
         onClick={onClick}
