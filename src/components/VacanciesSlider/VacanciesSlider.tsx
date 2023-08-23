@@ -25,7 +25,6 @@ const VacanciesSlider: React.FC = () => {
         <StyledSwiper
           pagination={{ clickable: true }}
           navigation
-          mousewheel
           loop
           slidesPerView={'auto'}
           breakpoints={{
@@ -36,6 +35,7 @@ const VacanciesSlider: React.FC = () => {
             768: {
               slidesPerView: 2,
               spaceBetween: 40,
+              slidesPerGroup: 2,
             },
             1200: {
               slidesPerView: 3,
