@@ -19,7 +19,7 @@ interface InputProps {
   id: string;
   type: HTMLInputTypeAttribute;
   name: string;
-  value: string | undefined;
+  value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   lightTheme: boolean;
   errors: {};
