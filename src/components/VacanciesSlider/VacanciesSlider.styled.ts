@@ -6,8 +6,7 @@ interface ExtendedStyledSwiperProps extends SwiperProps {
   pagination?: {
     clickable: boolean;
   };
-  navigation: boolean;
-  mousewheel: boolean;
+  navigation?: boolean;
   loop: boolean;
   slidesPerView: number | 'auto' | undefined;
   modules: any;
@@ -19,6 +18,7 @@ interface ExtendedStyledSwiperProps extends SwiperProps {
     768: {
       slidesPerView: number;
       spaceBetween: number;
+      slidesPerGroup: number;
     };
     1200: {
       slidesPerView: number;
@@ -33,6 +33,21 @@ export const StyledSwiper = styled(Swiper)<ExtendedStyledSwiperProps>`
     padding-right: 10px;
     padding-bottom: 60px;
     padding-top: 20px;
+  }
+
+  & .swiper-slide.swiper-slide-active img {
+    @media (max-width: 1199px) {
+      transform: scale(1.03);
+      transition: all 1000ms, filter 1000ms ease-in-out;
+      filter: brightness(100%);
+    }
+  }
+  & .swiper-slide.swiper-slide-next img {
+    @media (max-width: 1199px) {
+      transform: scale(1.03);
+      transition: all 1000ms, filter 1000ms ease-in-out;
+      filter: brightness(100%);
+    }
   }
 
   & .swiper-wrapper {
@@ -51,7 +66,8 @@ export const StyledSwiper = styled(Swiper)<ExtendedStyledSwiperProps>`
   & .swiper-button-next {
     right: 20%;
   }
-  & .swiper-pagination-bullets {
+  &.swiper-initialized.swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: auto;
     bottom: 7.5%;
   }
