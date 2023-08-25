@@ -74,28 +74,34 @@ const ContactInfoList: React.FC = () => {
         <SectionContainer>
           <ContactInfoListStyled>
             <ContactInfoItem>
-              <Wrapper>
-                <MdLocationOn size={60} color="#c3a069" />
-              </Wrapper>
-              <h3>Address</h3>
-              <p>
-                ul. Kościelnicka 29,
-                <br /> 99-210 Uniejów
-              </p>
+              <Link to="contactUs" smooth={true} duration={1000}>
+                <Wrapper>
+                  <MdLocationOn size={60} color="#c3a069" />
+                </Wrapper>
+                <h3>Address</h3>
+                <p>
+                  ul. Kościelnicka 29,
+                  <br /> 99-210 Uniejów
+                </p>
+              </Link>
             </ContactInfoItem>
             <ContactInfoItem>
-              <Wrapper>
-                <BsTelephoneFill size={60} color="#c3a069" />
-              </Wrapper>
-              <h3>Call today</h3>
-              <p>+48 777 777 777</p>
+              <ContactLink href="tel:+487979931830">
+                <Wrapper>
+                  <BsTelephoneFill size={60} color="#c3a069" />
+                </Wrapper>
+                <h3>Call today</h3>
+                <p>+48 777 777 777</p>
+              </ContactLink>
             </ContactInfoItem>
             <ContactInfoItem>
-              <Wrapper>
-                <MdEmail size={60} color="#c3a069" />
-              </Wrapper>
-              <h3>Email</h3>
-              <p>biuro@ajserwis.com</p>
+              <ContactLink href="mailto:biuro@ajserwis.com">
+                <Wrapper>
+                  <MdEmail size={60} color="#c3a069" />
+                </Wrapper>
+                <h3>Email</h3>
+                <p>biuro@ajserwis.com</p>
+              </ContactLink>
             </ContactInfoItem>
             <ContactInfoItem>
               <Wrapper>
