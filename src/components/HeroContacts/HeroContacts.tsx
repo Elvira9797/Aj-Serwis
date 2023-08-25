@@ -1,8 +1,13 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-scroll';
-import { HeroTitle, HeroUnderTitle, Overlay } from './HeroContacts.styled';
-import Button from '../Button/Button';
+import {
+  ButtonStyled,
+  HeroTitle,
+  HeroUnderTitle,
+  Overlay,
+  TextButton,
+} from './HeroContacts.styled';
 
 const HeroContacts: React.FC = () => {
   const titleSpring = useSpring({
@@ -36,7 +41,9 @@ const HeroContacts: React.FC = () => {
       </animated.div>
       <Link to="contactUs" smooth={true} duration={1000}>
         <animated.div style={buttonSpring}>
-          <Button variant="hero">Contact Us</Button>
+          <ButtonStyled>
+            <TextButton>Contact us</TextButton>
+          </ButtonStyled>
         </animated.div>
       </Link>
     </Overlay>
