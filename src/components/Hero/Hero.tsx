@@ -44,8 +44,7 @@ const Hero: React.FC = () => {
       </animated.div>
       <animated.div style={buttonSpring}>
         <Button
-          variant="primary"
-          type="button"
+          variant="hero"
           onClick={handleButtonClick}
           style={{
             // backgroundColor: theme.colors.accentColor,

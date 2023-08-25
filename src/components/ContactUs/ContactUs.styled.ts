@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import contactUsBg from '../../img/contactUS-bg.jpg';
+import contactUsBg from '../../img/contactUs-bg.jpg';
 
 export const Section = styled.section`
   width: 100%;
