@@ -7,7 +7,7 @@ export const SocialList = styled.ul`
   flex-direction: column;
   gap: 4px;
   right: 0;
-  @media (max-width: 450px) {
+  @media (max-width: 1236px) {
     flex-direction: row;
     left: 0;
     bottom: 0;
@@ -24,7 +24,7 @@ export const SocialListItem = styled.li`
   &:hover {
     transform: scale(1.1);
   }
-  @media (max-width: 450px) {
+  @media (max-width: 1236px) {
     border-radius: 4px;
   }
 `;
@@ -34,7 +34,7 @@ export const SocialLink = styled.a`
   justify-content: center;
   align-items: center;
   padding: 8px;
-  @media (max-width: 450px) {
+  @media (max-width: 1236px) {
     padding: 6px;
   }
 `;
