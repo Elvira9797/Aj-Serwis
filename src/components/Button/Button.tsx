@@ -1,33 +1,34 @@
-import { FC, ReactNode } from 'react';
+import { CSSProperties, FC, ReactNode } from 'react';
 import { StyledBtn } from './Button-styled';
 
 interface ButtonProps {
   children: ReactNode;
   variant: 'primary' | 'secondary';
-  size: 'sm' | 'md' | 'lg';
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
-  style?: {};
+  style?: CSSProperties;
+  lightTheme?: boolean;
 }
 
 const Button: FC<ButtonProps> = ({
   children,
   variant,
-  size,
   type = 'button',
   onClick,
   style,
+  lightTheme,
 }) => {
+  console.log('lightTheme: ', lightTheme);
   return (
     <>
       <StyledBtn
         style={style}
+        lightTheme={lightTheme}
         type={type}
         variant={variant}
-        size={size}
         onClick={onClick}
       >
-        {children}
+        <span>{children}</span>
       </StyledBtn>
     </>
   );

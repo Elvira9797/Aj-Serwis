@@ -1,12 +1,13 @@
 import Form from '../Form/Form';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { Section, SubTitle, Title } from './ContactUs.styled';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import { Section, SubTitle } from './ContactUs.styled';
 
 const ContactUs = () => {
   return (
     <Section>
       <SectionContainer>
-        <Title>Contact Us!</Title>
+        <SectionTitle style={{ color: '#fff' }}>Contact Us!</SectionTitle>
         <SubTitle>
           We will be glad if you leave your info to contact with us!
         </SubTitle>
