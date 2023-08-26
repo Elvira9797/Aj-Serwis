@@ -36,7 +36,8 @@ const getVariantStyles = (
     case 'hero':
       return css`
         padding: 0.4rem 1rem;
-        padding-left: 1.5rem;
+        text-transform: none;
+        font-size: 1rem;
         &:before {
           content: '';
           background-color: ${theme.colors.accentColor};
@@ -51,9 +52,7 @@ const getVariantStyles = (
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
         }
-        &:hover {
-          padding-left: 1rem;
-        }
+
         span {
           position: relative;
           color: ${lightTheme
@@ -61,20 +60,20 @@ const getVariantStyles = (
             : theme.colors.secondaryColor};
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
+          font-weight: ${theme.typography.fontWeight.semiBold};
         }
 
         &:hover:before {
           width: 100%;
-          background-color: ${lightTheme
+          /* background-color: ${lightTheme
             ? theme.colors.primaryColor
-            : theme.colors.secondaryColor};
+            : theme.colors.secondaryColor}; */
         }
-        &:hover span {
+        /* &:hover span {
           color: ${lightTheme
-            ? theme.colors.secondaryColor
-            : theme.colors.primaryColor};
-          font-weight: ${theme.typography.fontWeight.semiBold};
-        }
+          ? theme.colors.secondaryColor
+          : theme.colors.primaryColor};
+        } */
         @media (max-width: 768px) {
           &:before {
             display: none;
@@ -97,8 +96,12 @@ const getVariantStyles = (
         border-radius: 0.5rem;
 
         &:hover:enabled {
-          background-color: ${theme.colors.secondaryColor};
-          color: ${theme.colors.primaryColor};
+          background-color: ${lightTheme
+            ? theme.colors.primaryColor
+            : theme.colors.secondaryColor};
+          color: ${lightTheme
+            ? theme.colors.secondaryColor
+            : theme.colors.primaryColor};
           transform: scale(1.02);
           font-weight: ${theme.typography.fontWeight.semiBold};
         }
