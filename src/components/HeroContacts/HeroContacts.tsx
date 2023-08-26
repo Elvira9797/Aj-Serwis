@@ -2,11 +2,9 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-scroll';
 import {
-  ButtonStyled,
   HeroTitle,
   HeroUnderTitle,
   Overlay,
-  TextButton,
 } from './HeroContacts.styled';
 import Button from '../Button/Button';
 
