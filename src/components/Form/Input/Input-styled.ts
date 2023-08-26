@@ -4,12 +4,12 @@ import checked from '../../../assets/svg/checked.svg';
 
 interface StyledLabelProps {
   focus: boolean;
-  inputValue: string | undefined;
+  inputValue: string;
   lightTheme: boolean;
 }
 
 interface StyledInputProps {
-  inputValue: string | undefined;
+  inputValue: string;
   focus: boolean;
   lightTheme: boolean;
 }

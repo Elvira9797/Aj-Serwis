@@ -8,7 +8,6 @@ import {
   Overlay,
   TextButton,
 } from './HeroContacts.styled';
-import Button from '../Button/Button';
 
 const HeroContacts: React.FC = () => {
   const titleSpring = useSpring({
@@ -42,7 +41,9 @@ const HeroContacts: React.FC = () => {
       </animated.div>
       <Link to="contactUs" smooth={true} duration={1000}>
         <animated.div style={buttonSpring}>
-          <Button variant="hero">Contact Us</Button>
+          <ButtonStyled>
+            <TextButton>Contact us</TextButton>
+          </ButtonStyled>
         </animated.div>
       </Link>
     </Overlay>

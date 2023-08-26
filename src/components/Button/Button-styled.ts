@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Theme, css } from '@emotion/react';
 
 interface StyledButton {
-  variant: 'hero' | 'form' | 'card';
+  variant: 'primary' | 'secondary';
   lightTheme?: boolean;
 }
 
@@ -22,7 +22,8 @@ export const StyledBtn = styled.button<StyledButton>(
     transition: ${theme.transition.basic};
     transition-delay: 75ms;
     text-transform: uppercase;
-
+    
+    
     ${getVariantStyles(variant, theme, lightTheme)}
   `
 );
@@ -33,7 +34,7 @@ const getVariantStyles = (
   lightTheme: StyledButton['lightTheme']
 ) => {
   switch (variant) {
-    case 'hero':
+    case 'primary':
       return css`
         padding: 0.4rem 1rem;
         padding-left: 1.5rem;
@@ -90,25 +91,7 @@ const getVariantStyles = (
           }
         }
       `;
-    case 'form':
-      return css`
-        background-color: ${theme.colors.accentColor};
-        padding: 0.6rem 4rem;
-        border-radius: 0.5rem;
-
-        &:hover:enabled {
-          background-color: ${theme.colors.secondaryColor};
-          color: ${theme.colors.primaryColor};
-          transform: scale(1.02);
-          font-weight: ${theme.typography.fontWeight.semiBold};
-        }
-        &:disabled {
-          background-color: ${theme.colors.accentColor};
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
-      `;
-    case 'card':
+    case 'secondary':
       return css`
         width: 100%;
         background-color: ${theme.colors.primaryColor};

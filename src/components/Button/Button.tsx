@@ -3,12 +3,11 @@ import { StyledBtn } from './Button-styled';
 
 interface ButtonProps {
   children: ReactNode;
-  variant: 'hero' | 'form' | 'card';
+  variant: 'primary' | 'secondary';
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
   style?: CSSProperties;
   lightTheme?: boolean;
-  disabled?: boolean;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -18,7 +17,6 @@ const Button: FC<ButtonProps> = ({
   onClick,
   style,
   lightTheme,
-  disabled,
 }) => {
   console.log('lightTheme: ', lightTheme);
   return (
@@ -29,7 +27,6 @@ const Button: FC<ButtonProps> = ({
         type={type}
         variant={variant}
         onClick={onClick}
-        disabled={disabled}
       >
         <span>{children}</span>
       </StyledBtn>
