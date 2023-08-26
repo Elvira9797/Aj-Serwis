@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
       </animated.div>
       <animated.div style={buttonSpring}>
         <Button
-          variant="primary"
+          variant="hero"
           type="button"
           onClick={handleButtonClick}
           style={{
