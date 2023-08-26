@@ -59,7 +59,7 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         state={{ from: location }}
       >
         <Button
-          variant={'card'}
+          variant={'secondary'}
           type={'button'}
           style={
             {

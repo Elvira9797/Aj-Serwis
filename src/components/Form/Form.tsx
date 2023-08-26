@@ -6,15 +6,14 @@ import { StyledCheckbox } from './Input/Input-styled';
 import { yupResolver } from '@hookform/resolvers/yup';
 import validationSchema from './validationSchema';
 import { nanoid } from 'nanoid';
-import { CSSProperties, FC, useEffect, useState } from 'react';
+import { CSSProperties, FC } from 'react';
 
 interface FormFields {
   name: string;
   surname: string;
   phone: string;
-  email: string;
-  comment: string | undefined;
-  policy: boolean | undefined;
+  comment: string;
+  policy: boolean;
 }
 
 interface FormProps {
@@ -26,7 +25,6 @@ const inputIds = {
   name: nanoid(),
   surname: nanoid(),
   phone: nanoid(),
-  email: nanoid(),
   comment: nanoid(),
   policy: nanoid(),
 };
@@ -42,26 +40,12 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
     resolver: yupResolver(validationSchema),
   });
 
-  const [isDisabled, setisDisabled] = useState(true);
-
-  const allFieldsValue = watch();
-
-  useEffect(() => {
-    const setBtnDisabled = () => {
-      if (allFieldsValue.policy) {
-        setisDisabled(false);
-      } else {
-        setisDisabled(true);
-      }
-    };
-
-    setBtnDisabled();
-  }, [allFieldsValue]);
-
   const onSubmit = (data: FormFields) => {
     console.log(data);
     reset();
   };
+
+  const allFieldsValue = watch();
 
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)} style={style}>
@@ -71,7 +55,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           value={allFieldsValue.name}
           type="text"
           placeholder=""
-          label="Name *"
+          label="Name"
           {...register('name')}
           errors={errors}
           lightTheme={lightTheme}
@@ -81,34 +65,22 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           type="text"
           placeholder=""
           {...register('surname')}
-          label="Surname *"
+          label="Surname"
           value={allFieldsValue.surname}
           errors={errors}
           lightTheme={lightTheme}
         />
       </Wrapper>
-      <Wrapper>
-        <Input
-          id={inputIds.phone}
-          type="tel"
-          placeholder=""
-          {...register('phone')}
-          label="Phone Number *"
-          value={allFieldsValue.phone}
-          errors={errors}
-          lightTheme={lightTheme}
-        />
-        <Input
-          id={inputIds.email}
-          type="email"
-          placeholder=""
-          {...register('email')}
-          label="Email *"
-          value={allFieldsValue.email}
-          errors={errors}
-          lightTheme={lightTheme}
-        />
-      </Wrapper>
+      <Input
+        id={inputIds.phone}
+        type="tel"
+        placeholder=""
+        {...register('phone')}
+        label="Phone Number"
+        value={allFieldsValue.phone}
+        errors={errors}
+        lightTheme={lightTheme}
+      />
       <Input
         id={inputIds.comment}
         type="text"
@@ -147,9 +119,8 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
         </label>
       </div>
       <Button
-        disabled={isDisabled}
         type="submit"
-        variant="form"
+        variant="primary"
         lightTheme={lightTheme}
         style={{
           margin: '0 auto',
