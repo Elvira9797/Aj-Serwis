@@ -31,6 +31,7 @@ const VacanciesSlider: React.FC = () => {
             320: {
               slidesPerView: 1,
               spaceBetween: 50,
+              slidesPerGroup: 1,
             },
             768: {
               slidesPerView: 2,
@@ -40,6 +41,7 @@ const VacanciesSlider: React.FC = () => {
             1200: {
               slidesPerView: 3,
               spaceBetween: 40,
+              slidesPerGroup: 1,
             },
           }}
           modules={[Navigation, Pagination]}

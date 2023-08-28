@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
         </HeroUnderTitle>
       </animated.div>
       <animated.div style={buttonSpring}>
-        <Button variant="primary" type="button" onClick={handleButtonClick}>
+        <Button variant="hero" type="button" onClick={handleButtonClick}>
           View job vacancies
         </Button>
       </animated.div>

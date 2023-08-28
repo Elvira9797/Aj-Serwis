@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Theme, css } from '@emotion/react';
 
 interface StyledButton {
-  variant: 'primary' | 'secondary';
+  variant: 'hero' | 'form' | 'card';
   lightTheme?: boolean;
 }
 
@@ -22,8 +22,7 @@ export const StyledBtn = styled.button<StyledButton>(
     transition: ${theme.transition.basic};
     transition-delay: 75ms;
     text-transform: uppercase;
-    
-    
+
     ${getVariantStyles(variant, theme, lightTheme)}
   `
 );
@@ -34,10 +33,11 @@ const getVariantStyles = (
   lightTheme: StyledButton['lightTheme']
 ) => {
   switch (variant) {
-    case 'primary':
+    case 'hero':
       return css`
         padding: 0.4rem 1rem;
-        padding-left: 1.5rem;
+        text-transform: none;
+        font-size: 1rem;
         &:before {
           content: '';
           background-color: ${theme.colors.accentColor};
@@ -52,9 +52,7 @@ const getVariantStyles = (
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
         }
-        &:hover {
-          padding-left: 1rem;
-        }
+
         span {
           position: relative;
           color: ${lightTheme
@@ -62,20 +60,20 @@ const getVariantStyles = (
             : theme.colors.secondaryColor};
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
+          font-weight: ${theme.typography.fontWeight.semiBold};
         }
 
         &:hover:before {
           width: 100%;
-          background-color: ${lightTheme
+          /* background-color: ${lightTheme
             ? theme.colors.primaryColor
-            : theme.colors.secondaryColor};
+            : theme.colors.secondaryColor}; */
         }
-        &:hover span {
+        /* &:hover span {
           color: ${lightTheme
-            ? theme.colors.secondaryColor
-            : theme.colors.primaryColor};
-          font-weight: ${theme.typography.fontWeight.semiBold};
-        }
+          ? theme.colors.secondaryColor
+          : theme.colors.primaryColor};
+        } */
         @media (max-width: 768px) {
           &:before {
             display: none;
@@ -91,7 +89,29 @@ const getVariantStyles = (
           }
         }
       `;
-    case 'secondary':
+    case 'form':
+      return css`
+        background-color: ${theme.colors.accentColor};
+        padding: 0.6rem 4rem;
+        border-radius: 0.5rem;
+
+        &:hover:enabled {
+          background-color: ${lightTheme
+            ? theme.colors.primaryColor
+            : theme.colors.secondaryColor};
+          color: ${lightTheme
+            ? theme.colors.secondaryColor
+            : theme.colors.primaryColor};
+          transform: scale(1.02);
+          font-weight: ${theme.typography.fontWeight.semiBold};
+        }
+        &:disabled {
+          background-color: ${theme.colors.accentColor};
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      `;
+    case 'card':
       return css`
         width: 100%;
         background-color: ${theme.colors.primaryColor};

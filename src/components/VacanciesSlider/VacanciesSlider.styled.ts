@@ -14,6 +14,7 @@ interface ExtendedStyledSwiperProps extends SwiperProps {
     320: {
       slidesPerView: number;
       spaceBetween: number;
+      slidesPerGroup: number;
     };
     768: {
       slidesPerView: number;
@@ -23,6 +24,7 @@ interface ExtendedStyledSwiperProps extends SwiperProps {
     1200: {
       slidesPerView: number;
       spaceBetween: number;
+      slidesPerGroup: number;
     };
   };
 }
@@ -37,14 +39,14 @@ export const StyledSwiper = styled(Swiper)<ExtendedStyledSwiperProps>`
 
   & .swiper-slide.swiper-slide-active img {
     @media (max-width: 1199px) {
-      transform: scale(1.03);
+      transform: scale(1.05);
       transition: all 1000ms, filter 1000ms ease-in-out;
       filter: brightness(100%);
     }
   }
   & .swiper-slide.swiper-slide-next img {
-    @media (max-width: 1199px) {
-      transform: scale(1.03);
+    @media (min-width: 768px) and (max-width: 1199px) {
+      transform: scale(1.05);
       transition: all 1000ms, filter 1000ms ease-in-out;
       filter: brightness(100%);
     }
