@@ -8,7 +8,6 @@ import SocialMediaLink from '../SocialMediaLink/SocialMediaLink';
 const Hero: React.FC = () => {
   const navigate = useNavigate();
 
-  // Визначення анімацій за допомогою react-spring
   const titleSpring = useSpring({
     from: { opacity: 0, transform: 'translateY(20px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
@@ -43,16 +42,7 @@ const Hero: React.FC = () => {
         </HeroUnderTitle>
       </animated.div>
       <animated.div style={buttonSpring}>
-        <Button
-          variant="primary"
-          type="button"
-          onClick={handleButtonClick}
-          style={{
-            // backgroundColor: theme.colors.accentColor,
-            // color: 'white',
-            border: 'none',
-          }}
-        >
+        <Button variant="primary" type="button" onClick={handleButtonClick}>
           View job vacancies
         </Button>
       </animated.div>
