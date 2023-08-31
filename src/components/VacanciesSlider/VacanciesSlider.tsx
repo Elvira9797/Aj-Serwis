@@ -15,6 +15,11 @@ import SectionContainer from '../SectionContainer/SectionContainer';
 import { Title } from '../ContactUs/ContactUs.styled';
 import { theme } from '../../common/theme';
 
+// interface VacanciesSliderProps {
+// title: string;
+// vacancies: [];
+// }
+
 const VacanciesSlider: React.FC = () => {
   return (
     <StyledSliderSection>

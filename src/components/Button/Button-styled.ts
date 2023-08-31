@@ -22,6 +22,9 @@ export const StyledBtn = styled.button<StyledButton>(
     transition: ${theme.transition.basic};
     transition-delay: 75ms;
     text-transform: uppercase;
+    color: ${lightTheme
+      ? theme.colors.primaryColor
+      : theme.colors.secondaryColor};
 
     ${getVariantStyles(variant, theme, lightTheme)}
   `
@@ -50,14 +53,12 @@ const getVariantStyles = (
           width: 45px;
           height: 45px;
           transition: ${theme.transition.basic};
-          transition-delay: 75ms;
+          /* transition-delay: 75ms; */
         }
 
         span {
           position: relative;
-          color: ${lightTheme
-            ? theme.colors.primaryColor
-            : theme.colors.secondaryColor};
+          color: inherit;
           transition: ${theme.transition.basic};
           transition-delay: 75ms;
           font-weight: ${theme.typography.fontWeight.semiBold};
@@ -65,15 +66,8 @@ const getVariantStyles = (
 
         &:hover:before {
           width: 100%;
-          /* background-color: ${lightTheme
-            ? theme.colors.primaryColor
-            : theme.colors.secondaryColor}; */
         }
-        /* &:hover span {
-          color: ${lightTheme
-          ? theme.colors.secondaryColor
-          : theme.colors.primaryColor};
-        } */
+
         @media (max-width: 768px) {
           &:before {
             display: none;
@@ -94,6 +88,7 @@ const getVariantStyles = (
         background-color: ${theme.colors.accentColor};
         padding: 0.6rem 4rem;
         border-radius: 0.5rem;
+        font-weight: 700;
 
         &:hover:enabled {
           background-color: ${lightTheme
@@ -102,8 +97,11 @@ const getVariantStyles = (
           color: ${lightTheme
             ? theme.colors.secondaryColor
             : theme.colors.primaryColor};
+          /* transform: scale(1.02); */
+        }
+        &:active:enabled {
+          transition: none;
           transform: scale(1.02);
-          font-weight: ${theme.typography.fontWeight.semiBold};
         }
         &:disabled {
           background-color: ${theme.colors.accentColor};

@@ -41,34 +41,21 @@ export const VacancyList = styled.ul`
   }
 `;
 export const VacancyItem = styled.li`
-  :not(:last-child) {
-    margin-bottom: 24px;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 `;
 
-export const VacancyFormContainer = styled.div`
-  display: flex;
-  gap: 3rem;
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
+export const VacancySpan = styled.span`
+  font-weight: 700;
+  margin-right: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 `;
 
-export const VacancyFormInfo = styled.div`
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  h2 {
-    text-align: start;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  p {
-    text-align: start;
-    font-size: 1.2rem;
-  }
-`;
+
+
+
 
 export const VacancySection = styled.section`
   :first-of-type {
@@ -78,4 +65,9 @@ export const VacancySection = styled.section`
   @media (max-width: 768px) {
     padding: 70px 0;
   }
+`;
+
+export const VacancyText = styled.p`
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
 `;
