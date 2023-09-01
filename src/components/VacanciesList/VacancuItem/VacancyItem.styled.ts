@@ -64,7 +64,7 @@ export const StyledVacancyText = styled.p`
   gap: 12px;
   font-size: 18px;
 `;
-export const StyledVacancyShortInfo = styled.p`
+export const StyledVacancyJobTitle = styled.p`
   text-align: start;
 
   color: ${theme.colors.secondaryColor};

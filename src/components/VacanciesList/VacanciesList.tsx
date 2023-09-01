@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import { theme } from '../../common/theme';
-import { vacancies } from '../../common/vacanciesArr';
 import { Title } from '../ContactUs/ContactUs.styled';
 import GoBackBtn from '../GoBackBtn/GoBackBtn';
 import SectionContainer from '../SectionContainer/SectionContainer';
@@ -10,6 +9,9 @@ import {
   StyledVacancyList,
 } from './VacancyList.styled';
 
+import vacansieList from '../../common/card-vacancies.json';
+const { job_listing } = vacansieList;
+
 function VacanciesList() {
   const navigate = useNavigate();
   return (
@@ -18,13 +20,16 @@ function VacanciesList() {
         <Title style={{ color: `${theme.colors.primaryColor}` }}>
           Vacancies
         </Title>
-      <GoBackBtn onClick={() => navigate(-1)} style={{ marginBottom: '2rem' }}>
-        Go back
-      </GoBackBtn>
+        <GoBackBtn
+          onClick={() => navigate(-1)}
+          style={{ marginBottom: '2rem' }}
+        >
+          Go back
+        </GoBackBtn>
         <StyledVacancyList>
-          {vacancies.length > 0 &&
-            vacancies.map(vacancy => (
-              <VacancyItem key={vacancy.vacancieId} vacancy={vacancy} />
+          {job_listing.length > 0 &&
+            job_listing.map(vacancy => (
+              <VacancyItem key={vacancy.id} vacancy={vacancy} />
             ))}
         </StyledVacancyList>
       </SectionContainer>
