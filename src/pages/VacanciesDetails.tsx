@@ -5,18 +5,19 @@ import vacansieList from '../common/full-info-vacancies.json';
 import { Element } from 'react-scroll';
 import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
 import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
+import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 
 const { job_listing: vacancies } = vacansieList;
 
 const VacanciesDetails = () => {
-  const { vacancieId } = useParams();
+  const { id } = useParams();
 
   const getCurrentVacancy = () => {
-    return vacancies.find(vacancy => vacancy.id === vacancieId);
+    return vacancies.find(vacancy => vacancy.id === id);
   };
 
   const getFilteredVacancies = () => {
-    return vacancies.filter(vacancy => vacancy.id !== vacancieId);
+    return vacancies.filter(vacancy => vacancy.id !== id);
   };
 
   const currentVacancy = getCurrentVacancy();
@@ -31,10 +32,10 @@ const VacanciesDetails = () => {
       <Element name="form">
         <VacancieDetailsFormSection />
       </Element>
-      {/* <VacanciesSlider
+      <VacanciesSlider
         title={'Other vacancies you may be interested in'}
         vacancies={filteredVacancies}
-      /> */}
+      />
     </>
   );
 };
