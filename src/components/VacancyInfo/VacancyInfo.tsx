@@ -22,6 +22,7 @@ interface VacansyInfoProps {
         job_title: string;
         looking_for: string;
         salary: string;
+        image: string;
         work_schedule: string;
         location: string;
         responsibilities: string[];
@@ -44,50 +45,61 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
           Go back
         </GoBackBtn>
         <VacancyContainer>
-          <VacancyImg
-            src={
-              'https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg'
-            }
-          />
-          <VacancyList>
-            <VacancyItem>
-              <VacancyTitle>{vacancy?.job_title}</VacancyTitle>
-            </VacancyItem>
-            <VacancyItem>
-              <VacancyText>{vacancy?.looking_for}</VacancyText>
-            </VacancyItem>
-            {vacancy?.requirements && (
+          <VacancyImg src={vacancy?.image} />
+          <div>
+            <VacancyTitle>{vacancy?.job_title}</VacancyTitle>
+            <VacancyList>
+              <VacancyItem></VacancyItem>
+              <VacancyItem>
+                <VacancyText>{vacancy?.looking_for}</VacancyText>
+              </VacancyItem>
+              {vacancy?.requirements && (
+                <VacancyItem>
+                  <VacancyText>
+                    <VacancySpan>Requirements:</VacancySpan>
+                    {vacancy?.requirements.join(', ')}
+                  </VacancyText>
+                </VacancyItem>
+              )}
+              {vacancy?.responsibilities && (
+                <VacancyItem>
+                  <VacancyText>
+                    {' '}
+                    <VacancySpan>Responsibilities:</VacancySpan>
+                    {vacancy.responsibilities.join(', ')}
+                  </VacancyText>
+                </VacancyItem>
+              )}
+
               <VacancyItem>
                 <VacancyText>
-                  <VacancySpan>Requirements:</VacancySpan>
-                  {vacancy?.requirements}
+                  <VacancySpan>Location:</VacancySpan>
+                  {vacancy?.location}
                 </VacancyText>
               </VacancyItem>
-            )}
-            <VacancyItem>
-              <VacancyText>
-                <VacancySpan>Location:</VacancySpan>
-                {vacancy?.location}
-              </VacancyText>
-            </VacancyItem>
-            <VacancyItem>
-              <VacancyText>
-                <VacancySpan>Salary:</VacancySpan>
-                {vacancy?.salary}
-              </VacancyText>
-            </VacancyItem>
-            <VacancyItem>
-              <VacancyText>
-                <VacancySpan>Work hours:</VacancySpan>
-                {vacancy?.work_schedule}
-              </VacancyText>
-            </VacancyItem>
+              <VacancyItem>
+                <VacancyText>
+                  <VacancySpan>Salary:</VacancySpan>
+                  {vacancy?.salary}
+                </VacancyText>
+              </VacancyItem>
+              <VacancyItem>
+                <VacancyText>
+                  <VacancySpan>Work hours:</VacancySpan>
+                  {vacancy?.work_schedule}
+                </VacancyText>
+              </VacancyItem>
+            </VacancyList>
             <Link to="form" smooth={true} duration={1000}>
-              <Button variant={'form'} style={{fontWeight: '700'}} lightTheme={true}>
+              <Button
+                variant={'form'}
+                style={{ fontWeight: '700' }}
+                lightTheme={true}
+              >
                 Aplly for a Job
               </Button>
             </Link>
-          </VacancyList>
+          </div>
         </VacancyContainer>
       </SectionContainer>
     </VacancySection>

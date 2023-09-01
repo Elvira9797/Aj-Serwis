@@ -1,23 +1,23 @@
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Form from '../Form/Form';
-import { VacancySection } from '../VacancyInfo/VacancyInfo-styled';
 import {
-  VacancyFormContainer,
-  VacancyFormInfo,
+  StyledFormContainer,
+  StyledFormInfo,
+  StyledFormSection,
 } from './VacancieDetailsFormSection-styled';
 
 const VacancieDetailsFormSection = () => {
   return (
-    <VacancySection>
+    <StyledFormSection>
       <SectionContainer>
-        <VacancyFormContainer>
-          <VacancyFormInfo>
+        <StyledFormContainer>
+          <StyledFormInfo>
             <SectionTitle>
               Respond to the vacancy by filling out the form!
             </SectionTitle>
             <p>Please provide only your valid contact details</p>
-          </VacancyFormInfo>
+          </StyledFormInfo>
           <Form
             lightTheme={true}
             style={{
@@ -27,9 +27,9 @@ const VacancieDetailsFormSection = () => {
               borderRadius: '2rem',
             }}
           />
-        </VacancyFormContainer>
+        </StyledFormContainer>
       </SectionContainer>
-    </VacancySection>
+    </StyledFormSection>
   );
 };
 

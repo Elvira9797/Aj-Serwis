@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { VacancySection } from '../VacancyInfo/VacancyInfo-styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { AiFillCheckCircle } from 'react-icons/ai';
@@ -7,6 +6,7 @@ import {
   StyledContainer,
   StyledItem,
   StyledList,
+  StyledSection,
   StyledSubtitle,
 } from './VacancyOffer-styled';
 
@@ -16,7 +16,7 @@ interface VacancyOfferProps {
 
 const VacancyOffer: FC<VacancyOfferProps> = ({ vacancyOffers }) => {
   return (
-    <VacancySection style={{ backgroundColor: '#f7f9fb' }}>
+    <StyledSection>
       <SectionContainer>
         <SectionTitle>What we offer?</SectionTitle>
         <StyledContainer>
@@ -36,7 +36,7 @@ const VacancyOffer: FC<VacancyOfferProps> = ({ vacancyOffers }) => {
           </StyledList>
         </StyledContainer>
       </SectionContainer>
-    </VacancySection>
+    </StyledSection>
   );
 };
 

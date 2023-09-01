@@ -1,6 +1,14 @@
 import styled from '@emotion/styled';
 import { FaHandshake } from 'react-icons/fa';
 
+export const StyledSection = styled.div`
+  padding: 90px 0;
+  background-color: #f7f9fb;
+  @media (max-width: 768px) {
+    padding: 70px 0;
+  }
+`;
+
 export const StyledContainer = styled.div`
   width: 100%;
 `;

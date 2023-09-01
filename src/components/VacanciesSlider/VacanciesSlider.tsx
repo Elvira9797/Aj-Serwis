@@ -14,20 +14,17 @@ import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import { Title } from '../ContactUs/ContactUs.styled';
 import { theme } from '../../common/theme';
-import { IFullVacancieData, IVacancieData } from '../../common/vacanciesArr';
+import { IVacancieData } from '../../common/vacanciesArr';
 
 interface VacanciesSliderShortProps {
   title: string;
   vacancies: IVacancieData[];
 }
-interface VacanciesSliderFullProps {
-  title: string;
-  vacancies: IFullVacancieData[];
-}
 
-const VacanciesSlider: React.FC<
-  VacanciesSliderShortProps | VacanciesSliderFullProps
-> = ({ title, vacancies }) => {
+const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
+  title,
+  vacancies,
+}) => {
   return (
     <StyledSliderSection>
       <SectionContainer>

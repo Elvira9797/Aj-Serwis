@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { IFullVacancieData, IVacancieData } from '../../../common/vacanciesArr';
+import { IVacancieData } from '../../../common/vacanciesArr';
 import {
   StyledGradientWrap,
   StyledImgGradient,
@@ -20,11 +20,7 @@ interface IVacancyItem {
   vacancy: IVacancieData;
 }
 
-interface IVacancyFullItem {
-  vacancy: IFullVacancieData | any;
-}
-
-const VacancyItem: React.FC<IVacancyItem | IVacancyFullItem> = ({
+const VacancyItem: React.FC<IVacancyItem> = ({
   vacancy: { id, image, job_title, city, position, salary },
 }) => {
   const location = useLocation();

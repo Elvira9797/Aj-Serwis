@@ -1,29 +1,31 @@
 import { useParams } from 'react-router-dom';
 import VacancyInfo from '../components/VacancyInfo/VacancyInfo';
 
-import vacansieList from '../common/full-info-vacancies.json';
 import { Element } from 'react-scroll';
 import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
 import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
+import vacansiesFullInfoList from '../common/full-info-vacancies.json';
+import vacacanciesShortList from '../common/card-vacancies.json';
 
-const { job_listing: vacancies } = vacansieList;
+const { job_listing: vacanciesFull } = vacansiesFullInfoList;
+
+const { job_listing: vacaciesShort } = vacacanciesShortList;
 
 const VacanciesDetails = () => {
   const { id } = useParams();
 
   const getCurrentVacancy = () => {
-    return vacancies.find(vacancy => vacancy.id === id);
+    return vacanciesFull.find(vacancy => vacancy.id === id);
   };
 
   const getFilteredVacancies = () => {
-    return vacancies.filter(vacancy => vacancy.id !== id);
+    return vacaciesShort.filter(vacancy => vacancy.id !== id);
   };
 
   const currentVacancy = getCurrentVacancy();
 
   const filteredVacancies = getFilteredVacancies();
-  console.log('filteredVacancies: ', filteredVacancies);
 
   return (
     <>
