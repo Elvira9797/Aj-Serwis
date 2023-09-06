@@ -1,15 +1,23 @@
 import styled from '@emotion/styled';
 
-export const VacancyFormContainer = styled.div`
-  display: flex;
-  gap: 3rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
+export const StyledFormSection = styled.div`
+  padding: 90px 0;
+  @media (max-width: 768px) {
+    padding: 70px 0;
   }
 `;
 
-export const VacancyFormInfo = styled.div`
+export const StyledFormContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const StyledFormInfo = styled.div`
   flex-basis: 100%;
   display: flex;
   justify-content: center;
