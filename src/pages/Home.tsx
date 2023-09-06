@@ -4,12 +4,15 @@ import Hero from '../components/Hero/Hero';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import WhyAjSerwis from '../components/WhyAjSerwis/WhyAjSerwis';
 
+import vacansieList from '../common/card-vacancies.json';
+const { job_listing } = vacansieList;
+
 const Home = () => {
   return (
     <>
       <Hero />
       <AboutUs />
-      <VacanciesSlider />
+      <VacanciesSlider title="Vacancies" vacancies={job_listing} />
       <WhyAjSerwis />
       <ContactUs />
     </>

@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
 export const VacancyContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   @media (max-width: 900px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   @media (max-width: 1200px) {
     gap: 2rem;
@@ -15,15 +16,14 @@ export const VacancyContainer = styled.div`
 export const VacancyTitle = styled.h2`
   text-align: start;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
 `;
 
 export const VacancyImg = styled.img`
-  max-width: 50%;
-  max-height: 400px;
   object-fit: cover;
+  height: 390px;
   @media (max-width: 900px) {
-    max-width: 100%;
+    margin: 0 auto;
   }
 `;
 
@@ -31,51 +31,30 @@ export const VacancyList = styled.ul`
   flex-basis: 100%;
   p {
     text-align: start;
-    text-transform: uppercase;
-    :last-child {
-      text-transform: none;
-    }
     @media (max-width: 1200px) {
       font-size: 1rem;
     }
   }
 `;
 export const VacancyItem = styled.li`
-  :not(:last-child) {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 1rem;
 `;
 
-export const VacancyFormContainer = styled.div`
-  display: flex;
-  gap: 3rem;
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
-`;
-
-export const VacancyFormInfo = styled.div`
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  h2 {
-    text-align: start;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  p {
-    text-align: start;
-    font-size: 1.2rem;
-  }
+export const VacancySpan = styled.span`
+  font-weight: 700;
+  margin-right: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 `;
 
 export const VacancySection = styled.section`
-  :first-of-type {
-    padding-top: 8rem;
-  }
   padding: 90px 0;
+  padding-top: 8rem;
   @media (max-width: 768px) {
     padding: 70px 0;
   }
+`;
+
+export const VacancyText = styled.p`
+  /* text-transform: uppercase; */
 `;

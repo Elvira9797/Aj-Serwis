@@ -1,0 +1,84 @@
+{
+  "job_listing": [
+    {
+      "id": "001",
+      "job_title": "Household chemicals production",
+      "city": "Zwierzyniec-Pierwszy",
+      "position": "packer and sorter",
+      "salary": "20 PLN / hour net.",
+      "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
+    },
+    {
+      "id": "002",
+      "job_title": "Furniture assembly workers (chairs)",
+      "city": "Turek",
+      "position": "assembler",
+      "salary": "23 PLN / hour net.",
+      "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png"
+    },
+    {
+      "id": "003",
+      "job_title": "Cocoa, coffee, jelly production",
+      "city": "Zabierzów",
+      "position": "packer and sorter",
+      "salary": "19 PLN / hour net.",
+      "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png"
+    },
+    {
+      "id": "004",
+      "job_title": "Insulation products manufacturing",
+      "city": "Uniejów",
+      "position": "packer",
+      "salary": "18 PLN / hour net.",
+      "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg"
+    },
+    {
+      "id": "005",
+      "job_title": "Forklift Operator with UDT",
+      "city": "Rakszawa, Jędrzejów",
+      "position": "forklift operator",
+      "salary": "25 PLN / hour net.",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+    },
+    {
+      "id": "006",
+      "job_title": "Energy drinks and juices production",
+      "city": "Niepołomice",
+      "position": "packer and sorter",
+      "salary": "19 PLN / hour net.",
+      "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg"
+    },
+    {
+      "id": "007",
+      "job_title": "Beer production",
+      "city": "Rakszawa, Jędrzejów",
+      "position": "beer bottler on the line",
+      "salary": "19.5 PLN/hour net.",
+      "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
+    },
+    {
+      "id": "008",
+      "job_title": "Beer production",
+      "city": "Rakszawa, Jędrzejów",
+      "position": "laboratory assistants",
+      "salary": "25 PLN/hour net.",
+      "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
+    },
+    {
+      "id": "009",
+      "job_title": "Ice cream production",
+      "city": "Kalisz",
+      "position": "packer and labeler",
+      "salary": "19 PLN / hour net.",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+    },
+    {
+      "id": "010",
+      "job_title": "Laying pavement tiles",
+      "city": "Łódź",
+      "position": "pavement tile installer",
+      "salary": "25-30 PLN / hour net.",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+    }
+  ]
+}

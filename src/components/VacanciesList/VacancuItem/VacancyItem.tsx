@@ -7,7 +7,7 @@ import {
   StyledVacancyItem,
   StyledVacancyItemImg,
   StyledVacancyLink,
-  StyledVacancyShortInfo,
+  StyledVacancyJobTitle,
   StyledVacancyText,
   StyledVacancyTitle,
 } from './VacancyItem.styled';
@@ -21,20 +21,17 @@ interface IVacancyItem {
 }
 
 const VacancyItem: React.FC<IVacancyItem> = ({
-  vacancy: { vacancieId, image, shortInfo, city, position, salary },
+  vacancy: { id, image, job_title, city, position, salary },
 }) => {
   const location = useLocation();
 
   return (
     <StyledVacancyItem>
-      <StyledVacancyLink
-        to={`/vacancies/${vacancieId}`}
-        state={{ from: location }}
-      >
+      <StyledVacancyLink to={`/vacancies/${id}`} state={{ from: location }}>
         <StyledGradientWrap>
-          <StyledVacancyItemImg src={image} alt={shortInfo} />
+          <StyledVacancyItemImg src={image} alt={job_title} />
           <StyledImgGradient>
-            <StyledVacancyShortInfo>{shortInfo}</StyledVacancyShortInfo>
+            <StyledVacancyJobTitle>{job_title}</StyledVacancyJobTitle>
           </StyledImgGradient>
         </StyledGradientWrap>
 
@@ -54,22 +51,10 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         </StyledTextContainer>
       </StyledVacancyLink>
 
-      <StyledVacancyLink
-        to={`/vacancies/${vacancieId}`}
-        state={{ from: location }}
-      >
+      <StyledVacancyLink to={`/vacancies/${id}`} state={{ from: location }}>
         <Button
           variant={'card'}
           type={'button'}
-          style={
-            {
-              // textDecoration: 'none',
-              // width: '100%',
-              // backgroundColor: `${theme.colors.primaryColor}`,
-              // borderColor: `${theme.colors.primaryColor}`,
-              // borderRadius: 4,
-            }
-          }
           onClick={() => {
             console.log('Navigate Vacancy Details');
           }}

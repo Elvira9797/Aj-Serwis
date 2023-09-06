@@ -62,9 +62,9 @@ export const StyledVacancyText = styled.p`
   text-align: start;
   color: black;
   gap: 12px;
-  font-size: 18px;
+  font-size: 16px;
 `;
-export const StyledVacancyShortInfo = styled.p`
+export const StyledVacancyJobTitle = styled.p`
   text-align: start;
 
   color: ${theme.colors.secondaryColor};
@@ -74,7 +74,7 @@ export const StyledVacancyShortInfo = styled.p`
 export const StyledVacancyTitle = styled.span`
   text-align: start;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 `;
 

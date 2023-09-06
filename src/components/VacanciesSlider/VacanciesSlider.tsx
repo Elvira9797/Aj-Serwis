@@ -8,20 +8,25 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { vacancies } from '../../common/vacanciesArr';
+// import { vacancies } from '../../common/vacanciesArr';
 import VacancyItem from '../VacanciesList/VacancuItem/VacancyItem';
 import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { Title } from '../ContactUs/ContactUs.styled';
-import { theme } from '../../common/theme';
+import { IVacancieData } from '../../common/vacanciesArr';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
-const VacanciesSlider: React.FC = () => {
+interface VacanciesSliderShortProps {
+  title: string;
+  vacancies: IVacancieData[];
+}
+
+const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
+  vacancies,
+}) => {
   return (
     <StyledSliderSection>
       <SectionContainer>
-        <Title style={{ color: `${theme.colors.primaryColor}` }}>
-          Vacancies
-        </Title>
+        <SectionTitle>Vacancies</SectionTitle>
         <StyledSwiper
           pagination={{ clickable: true }}
           navigation
@@ -47,7 +52,7 @@ const VacanciesSlider: React.FC = () => {
           modules={[Navigation, Pagination]}
         >
           {vacancies.map(vacancy => (
-            <SwiperSlide key={vacancy.vacancieId}>
+            <SwiperSlide key={vacancy.id}>
               <VacancyItem vacancy={vacancy} />
             </SwiperSlide>
           ))}

@@ -1,84 +1,108 @@
 import { FC } from 'react';
-import { IVacancieData } from '../../common/vacanciesArr';
 import {
   VacancyContainer,
   VacancyImg,
   VacancyItem,
   VacancyList,
+  VacancySection,
+  VacancySpan,
+  VacancyText,
   VacancyTitle,
 } from './VacancyInfo-styled';
+import SectionContainer from '../SectionContainer/SectionContainer';
+import GoBackBtn from '../GoBackBtn/GoBackBtn';
+import { useNavigate } from 'react-router-dom';
+import Button from '../Button/Button';
+import { Link } from 'react-scroll';
 
 interface VacansyInfoProps {
-  vacancy: IVacancieData | undefined;
+  vacancy:
+    | {
+        id: string;
+        job_title: string;
+        looking_for: string;
+        salary: string;
+        image: string;
+        work_schedule: string;
+        location: string;
+        responsibilities: string[];
+        what_we_offer: string[];
+        requirements?: string[];
+      }
+    | undefined;
 }
 
 const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
+  const navigate = useNavigate();
+
   return (
-    <>
-      <VacancyContainer>
-        <VacancyImg src={vacancy?.image} alt={vacancy?.position} />
-        <VacancyList>
-          <VacancyItem>
-            <VacancyTitle>
-              {' '}
-              <span
-                style={{
-                  fontWeight: 700,
-                  marginRight: '12px',
-                  letterSpacing: '0.05em',
-                }}
+    <VacancySection>
+      <SectionContainer>
+        <GoBackBtn
+          style={{ marginBottom: '2rem' }}
+          onClick={() => navigate(-1)}
+        >
+          Go back
+        </GoBackBtn>
+        <VacancyContainer>
+          <VacancyImg src={vacancy?.image} />
+          <div>
+            <VacancyTitle>{vacancy?.job_title}</VacancyTitle>
+            <VacancyList>
+              <VacancyItem></VacancyItem>
+              <VacancyItem>
+                <VacancyText>{vacancy?.looking_for}</VacancyText>
+              </VacancyItem>
+              {vacancy?.requirements && (
+                <VacancyItem>
+                  <VacancyText>
+                    <VacancySpan>Requirements:</VacancySpan>
+                    {vacancy?.requirements.join(', ')}
+                  </VacancyText>
+                </VacancyItem>
+              )}
+              {vacancy?.responsibilities && (
+                <VacancyItem>
+                  <VacancyText>
+                    {' '}
+                    <VacancySpan>Responsibilities:</VacancySpan>
+                    {vacancy.responsibilities.join(', ')}
+                  </VacancyText>
+                </VacancyItem>
+              )}
+
+              <VacancyItem>
+                <VacancyText>
+                  <VacancySpan>Location:</VacancySpan>
+                  {vacancy?.location}
+                </VacancyText>
+              </VacancyItem>
+              <VacancyItem>
+                <VacancyText>
+                  <VacancySpan>Salary:</VacancySpan>
+                  {vacancy?.salary}
+                </VacancyText>
+              </VacancyItem>
+              <VacancyItem>
+                <VacancyText>
+                  <VacancySpan>Work hours:</VacancySpan>
+                  {vacancy?.work_schedule}
+                </VacancyText>
+              </VacancyItem>
+            </VacancyList>
+            <Link to="form" smooth={true} duration={1000}>
+              <Button
+                variant={'form'}
+                style={{ fontWeight: '700' }}
+                lightTheme={true}
               >
-                Position:
-              </span>{' '}
-              {vacancy?.position}
-            </VacancyTitle>
-          </VacancyItem>
-          <VacancyItem>
-            <p style={{ textTransform: 'uppercase' }}>
-              <span
-                style={{
-                  fontWeight: 700,
-                  marginRight: '12px',
-                  letterSpacing: '0.05em',
-                }}
-              >
-                City:
-              </span>{' '}
-              {vacancy?.city}
-            </p>
-          </VacancyItem>
-          <VacancyItem>
-            <p style={{ textTransform: 'uppercase' }}>
-              <span
-                style={{
-                  fontWeight: 700,
-                  marginRight: '12px',
-                  letterSpacing: '0.05em',
-                }}
-              >
-                Salary:
-              </span>{' '}
-              {vacancy?.salary}
-            </p>
-          </VacancyItem>
-          <VacancyItem>
-            <p>
-              <span
-                style={{
-                  fontWeight: 700,
-                  marginRight: '12px',
-                  letterSpacing: '0.05em',
-                  textTransform: 'uppercase',
-                }}
-              >
-                Detailed info:
-              </span>{' '}
-              {vacancy?.fullInfo}
-            </p>
-          </VacancyItem>
-        </VacancyList>
-      </VacancyContainer>
-    </>
+                Aplly for a Job
+              </Button>
+            </Link>
+          </div>
+        </VacancyContainer>
+      </SectionContainer>
+    </VacancySection>
   );
 };
 

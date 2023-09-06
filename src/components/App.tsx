@@ -14,10 +14,7 @@ export const App: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<LazyHome />} />
         <Route path="vacancies" element={<LazyVacancies />} />
-        <Route
-          path="vacancies/:vacancieId"
-          element={<LazyVacanciesDetails />}
-        />
+        <Route path="vacancies/:id" element={<LazyVacanciesDetails />} />
         <Route path="contacts" element={<LazyContacts />} />
       </Route>
       <Route path="*" element={<NotFound />} />

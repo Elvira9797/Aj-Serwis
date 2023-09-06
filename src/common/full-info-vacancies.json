@@ -1,0 +1,229 @@
+{
+  "job_listing": [
+    {
+      "id": "001",
+      "job_title": "Household chemicals production",
+      "looking_for": "We are looking for women, men, or married couples",
+      "salary": "20 PLN / hour net.",
+      "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
+      "work_schedule": "8-hour shifts with the potential for overtime, from Monday to Saturday (Sundays upon request), spanning two shifts",
+      "location": "Zwierzyniec - Pierwszy",
+      "responsibilities": ["packing and sorting"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+
+    {
+      "id": "002",
+      "job_title": "Furniture assembly workers (chairs)",
+      "looking_for": "We are looking for women and men",
+      "salary": "23 PLN / hour net.",
+      "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
+      "work_schedule": "8-hour shifts, from Monday to Saturday, spanning two shifts",
+      "location": "Turek",
+      "responsibilities": ["assembly of components for chair installation"],
+      "requirements": ["required ability to understand the Polish language"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie",
+        "Bonuses for not having any absences at work"
+      ]
+    },
+
+    {
+      "id": "003",
+      "job_title": "Cocoa, coffee, jelly production",
+      "looking_for": "We are looking for women, men, or married couples",
+      "salary": "19 PLN / hour net.",
+      "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
+      "work_schedule": "12-hour shifts, from Monday to Friday (2 work Saturdays per month), spanning two shifts",
+      "location": "Zabierzów",
+      "responsibilities": ["packing and sorting"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+
+    {
+      "id": "004",
+      "job_title": "Insulation products manufacturing",
+      "looking_for": "We are looking for women and men",
+      "salary": "18 PLN / hour net.",
+      "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
+      "work_schedule": "12-hour shifts, from Monday to Saturdays, spanning two shifts",
+      "location": "Uniejów",
+      "responsibilities": ["packing and sorting"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 3-4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+    {
+      "id": "005",
+      "job_title": "Forklift Operator with UDT",
+      "looking_for": "We are looking for women and men",
+      "salary": "25 PLN / hour net.",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+      "work_schedule": "12-hour shifts, 260-320 hours per month, spanning two shifts",
+      "location": "Rakszawa, Jędrzejów",
+      "requirements": [
+        "forklift operating experience",
+        "UDT certification held"
+      ],
+      "responsibilities": [
+        "the work is exclusively related to a forklift truck: loading, unloading, and arranging goods in the warehouse"
+      ],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 3-4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+
+    {
+      "id": "006",
+      "job_title": "Energy drinks and juices production",
+      "looking_for": "We are looking for women, men, or married couples",
+      "salary": "19 PLN / hour net.",
+      "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
+      "work_schedule": "12-hour shifts, from Monday to Saturday (Sundays on request), spanning two shifts",
+      "location": "Niepołomice",
+      "responsibilities": ["packing and sorting"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+
+    {
+      "id": "007",
+      "job_title": "Beer production",
+      "looking_for": "We are looking for women and men",
+      "salary": "19.5 PLN/hour net.",
+      "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
+      "work_schedule": "8-12-hour shifts, 1 shift: 6:00-14:00 + overtime, 2nd shift: 14:00-22:00 + overtime, 3rd shift: 22:00-6:00 + overtime",
+      "location": "Rakszawa, Jędrzejów",
+      "responsibilities": [
+        "ensuring the proper labeling, packaging, and sealing of beer bottles"
+      ],
+      "requirements": ["required ability to understand the Polish language"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 2-3 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+    {
+      "id": "008",
+      "job_title": "Beer production",
+      "looking_for": "We are looking for women and men",
+      "salary": "25 PLN/hour net.",
+      "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
+      "work_schedule": "8-12-hour shifts, 1 shift: 6:00-14:00 + overtime, 2nd shift: 14:00-22:00 + overtime, 3rd shift: 22:00-6:00 + overtime",
+      "location": "Rakszawa, Jędrzejów",
+      "responsibilities": [
+        "performing various laboratory tests and experiments on samples"
+      ],
+      "requirements": ["required ability to understand the Polish language"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 2-3 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "Umowa Zlecenie"
+      ]
+    },
+
+    {
+      "id": "009",
+      "job_title": "Ice cream production",
+      "looking_for": "We are looking for women and men",
+      "salary": "19 PLN / hour net. + bonuses",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+      "work_schedule": "12-hour shifts, from Monday to Saturday, spanning two shifts",
+      "location": "Kalisz",
+      "responsibilities": [
+        "packaging ice cream products in containers or packaging materials, ensuring proper sealing and labeling",
+        "porting and inspecting ice cream items for quality, including checking for any defects or irregularities"
+      ],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "The indoor temperature is not cold, +15°C",
+        "Umowa Zlecenie"
+      ]
+    },
+    {
+      "id": "010",
+      "job_title": "Laying pavement tiles",
+      "looking_for": "We are looking for specialist employees",
+      "salary": "25-30 PLN / hour net.",
+      "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+      "work_schedule": "10-hour shifts, from Monday to Saturday",
+      "location": "Łódź",
+      "responsibilities": ["laying pavement tiles"],
+      "what_we_offer": [
+        "Opportunity to work both on a visa and visa-free regime",
+        "Accommodation is provided for 350 PLN per month",
+        "Room for 4 people",
+        "Payment from the 15th to the 20th of each month",
+        "We make a residence card",
+        "Free transportation to work",
+        "Free work attire/clothing",
+        "The indoor temperature is not cold, +15°C",
+        "Umowa Zlecenie"
+      ]
+    }
+  ]
+}

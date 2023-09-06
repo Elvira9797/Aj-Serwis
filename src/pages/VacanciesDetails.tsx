@@ -1,55 +1,43 @@
-import { useNavigate, useParams } from 'react-router-dom';
-import { vacancies } from '../common/vacanciesArr';
-import SectionContainer from '../components/SectionContainer/SectionContainer';
-import Form from '../components/Form/Form';
+import { useParams } from 'react-router-dom';
 import VacancyInfo from '../components/VacancyInfo/VacancyInfo';
-import {
-  VacancyFormContainer,
-  VacancyFormInfo,
-  VacancySection,
-} from '../components/VacancyInfo/VacancyInfo-styled';
-import GoBackBtn from '../components/GoBackBtn/GoBackBtn';
+
+import { Element } from 'react-scroll';
+import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
+import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
+import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
+import vacansiesFullInfoList from '../common/full-info-vacancies.json';
+import vacacanciesShortList from '../common/card-vacancies.json';
+
+const { job_listing: vacanciesFull } = vacansiesFullInfoList;
+
+const { job_listing: vacaciesShort } = vacacanciesShortList;
 
 const VacanciesDetails = () => {
-  const { vacancieId } = useParams();
-  const navigate = useNavigate();
+  const { id } = useParams();
+
   const getCurrentVacancy = () => {
-    return vacancies.find(vacancy => vacancy.vacancieId === vacancieId);
+    return vacanciesFull.find(vacancy => vacancy.id === id);
+  };
+
+  const getFilteredVacancies = () => {
+    return vacaciesShort.filter(vacancy => vacancy.id !== id);
   };
 
   const currentVacancy = getCurrentVacancy();
 
+  const filteredVacancies = getFilteredVacancies();
+
   return (
     <>
-      <VacancySection>
-        <SectionContainer>
-          <GoBackBtn
-            style={{ marginBottom: '2rem' }}
-            onClick={() => navigate(-1)}
-          >
-            Go Back
-          </GoBackBtn>
-          <VacancyInfo vacancy={currentVacancy} />
-        </SectionContainer>
-      </VacancySection>
-      <VacancySection style={{ backgroundColor: '#f7f9fb' }}>
-        <SectionContainer>
-          <VacancyFormContainer>
-            <VacancyFormInfo>
-              <h2>Respond to the vacancy by filling out the form!</h2>
-              <p>Please provide only your valid contact details</p>
-            </VacancyFormInfo>
-            <Form
-              lightTheme={true}
-              style={{
-                padding: '2rem',
-                borderRadius: '2rem',
-                backgroundColor: '#e5eef7',
-              }}
-            />
-          </VacancyFormContainer>
-        </SectionContainer>
-      </VacancySection>
+      <VacancyInfo vacancy={currentVacancy} />
+      <VacancyOffer vacancyOffers={currentVacancy?.what_we_offer} />
+      <Element name="form">
+        <VacancieDetailsFormSection />
+      </Element>
+      <VacanciesSlider
+        title={'Other vacancies you may be interested in'}
+        vacancies={filteredVacancies}
+      />
     </>
   );
 };
