@@ -1,20 +1,14 @@
-import {
-  Container,
-  ImageEl,
-  LeftBox,
-  RightBox,
-  Text,
-  Title,
-} from './AboutUs.styled';
+import { Container, ImageEl, LeftBox, RightBox, Text } from './AboutUs.styled';
 import aboutUs from '../../images/aboutUs.jpg';
 import SectionContainer from '../SectionContainer/SectionContainer';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const AboutUs = () => {
   return (
     <SectionContainer>
       <Container>
         <LeftBox>
-          <Title>About us</Title>
+          <SectionTitle>About us</SectionTitle>
           <Text>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

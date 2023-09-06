@@ -5,8 +5,13 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding-top: ${theme.section.padding.medium.paddingTop};
-  padding-bottom: ${theme.section.padding.medium.paddingBottom};
+  padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
+  padding-bottom: ${({ theme }) => theme.section.padding.small.paddingBottom};
+  @media (min-width: 1236px) {
+    padding-top: ${({ theme }) => theme.section.padding.medium.paddingTop};
+    padding-bottom: ${({ theme }) =>
+      theme.section.padding.medium.paddingBottom};
+  }
 `;
 export const LeftBox = styled.div`
   display: flex;

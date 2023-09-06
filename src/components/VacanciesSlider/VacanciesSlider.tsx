@@ -12,9 +12,8 @@ import 'swiper/css/scrollbar';
 import VacancyItem from '../VacanciesList/VacancuItem/VacancyItem';
 import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { Title } from '../ContactUs/ContactUs.styled';
-import { theme } from '../../common/theme';
 import { IVacancieData } from '../../common/vacanciesArr';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 interface VacanciesSliderShortProps {
   title: string;
@@ -22,13 +21,12 @@ interface VacanciesSliderShortProps {
 }
 
 const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
-  title,
   vacancies,
 }) => {
   return (
     <StyledSliderSection>
       <SectionContainer>
-        <Title style={{ color: `${theme.colors.primaryColor}` }}>{title}</Title>
+        <SectionTitle>Vacancies</SectionTitle>
         <StyledSwiper
           pagination={{ clickable: true }}
           navigation

@@ -13,8 +13,8 @@ export const SectionStyled = styled.section`
 export const Title = styled.h2`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 32px;
+  align-items: flex-start;
+  font-size: 26px;
   margin-bottom: 30px;
   &::after {
     content: '';
@@ -26,7 +26,7 @@ export const Title = styled.h2`
     margin-bottom: 20px;
     background-color: #c3a069;
   }
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     align-items: flex-end;
     margin-bottom: 0;
   }
@@ -36,11 +36,14 @@ export const Title = styled.h2`
       width: 300px;
     }
   }
+  @media (min-width: 1236px) {
+    font-size: 32px;
+  }
 `;
 
 export const BackgroundStyled = styled.div`
   display: none;
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     height: 374px;
     display: block;
     margin-bottom: 0;
@@ -49,19 +52,13 @@ export const BackgroundStyled = styled.div`
   }
 `;
 
-export const TitleContactInfoList = styled.h2`
-  margin-bottom: 60px;
-  text-align: center;
-  font-size: 36px;
-`;
-
 export const ContactInfoListStyled = styled.ul`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   margin: 0 auto;
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     width: 1000px;
     position: relative;
     top: -75px;
@@ -93,7 +90,7 @@ export const ContactLink = styled.a`
 `;
 
 export const ImgContainer = styled.div`
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -118,7 +115,7 @@ export const ImgContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     display: block;
     width: 820px;
     height: 580px;
@@ -126,7 +123,7 @@ export const Img = styled.img`
 `;
 
 export const ForTablet = styled.div`
-  @media (min-width: 1100px) {
+  @media (min-width: 1160px) {
     display: none;
   }
 `;

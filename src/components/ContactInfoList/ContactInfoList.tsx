@@ -21,7 +21,7 @@ const ContactInfoList: React.FC = () => {
   return (
     <SectionStyled>
       <SectionContainer>
-        <Title>Contacts us</Title>
+        <Title>Contact Details</Title>
       </SectionContainer>
       <BackgroundStyled>
         <SectionContainer>

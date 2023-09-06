@@ -1,15 +1,16 @@
-import { SubTitle, Title } from '../ContactUs/ContactUs.styled';
+import { SubTitle } from '../ContactUs/ContactUs.styled';
 import Form from '../Form/Form';
 import Map from '../Map/Map';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { Container } from './ContactsFormSection-styled';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import { ContactFormSection, Container } from './ContactsFormSection-styled';
 
 const ContactsFormSection = () => {
   return (
-    <section style={{padding: '30px 0'}}>
+    <ContactFormSection style={{ paddingTop: '30px' }}>
       <SectionContainer>
         <div>
-          <Title style={{ color: '#000' }}>Contact Us!</Title>
+          <SectionTitle>Contact Us!</SectionTitle>
           <SubTitle style={{ color: '#000' }}>Lorem Ipsum</SubTitle>
         </div>
         <Container>
@@ -17,7 +18,7 @@ const ContactsFormSection = () => {
           <Map />
         </Container>
       </SectionContainer>
-    </section>
+    </ContactFormSection>
   );
 };
 

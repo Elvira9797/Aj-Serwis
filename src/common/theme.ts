@@ -43,12 +43,12 @@ export const theme = {
   section: {
     padding: {
       medium: {
-        paddingTop: '90px',
-        paddingBottom: '90px',
-      },
-      small: {
         paddingTop: '70px',
         paddingBottom: '70px',
+      },
+      small: {
+        paddingTop: '60px',
+        paddingBottom: '60px',
       },
     },
   },

@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 
 export const StyledFormSection = styled.div`
-  padding: 90px 0;
-  @media (max-width: 768px) {
-    padding: 70px 0;
+  padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
+  padding-bottom: ${({ theme }) => theme.section.padding.small.paddingBottom};
+  @media (min-width: 1236px) {
+    padding-top: ${({ theme }) => theme.section.padding.medium.paddingTop};
+    padding-bottom: ${({ theme }) =>
+      theme.section.padding.medium.paddingBottom};
   }
 `;
 
