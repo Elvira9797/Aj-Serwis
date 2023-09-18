@@ -5,10 +5,11 @@ import engFlag from '../assets/png/eng.png';
 interface LanguageData {
   key: string;
   value: string;
+  name: string;
 }
 
 export const dataLang: LanguageData[] = [
-  { key: 'ENG', value: engFlag }, //default lang
-  { key: 'POL', value: polFlag },
-  { key: 'UKR', value: ukrFlag },
+  { name: 'ENG', value: engFlag, key: 'en' }, //default lang
+  { name: 'POL', value: polFlag, key: 'pl' },
+  { name: 'UKR', value: ukrFlag, key: 'ua' },
 ];
