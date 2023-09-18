@@ -8,12 +8,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-// import { vacancies } from '../../common/vacanciesArr';
 import VacancyItem from '../VacanciesList/VacancuItem/VacancyItem';
 import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
-import { IVacancieData } from '../../common/vacanciesArr';
 import SectionTitle from '../SectionTitle/SectionTitle';
+
+import { useTranslation } from 'react-i18next';
+import { IVacancieData } from '../../common/vacanciesArr';
 
 interface VacanciesSliderShortProps {
   title: string;
@@ -21,12 +22,40 @@ interface VacanciesSliderShortProps {
 }
 
 const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
+  title,
   vacancies,
 }) => {
+  const { i18n } = useTranslation();
+
   return (
     <StyledSliderSection>
+      <button
+        onClick={() => {
+          i18n.changeLanguage('en');
+          console.log('===============>>>>>>>>>>>>', i18n.resolvedLanguage);
+        }}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => {
+          i18n.changeLanguage('ua');
+          console.log('===============>>>>>>>>>>>>', i18n.resolvedLanguage);
+        }}
+      >
+        UA
+      </button>
+      <button
+        onClick={() => {
+          i18n.changeLanguage('pl');
+          console.log('===============>>>>>>>>>>>>', i18n.resolvedLanguage);
+        }}
+      >
+        PL
+      </button>
+
       <SectionContainer>
-        <SectionTitle>Vacancies</SectionTitle>
+        <SectionTitle>{title}</SectionTitle>
         <StyledSwiper
           pagination={{ clickable: true }}
           navigation
