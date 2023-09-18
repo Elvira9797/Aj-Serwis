@@ -7,27 +7,33 @@ import {
   StyledVacancyList,
 } from './VacancyList.styled';
 
-import vacansieList from '../../common/card-vacancies.json';
 import SectionTitle from '../SectionTitle/SectionTitle';
-const { job_listing } = vacansieList;
+
+import { useTranslation } from 'react-i18next';
+import { IVacancieData } from '../../common/vacanciesArr';
 
 function VacanciesList() {
   const navigate = useNavigate();
+
+  const { t } = useTranslation();
+  const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
   return (
     <StyledVacanciesSection style={{ paddingTop: '110px' }}>
       <SectionContainer>
         <SectionTitle style={{ marginBottom: '10px' }}>
-          Current Job Offers
+          {t('vacancies.title')}
         </SectionTitle>
         <GoBackBtn
           onClick={() => navigate(-1)}
           style={{ marginBottom: '2rem' }}
         >
-          Go back
+          {t('vacancies.back')}
         </GoBackBtn>
         <StyledVacancyList>
-          {job_listing.length > 0 &&
-            job_listing.map(vacancy => (
+          {vacaciesShort.length > 0 &&
+            vacaciesShort.map(vacancy => (
               <VacancyItem key={vacancy.id} vacancy={vacancy} />
             ))}
         </StyledVacancyList>

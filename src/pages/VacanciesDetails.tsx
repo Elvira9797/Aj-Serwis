@@ -6,13 +6,21 @@ import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
 import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import vacansiesFullInfoList from '../common/full-info-vacancies.json';
-import vacacanciesShortList from '../common/card-vacancies.json';
+// import vacacanciesShortList from '../common/card-vacancies.json';
+
+import { useTranslation } from 'react-i18next';
+import { IVacancieData } from '../common/vacanciesArr';
 
 const { job_listing: vacanciesFull } = vacansiesFullInfoList;
 
-const { job_listing: vacaciesShort } = vacacanciesShortList;
+// const { job_listing: vacaciesShort } = vacacanciesShortList;
 
 const VacanciesDetails = () => {
+  const { t } = useTranslation();
+  const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
+
   const { id } = useParams();
 
   const getCurrentVacancy = () => {
@@ -35,7 +43,7 @@ const VacanciesDetails = () => {
         <VacancieDetailsFormSection />
       </Element>
       <VacanciesSlider
-        title={'Other vacancies you may be interested in'}
+        title={t('vacancies.title')}
         vacancies={filteredVacancies}
       />
     </>
