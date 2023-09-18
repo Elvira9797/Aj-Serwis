@@ -8,6 +8,15 @@ import validationSchema from './validationSchema';
 import { nanoid } from 'nanoid';
 import { CSSProperties, FC, useEffect, useState } from 'react';
 
+////////////////////////////////////////////////////////////
+import emailjs from 'emailjs-com';
+const EMAIL_JS_USER_ID = 'cpL-disfPacYQD52J'; // Replace with your Email.js user ID
+const EMAIL_JS_SERVICE_ID = 'service_9yascik'; // Replace with your Email.js service ID
+const EMAIL_JS_TEMPLATE_ID = 'template_3qxcywm'; // Replace with your Email.js template ID
+emailjs.init(EMAIL_JS_USER_ID);
+export { EMAIL_JS_USER_ID, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID };
+////////////////////////////////////////////////////////////
+
 interface FormFields {
   name: string;
   surname: string;
@@ -57,8 +66,31 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
 
     setBtnDisabled();
   }, [allFieldsValue]);
-  const onSubmit = (data: FormFields) => {
+  const onSubmit = async (data: FormFields) => {
     console.log(data);
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    const emailData = {
+      to_email: 'dev6012@meta.ua', // Replace with the recipient's email address
+      subject: 'Welcome',
+      message: `
+      Name: ${data.name}
+      Surname: ${data.surname}
+      Phone: ${data.phone}
+      Email: ${data.email}
+      Comment or Review: ${data.comment}
+    `,
+    };
+
+    try {
+      // Send email using Email.js
+      await emailjs.send(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, emailData);
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email.');
+    }
+    ///////////////////////////////////////////////////////////////////////////////
     reset();
   };
 
