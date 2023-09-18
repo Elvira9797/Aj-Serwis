@@ -1,6 +1,10 @@
 {
   "main": {
-    "header": {},
+    "nav": {
+      "home": "Home",
+      "vacancies": "Vacancies",
+      "contacts": "Contacts"
+    },
     "hero": {},
     "aboutUs": {},
     "vacancies": {
