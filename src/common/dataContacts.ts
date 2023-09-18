@@ -4,10 +4,7 @@ interface ContactsArr {
 }
 
 export const dataContacts: ContactsArr[] = [
-  { name: 'BIURO', tel: '+48 575 872 762' },
   { name: 'MOISEIKO VASYL', tel: '+48 539 649 808' },
-  { name: 'KORNACKI JAKUB', tel: '+48 797 993 183' },
-  { name: 'ALEKSANDER ARTEMJEW', tel: '+48 777 777 777' },
 ];
 
 export const workEmail = 'aj.serwis.spzoo@gmail.com';
