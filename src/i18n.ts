@@ -14,9 +14,6 @@ i18n
     backend: {
       loadPath: '/Aj-Serwis/locales/{{lng}}/translation.json',
     },
-  })
-  .catch(error => {
-    console.error('Error initializing i18n:', error);
   });
 
 export default i18n;
