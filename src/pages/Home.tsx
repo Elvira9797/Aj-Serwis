@@ -9,11 +9,9 @@ import { IVacancieData } from '../common/vacanciesArr';
 
 const Home = () => {
   const { t } = useTranslation();
-
   const jobListings: IVacancieData[] = t('main.vacancies.job_listing', {
     returnObjects: true,
   });
-
   return (
     <>
       <Hero />
