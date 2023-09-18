@@ -1,9 +1,10 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { StyledNavList } from './Navigation.styled';
 
 import { useAppContext } from '../../context/AppContext';
 import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 
 interface NavigationProps {
   flexDirection: 'row' | 'column';
@@ -13,13 +14,15 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
   const { closeModal } = useAppContext();
   const { t } = useTranslation();
 
+  const res = i18n.resolvedLanguage;
+
   return (
     <nav>
       <StyledNavList flexDirection={flexDirection}>
         <li>
           <NavLink
             onClick={closeModal}
-            to="/"
+            to={`/?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
@@ -30,7 +33,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         <li>
           <NavLink
             onClick={closeModal}
-            to="/vacancies"
+            to={`/vacancies?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
@@ -41,7 +44,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         <li>
           <NavLink
             onClick={closeModal}
-            to="/contacts"
+            to={`/contacts?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
