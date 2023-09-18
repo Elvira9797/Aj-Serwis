@@ -17,19 +17,16 @@ const LangSelect = () => {
 
   useEffect(() => {
     localStorage.setItem('selectedLang', selectedValue);
-  }, [selectedValue]);
-
-  const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
+    i18n.changeLanguage(selectedValue);
+  }, [selectedValue, i18n]);
 
   const selectedImage = dataLang.find(
     lang => lang.key === selectedValue
   )?.value;
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedValue(event.target.value);
+    const selectedLanguage = event.target.value;
+    setSelectedValue(selectedLanguage);
   };
 
   return (
@@ -39,13 +36,7 @@ const LangSelect = () => {
           backgroundImage: `url(${selectedImage})`,
         }}
       ></CustomSelectImage>
-      <Select
-        value={selectedValue}
-        onChange={e => {
-          handleSelectChange(e);
-          changeLanguage(e);
-        }}
-      >
+      <Select value={selectedValue} onChange={handleSelectChange}>
         {dataLang.map(lang => (
           <SelectOption key={lang.key} value={lang.key}>
             {lang.name}
