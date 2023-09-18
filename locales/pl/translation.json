@@ -1,0 +1,101 @@
+{
+  "main": {
+    "header": {},
+    "hero": {},
+    "aboutUs": {},
+    "vacancies": {
+      "title": "Wakaty",
+      "job_listing": [
+        {
+          "id": "001",
+          "job_title": "Produkcja środków do czyszczenia domu",
+          "city": "Zwierzyniec-Pierwszy",
+          "position": "pakowacz i sortownik",
+          "salary": "20 PLN / godzinę netto.",
+          "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
+        },
+        {
+          "id": "002",
+          "job_title": "Monterzy mebli (krzesła)",
+          "city": "Turek",
+          "position": "montażysta",
+          "salary": "23 PLN / godzinę netto.",
+          "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png"
+        },
+        {
+          "id": "003",
+          "job_title": "Produkcja kakao, kawy, galaretek",
+          "city": "Zabierzów",
+          "position": "pakowacz i sortownik",
+          "salary": "19 PLN / godzinę netto.",
+          "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png"
+        },
+        {
+          "id": "004",
+          "job_title": "Produkcja materiałów izolacyjnych",
+          "city": "Uniejów",
+          "position": "pakowacz",
+          "salary": "18 PLN / godzinę netto.",
+          "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg"
+        },
+        {
+          "id": "005",
+          "job_title": "Operator wózka widłowego z UDT",
+          "city": "Rakszawa, Jędrzejów",
+          "position": "operator wózka widłowego",
+          "salary": "25 PLN / godzinę netto.",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+        },
+        {
+          "id": "006",
+          "job_title": "Produkcja napojów energetycznych i soków",
+          "city": "Niepołomice",
+          "position": "pakowacz i sortownik",
+          "salary": "19 PLN / godzinę netto.",
+          "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg"
+        },
+        {
+          "id": "007",
+          "job_title": "Produkcja piwa",
+          "city": "Rakszawa, Jędrzejów",
+          "position": "butelkowanie piwa na linii",
+          "salary": "19.5 PLN/godzinę netto.",
+          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
+        },
+        {
+          "id": "008",
+          "job_title": "Produkcja piwa",
+          "city": "Rakszawa, Jędrzejów",
+          "position": "asystenci laboratorium",
+          "salary": "25 PLN/godzinę netto.",
+          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
+        },
+        {
+          "id": "009",
+          "job_title": "Produkcja lodów",
+          "city": "Kalisz",
+          "position": "pakowacz i etykietowacz",
+          "salary": "19 PLN / godzinę netto.",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+        },
+        {
+          "id": "010",
+          "job_title": "Układanie kostki brukowej",
+          "city": "Łódź",
+          "position": "instalator kostki brukowej",
+          "salary": "25-30 PLN / godzinę netto.",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+        }
+      ]
+    },
+    "whyAj": {},
+    "contactUs": {},
+    "footer": {}
+  },
+  "vacancies": {
+    "title": "Aktualne oferty pracy",
+    "back": "Z POWROTEM"
+  },
+  "vacancyInfo": {},
+  "contacts": {}
+}
