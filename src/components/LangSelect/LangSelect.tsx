@@ -8,16 +8,23 @@ import {
 
 import { dataLang } from '../../common/dataLang';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 const LangSelect = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get('lang') ?? '';
+
   const [selectedValue, setSelectedValue] = useState<string>(
-    localStorage.getItem('selectedLang') || dataLang[0].key
+    query ?? localStorage.getItem('selectedLang')
   );
+
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     localStorage.setItem('selectedLang', selectedValue);
     i18n.changeLanguage(selectedValue);
+    if (selectedValue) navigate(`?lang=${selectedValue}`);
   }, [selectedValue, i18n]);
 
   const selectedImage = dataLang.find(
@@ -26,6 +33,8 @@ const LangSelect = () => {
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
+
+    setSearchParams({ lang: selectedLanguage });
     setSelectedValue(selectedLanguage);
   };
 
