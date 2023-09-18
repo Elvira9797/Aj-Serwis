@@ -4,15 +4,24 @@ import Hero from '../components/Hero/Hero';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import WhyAjSerwis from '../components/WhyAjSerwis/WhyAjSerwis';
 
-import vacansieList from '../common/card-vacancies.json';
-const { job_listing } = vacansieList;
+import { useTranslation } from 'react-i18next';
+import { IVacancieData } from '../common/vacanciesArr';
 
 const Home = () => {
+  const { t } = useTranslation();
+
+  const jobListings: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
+
   return (
     <>
       <Hero />
       <AboutUs />
-      <VacanciesSlider title="Vacancies" vacancies={job_listing} />
+      <VacanciesSlider
+        title={t('main.vacancies.title')}
+        vacancies={jobListings}
+      />
       <WhyAjSerwis />
       <ContactUs />
     </>

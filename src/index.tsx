@@ -9,6 +9,7 @@ import './index.css';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './common/theme';
 import AppProvider from './context/AppProvider';
+import './i18n';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
