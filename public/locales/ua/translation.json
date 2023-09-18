@@ -1,6 +1,10 @@
 {
   "main": {
-    "header": {},
+    "nav": {
+      "home": "Головна",
+      "vacancies": "Вакансії",
+      "contacts": "Контакти"
+    },
     "hero": {},
     "aboutUs": {},
     "vacancies": {

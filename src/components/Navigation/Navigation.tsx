@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 import { StyledNavList } from './Navigation.styled';
 
-import { dataNavigation } from '../../common/dataNavigation';
 import { useAppContext } from '../../context/AppContext';
+import { useTranslation } from 'react-i18next';
 
 interface NavigationProps {
   flexDirection: 'row' | 'column';
@@ -11,23 +11,44 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
   const { closeModal } = useAppContext();
+  const { t } = useTranslation();
 
   return (
     <nav>
       <StyledNavList flexDirection={flexDirection}>
-        {dataNavigation.map(({ page, link }) => (
-          <li key={link}>
-            <NavLink
-              onClick={closeModal}
-              to={link}
-              className={({ isActive, isPending }) =>
-                isPending ? 'pending' : isActive ? 'active' : ''
-              }
-            >
-              {page}
-            </NavLink>
-          </li>
-        ))}
+        <li>
+          <NavLink
+            onClick={closeModal}
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            }
+          >
+            {t('main.nav.home')}
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            onClick={closeModal}
+            to="/vacancies"
+            className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            }
+          >
+            {t('main.nav.vacancies')}
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            onClick={closeModal}
+            to="/contacts"
+            className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            }
+          >
+            {t('main.nav.contacts')}
+          </NavLink>
+        </li>
       </StyledNavList>
     </nav>
   );

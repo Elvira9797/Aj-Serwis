@@ -1,6 +1,10 @@
 {
   "main": {
-    "header": {},
+    "nav": {
+      "home": "Główny",
+      "vacancies": "Wakaty",
+      "contacts": "Łączność"
+    },
     "hero": {},
     "aboutUs": {},
     "vacancies": {
