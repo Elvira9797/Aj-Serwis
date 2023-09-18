@@ -8,22 +8,17 @@ import {
 
 import { dataLang } from '../../common/dataLang';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router-dom';
 
 const LangSelect = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get('lang') || '';
-
   const [selectedValue, setSelectedValue] = useState<string>(
-    query || localStorage.getItem('selectedLang') || dataLang[0].key
+    localStorage.getItem('selectedLang') || dataLang[0].key
   );
-
   const { i18n } = useTranslation();
 
   useEffect(() => {
     localStorage.setItem('selectedLang', selectedValue);
-    setSearchParams({ lang: selectedValue });
-  }, [selectedValue]);
+    i18n.changeLanguage(selectedValue);
+  }, [selectedValue, i18n]);
 
   const selectedImage = dataLang.find(
     lang => lang.key === selectedValue
@@ -31,9 +26,6 @@ const LangSelect = () => {
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
-
-    i18n.changeLanguage(selectedLanguage);
-    setSearchParams({ lang: selectedLanguage });
     setSelectedValue(selectedLanguage);
   };
 
@@ -44,7 +36,7 @@ const LangSelect = () => {
           backgroundImage: `url(${selectedImage})`,
         }}
       ></CustomSelectImage>
-      <Select value={i18n.resolvedLanguage} onChange={handleSelectChange}>
+      <Select value={selectedValue} onChange={handleSelectChange}>
         {dataLang.map(lang => (
           <SelectOption key={lang.key} value={lang.key}>
             {lang.name}
