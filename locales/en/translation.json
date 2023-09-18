@@ -92,7 +92,16 @@
         }
       ]
     },
-    "whyAj": {},
+    "whyAj": {
+      "title": "Why AJ Serwis",
+      "benefits": {
+        "job": "Help in finding a job",
+        "doc": "Assistance in filing documents",
+        "live": "Free place of life near work",
+        "bilingual": "Assistance of a bilingual coordinator",
+        "transfer": "Free transfer to the place of work"
+      }
+    },
     "contactUs": {},
     "footer": {}
   },

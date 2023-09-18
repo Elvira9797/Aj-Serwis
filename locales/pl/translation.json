@@ -92,7 +92,16 @@
         }
       ]
     },
-    "whyAj": {},
+    "whyAj": {
+      "title": "Dlaczego Aj Service",
+      "benefits": {
+        "job": "Pomoc w znalezieniu pracy",
+        "doc": "Pomoc w wypełnianiu dokumentów",
+        "live": "Darmowe miejsce zamieszkania w pobliżu miejsca pracy",
+        "bilingual": "Pomoc dwujęzycznego koordynatora",
+        "transfer": "Darmowy transport do miejsca pracy"
+      }
+    },
     "contactUs": {},
     "footer": {}
   },
