@@ -14,15 +14,15 @@
         {
           "id": "001",
           "job_title": "Виробництво побутової хімії",
-          "city": "Звєржинець-Перший",
-          "position": "упаковщик і сортувальник",
+          "city": "Zwierzyniec-Pierwszy",
+          "position": "пакувальник сортувальник",
           "salary": "20 PLN / година чистими.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
         },
         {
           "id": "002",
           "job_title": "Робітники по збірці меблів (стільців)",
-          "city": "Турек",
+          "city": "Turek",
           "position": "збирач",
           "salary": "23 PLN / година чистими.",
           "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png"
@@ -30,23 +30,23 @@
         {
           "id": "003",
           "job_title": "Виробництво какао, кави, желейки",
-          "city": "Забіржів",
-          "position": "упаковщик і сортувальник",
+          "city": "Zabierzów",
+          "position": "пакувальник сортувальник",
           "salary": "19 PLN / година чистими.",
           "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png"
         },
         {
           "id": "004",
           "job_title": "Виробництво ізоляційних матеріалів",
-          "city": "Унейов",
-          "position": "упаковщик",
+          "city": "Uniejów",
+          "position": "пакувальник",
           "salary": "18 PLN / година чистими.",
           "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg"
         },
         {
           "id": "005",
           "job_title": "Оператор відмостки з УДТ",
-          "city": "Раксзава, Єнджейу",
+          "city": "Rakszawa, Jędrzejów",
           "position": "оператор відмостки",
           "salary": "25 PLN / година чистими.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
@@ -54,15 +54,15 @@
         {
           "id": "006",
           "job_title": "Виробництво енергетичних напоїв та соків",
-          "city": "Неполоміце",
-          "position": "упаковщик і сортувальник",
+          "city": "Niepołomice",
+          "position": "пакувальник сортувальник",
           "salary": "19 PLN / година чистими.",
           "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg"
         },
         {
           "id": "007",
           "job_title": "Виробництво пива",
-          "city": "Раксзава, Єнджейу",
+          "city": "Rakszawa, Jędrzejów",
           "position": "пивовар на лінії",
           "salary": "19.5 PLN / година чистими.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
@@ -70,7 +70,7 @@
         {
           "id": "008",
           "job_title": "Виробництво пива",
-          "city": "Раксзава, Єнджейу",
+          "city": "Rakszawa, Jędrzejów",
           "position": "асистенти лабораторії",
           "salary": "25 PLN / година чистими.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
@@ -78,16 +78,16 @@
         {
           "id": "009",
           "job_title": "Виробництво морозива",
-          "city": "Каліш",
-          "position": "упаковщик і маркувальник",
+          "city": "Kalisz",
+          "position": "пакувальник маркувальник",
           "salary": "19 PLN / година чистими.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
         },
         {
           "id": "010",
           "job_title": "Укладка тротуарних плит",
-          "city": "Лодзь",
-          "position": "встановлювач тротуарних плит",
+          "city": "Łódź",
+          "position": "бруківник",
           "salary": "25-30 PLN / година чистими.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
         }
