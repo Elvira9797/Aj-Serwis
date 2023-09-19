@@ -14,6 +14,7 @@ import GoBackBtn from '../GoBackBtn/GoBackBtn';
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 interface VacansyInfoProps {
   vacancy:
@@ -34,6 +35,7 @@ interface VacansyInfoProps {
 
 const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <VacancySection>
@@ -42,7 +44,7 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
           style={{ marginBottom: '2rem' }}
           onClick={() => navigate(-1)}
         >
-          Go back
+          {t('vacancies.back')}
         </GoBackBtn>
         <VacancyContainer>
           <VacancyImg src={vacancy?.image} />
@@ -56,7 +58,13 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
               {vacancy?.requirements && (
                 <VacancyItem>
                   <VacancyText>
-                    <VacancySpan>Requirements:</VacancySpan>
+                    <VacancySpan>
+                      {' '}
+                      {t(
+                        'vacancyDetails.vacancyInfo.job_list_titles.requirements'
+                      )}
+                      :
+                    </VacancySpan>
                     {vacancy?.requirements.join(', ')}
                   </VacancyText>
                 </VacancyItem>
@@ -65,7 +73,13 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
                 <VacancyItem>
                   <VacancyText>
                     {' '}
-                    <VacancySpan>Responsibilities:</VacancySpan>
+                    <VacancySpan>
+                      {' '}
+                      {t(
+                        'vacancyDetails.vacancyInfo.job_list_titles.responsibilities'
+                      )}
+                      :
+                    </VacancySpan>
                     {vacancy.responsibilities.join(', ')}
                   </VacancyText>
                 </VacancyItem>
@@ -73,19 +87,29 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
 
               <VacancyItem>
                 <VacancyText>
-                  <VacancySpan>Location:</VacancySpan>
+                  <VacancySpan>
+                    {' '}
+                    {t('vacancyDetails.vacancyInfo.job_list_titles.location')}:
+                  </VacancySpan>
                   {vacancy?.location}
                 </VacancyText>
               </VacancyItem>
               <VacancyItem>
                 <VacancyText>
-                  <VacancySpan>Salary:</VacancySpan>
+                  <VacancySpan>
+                    {' '}
+                    {t('vacancyDetails.vacancyInfo.job_list_titles.salary')}:
+                  </VacancySpan>
                   {vacancy?.salary}
                 </VacancyText>
               </VacancyItem>
               <VacancyItem>
                 <VacancyText>
-                  <VacancySpan>Work hours:</VacancySpan>
+                  <VacancySpan>
+                    {' '}
+                    {t('vacancyDetails.vacancyInfo.job_list_titles.work_hours')}
+                    :
+                  </VacancySpan>
                   {vacancy?.work_schedule}
                 </VacancyText>
               </VacancyItem>
@@ -96,7 +120,7 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
                 style={{ fontWeight: '700' }}
                 lightTheme={true}
               >
-                Aplly for a Job
+                {t('vacancyDetails.vacancyInfo.btnText')}
               </Button>
             </Link>
           </div>
