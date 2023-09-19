@@ -5,15 +5,9 @@ import { Element } from 'react-scroll';
 import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
 import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
-import vacansiesFullInfoList from '../common/full-info-vacancies.json';
-// import vacacanciesShortList from '../common/card-vacancies.json';
 
 import { useTranslation } from 'react-i18next';
-import { IVacancieData } from '../common/vacanciesArr';
-
-const { job_listing: vacanciesFull } = vacansiesFullInfoList;
-
-// const { job_listing: vacaciesShort } = vacacanciesShortList;
+import { IFullVacancieData, IVacancieData } from '../common/vacanciesArr';
 
 const VacanciesDetails = () => {
   const { t } = useTranslation();
@@ -21,10 +15,17 @@ const VacanciesDetails = () => {
     returnObjects: true,
   });
 
+  const vacanciesFullInfo: IFullVacancieData[] = t(
+    'vacancyDetails.vacancyInfo.job_listing',
+    {
+      returnObjects: true,
+    }
+  );
+
   const { id } = useParams();
 
   const getCurrentVacancy = () => {
-    return vacanciesFull.find(vacancy => vacancy.id === id);
+    return vacanciesFullInfo.find(vacancy => vacancy.id === id);
   };
 
   const getFilteredVacancies = () => {

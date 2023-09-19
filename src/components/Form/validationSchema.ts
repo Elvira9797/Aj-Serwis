@@ -1,39 +1,49 @@
+import i18next from 'i18next';
 import * as yup from 'yup';
 
 const validationSchema = yup.object({
   name: yup
     .string()
-    .required('Name is required')
-    .matches(/^[a-zA-Zа-яА-ЯҐґЄєІіЇї]+$/, 'Only letters are allowed')
-    .min(2, 'Name must be at least 2 characters long')
-    .max(35, 'Name must be no more than 35 characters long')
+    .required(i18next.t('main.contactUs.form.errors.name.required'))
+    .matches(
+      /^[a-zA-Zа-яА-ЯҐґЄєІіЇї]+$/,
+      i18next.t('main.contactUs.form.errors.name.matches')
+    )
+    .min(2, i18next.t('main.contactUs.form.errors.name.min'))
+    .max(35, i18next.t('main.contactUs.form.errors.name.max'))
     .trim(),
   surname: yup
     .string()
-    .required('Surname is required')
-    .matches(/^[a-zA-Zа-яА-ЯҐґЄєІіЇї]+$/, 'Only letters are allowed')
-    .min(2, 'Surname must be at least 2 characters long')
-    .max(35, 'Surname must be no more than 35 characters long')
+    .required(i18next.t('main.contactUs.form.errors.surname.required'))
+    .matches(
+      /^[a-zA-Zа-яА-ЯҐґЄєІіЇї]+$/,
+      i18next.t('main.contactUs.form.errors.surname.matches')
+    )
+    .min(2, i18next.t('main.contactUs.form.errors.surname.min'))
+    .max(35, i18next.t('main.contactUs.form.errors.surname.max'))
     .trim(),
   phone: yup
     .string()
-    .required('Phone number is required')
-    .matches(/^[0-9+()-]+$/, 'Only numbers are allowed')
-    .min(6, 'Phone number must be at least 6 characters long')
-    .max(18, 'Phone number must be no more than 18 characters long')
+    .required(i18next.t('main.contactUs.form.errors.phone.required'))
+    .matches(
+      /^[0-9+()-]+$/,
+      i18next.t('main.contactUs.form.errors.phone.matches')
+    )
+    .min(6, i18next.t('main.contactUs.form.errors.phone.min'))
+    .max(18, i18next.t('main.contactUs.form.errors.phone.max'))
     .trim(),
   email: yup
     .string()
-    .required('Email is required')
-    .email('Invalid email format')
+    .required(i18next.t('main.contactUs.form.errors.email.required'))
+    .email(i18next.t('main.contactUs.form.errors.email.matches'))
     .trim(),
   comment: yup
     .string()
     .optional()
-    .max(250, 'Comment or review must be no more than 250 characters long')
+    .max(250, i18next.t('main.contactUs.form.errors.comment.max'))
     .trim(),
 
-  policy: yup.boolean().oneOf([true], 'Field must be checked'),
+  policy: yup.boolean().oneOf([true]),
 });
 
 export default validationSchema;

@@ -9,19 +9,22 @@ import {
   StyledSection,
   StyledSubtitle,
 } from './VacancyOffer-styled';
+import { useTranslation } from 'react-i18next';
 
 interface VacancyOfferProps {
   vacancyOffers: string[] | undefined;
 }
 
 const VacancyOffer: FC<VacancyOfferProps> = ({ vacancyOffers }) => {
+  const { t } = useTranslation();
+
   return (
     <StyledSection>
       <SectionContainer>
-        <SectionTitle>What we offer?</SectionTitle>
+        <SectionTitle>{t('vacancyDetails.vacancyOffer.title')}</SectionTitle>
         <StyledContainer>
           <StyledSubtitle>
-            Our company provides everything you need to work in Poland
+            {t('vacancyDetails.vacancyOffer.subtitle')}
           </StyledSubtitle>
           <StyledList style={{ width: '100%' }}>
             {vacancyOffers?.map(offer => (

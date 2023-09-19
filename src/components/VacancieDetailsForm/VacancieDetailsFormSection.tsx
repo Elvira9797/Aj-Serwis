@@ -6,17 +6,18 @@ import {
   StyledFormInfo,
   StyledFormSection,
 } from './VacancieDetailsFormSection-styled';
+import { useTranslation } from 'react-i18next';
 
 const VacancieDetailsFormSection = () => {
+  const {t} = useTranslation()
+
   return (
     <StyledFormSection>
       <SectionContainer>
         <StyledFormContainer>
           <StyledFormInfo>
-            <SectionTitle>
-              Respond to the vacancy by filling out the form!
-            </SectionTitle>
-            <p>Please provide only your valid contact details</p>
+            <SectionTitle>{t('vacancyDetails.vacancyForm.title')}</SectionTitle>
+            <p>{t('vacancyDetails.vacancyForm.subtitle')}</p>
           </StyledFormInfo>
           <Form
             lightTheme={true}

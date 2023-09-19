@@ -56,5 +56,8 @@ export const VacancySection = styled.section`
 `;
 
 export const VacancyText = styled.p`
-  /* text-transform: uppercase; */
+  text-transform: lowercase;
+  :first-of-type {
+    text-transform: none;
+  }
 `;
