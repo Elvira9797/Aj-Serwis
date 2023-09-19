@@ -13,7 +13,6 @@ import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-// import { useTranslation } from 'react-i18next';
 import { IVacancieData } from '../../common/vacanciesArr';
 
 interface VacanciesSliderShortProps {
