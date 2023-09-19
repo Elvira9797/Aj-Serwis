@@ -1,50 +1,54 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import {
   CustomSelectContainer,
   CustomSelectImage,
   Select,
   SelectOption,
 } from './LangSelect.styled';
-
 import { dataLang } from '../../common/dataLang';
-import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router-dom';
+import { useAppContext } from '../../context/AppContext';
 
 const LangSelect = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get('lang') || '';
-
-  const [selectedValue, setSelectedValue] = useState<string>(
-    query || localStorage.getItem('selectedLang') || dataLang[0].key
-  );
-
   const { i18n } = useTranslation();
+  const res = i18n.resolvedLanguage;
+  const query = searchParams.get('lang') || '';
+  const { closeModal, saveScrollPosition, restoreScrollPosition } =
+    useAppContext();
 
   useEffect(() => {
-    localStorage.setItem('selectedLang', selectedValue);
-    setSearchParams({ lang: selectedValue });
-  }, [selectedValue, setSearchParams]);
-
-  const selectedImage = dataLang.find(
-    lang => lang.key === selectedValue
-  )?.value;
+    const currentScrollPosition = localStorage.getItem('scrollPosition') || 0;
+    window.scrollTo(0, Number(currentScrollPosition));
+  }, []);
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
 
-    i18n.changeLanguage(selectedLanguage);
+    saveScrollPosition();
+
     setSearchParams({ lang: selectedLanguage });
-    setSelectedValue(selectedLanguage);
+
+    closeModal();
   };
+
+  useEffect(() => {
+    restoreScrollPosition();
+
+    i18n.changeLanguage(query);
+  }, [i18n, query, restoreScrollPosition]);
 
   return (
     <CustomSelectContainer>
       <CustomSelectImage
         style={{
-          backgroundImage: `url(${selectedImage})`,
+          backgroundImage: `url(${
+            dataLang.find(lang => lang.key === res)?.value
+          })`,
         }}
       ></CustomSelectImage>
-      <Select value={i18n.resolvedLanguage} onChange={handleSelectChange}>
+      <Select value={res} onChange={handleSelectChange}>
         {dataLang.map(lang => (
           <SelectOption key={lang.key} value={lang.key}>
             {lang.name}

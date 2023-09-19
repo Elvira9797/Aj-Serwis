@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
 import { useAppContext } from '../../../context/AppContext';
+
 interface AppBarProps {
   theme: {
     colors: { accentColor: string };

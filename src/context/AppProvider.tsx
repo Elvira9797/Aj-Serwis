@@ -8,6 +8,15 @@ interface AppProviderProps {
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const saveScrollPosition = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  const restoreScrollPosition = () => {
+    window.scrollTo(0, scrollPosition);
+  };
 
   const openModal = () => {
     setModalOpen(true);
@@ -20,6 +29,8 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   };
 
   const appContextValue = {
+    saveScrollPosition,
+    restoreScrollPosition,
     modalOpen,
     openModal,
     closeModal,
