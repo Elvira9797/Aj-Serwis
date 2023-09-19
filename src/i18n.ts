@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'pl',
     supportedLngs: ['en', 'pl', 'ua'],
     backend: {
       loadPath: '/Aj-Serwis/locales/{{lng}}/translation.json',
