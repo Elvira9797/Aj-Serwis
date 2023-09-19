@@ -102,13 +102,297 @@
         "transfer": "Darmowy transport do miejsca pracy"
       }
     },
-    "contactUs": {},
+    "contactUs": {
+      "title": "Skontaktuj się z nami",
+      "subtitle": "Będziemy wdzięczni, jeśli podzielisz się swoimi danymi kontaktowymi!",
+      "form": {
+        "fields": {
+          "name": "Imię *",
+          "surname": "Nazwisko *",
+          "phone": "Numer telefonu *",
+          "email": "Email *",
+          "comment": "Komentarz lub opinia",
+          "policy": "Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w formularzu kontaktowym w celu rekrutacji przez agencję AJ Serwis"
+        },
+
+        "errors": {
+          "name": {
+            "required": "Imię jest wymagane",
+            "matches": "Dozwolone są tylko litery",
+            "min": "Imię musi mieć co najmniej 2 znaki",
+            "max": "Imię nie może mieć więcej niż 35 znaków"
+          },
+          "surname": {
+            "required": "Nazwisko jest wymagane",
+            "matches": "Dozwolone są tylko litery",
+            "min": "Nazwisko musi mieć co najmniej 2 znaki",
+            "max": "Nazwisko nie może mieć więcej niż 35 znaków"
+          },
+          "phone": {
+            "required": "Numer telefonu jest wymagany",
+            "matches": "Dozwolone są tylko cyfry",
+            "min": "Numer telefonu musi mieć co najmniej 6 znaków",
+            "max": "Numer telefonu nie może mieć więcej niż 18 znaków"
+          },
+          "email": {
+            "required": "E-mail jest wymagany",
+            "matches": "Nieprawidłowy format adresu e-mail"
+          },
+          "comment": {
+            "max": "Komentarz lub opinia nie może mieć więcej niż 250 znaków"
+          }
+        },
+
+        "btnText": "Wyślij formularz"
+      }
+    },
     "footer": {}
   },
   "vacancies": {
     "title": "Aktualne oferty pracy",
     "back": "Z POWROTEM"
   },
-  "vacancyInfo": {},
+  "vacancyDetails": {
+    "vacancyInfo": {
+      "job_listing": [
+        {
+          "id": "001",
+          "job_title": "Produkcja chemii gospodarczej",
+          "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
+          "salary": "20 PLN / godzina netto.",
+          "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
+          "work_schedule": "8-godzinne zmiany z możliwością nadgodzin, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
+          "location": "Zwierzyniec - Pierwszy",
+          "responsibilities": ["pakowanie i sortowanie"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "002",
+          "job_title": "Pracownicy do montażu mebli (krzesła)",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "23 PLN / godzina netto.",
+          "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
+          "work_schedule": "8-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
+          "location": "Turek",
+          "responsibilities": ["montaż komponentów do instalacji krzeseł"],
+          "requirements": ["wymagana umiejętność zrozumienia języka polskiego"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie",
+            "Premie za brak nieobecności w pracy"
+          ]
+        },
+        {
+          "id": "003",
+          "job_title": "Produkcja kakao, kawy i galaretek",
+          "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
+          "salary": "19 PLN / godzina netto.",
+          "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
+          "work_schedule": "12-godzinne zmiany, od poniedziałku do piątku (2 soboty pracy w miesiącu), obejmujące dwie zmiany",
+          "location": "Zabierzów",
+          "responsibilities": ["pakowanie i sortowanie"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "004",
+          "job_title": "Produkcja materiałów izolacyjnych",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "18 PLN / godzina netto.",
+          "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
+          "work_schedule": "12-godzinne zmiany, od poniedziałku do sobót, obejmujące dwie zmiany",
+          "location": "Uniejów",
+          "responsibilities": ["pakowanie i sortowanie"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 3-4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "005",
+          "job_title": "Operator wózka widłowego z certyfikatem UDT",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "25 PLN / godzina netto.",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+          "work_schedule": "12-godzinne zmiany, 260-320 godzin miesięcznie, obejmujące dwie zmiany",
+          "location": "Rakszawa, Jędrzejów",
+          "requirements": [
+            "doświadczenie w obszarze obsługi wózka widłowego",
+            "posiadany certyfikat UDT"
+          ],
+          "responsibilities": [
+            "praca związana wyłącznie z wózkiem widłowym: załadunek, rozładunek i układanie towarów na magazynie"
+          ],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 3-4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "006",
+          "job_title": "Produkcja napojów energetycznych i soków",
+          "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
+          "salary": "19 PLN / godzina netto.",
+          "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
+          "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
+          "location": "Niepołomice",
+          "responsibilities": ["pakowanie i sortowanie"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "007",
+          "job_title": "Produkcja piwa",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "19.5 PLN / godzina netto.",
+          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
+          "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
+          "location": "Rakszawa, Jędrzejów",
+          "responsibilities": [
+            "zapewnienie prawidłowego etykietowania, pakowania i zamykania butelek z piwem"
+          ],
+          "requirements": ["wymagana umiejętność zrozumienia języka polskiego"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 2-3 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "008",
+          "job_title": "Produkcja piwa",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "25 PLN / godzina netto.",
+          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
+          "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
+          "location": "Rakszawa, Jędrzejów",
+          "responsibilities": [
+            "wykonywanie różnych testów laboratoryjnych i eksperymentów na próbkach"
+          ],
+          "requirements": ["wymagana umiejętność zrozumienia języka polskiego"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 2-3 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "009",
+          "job_title": "Produkcja lodów",
+          "looking_for": "Szukamy kobiet i mężczyzn",
+          "salary": "19 PLN / godzina netto. + premie",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+          "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
+          "location": "Kalisz",
+          "responsibilities": [
+            "pakowanie produktów lodowych do pojemników lub materiałów opakowaniowych, zapewnienie właściwego zamykania i etykietowania",
+            "sprawdzanie i kontrolowanie produktów lodowych pod kątem jakości, w tym sprawdzanie ewentualnych wad lub nieprawidłowości"
+          ],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Temperatura wewnątrz nie jest niska, +15°C",
+            "Umowa Zlecenie"
+          ]
+        },
+        {
+          "id": "010",
+          "job_title": "Układanie kostki brukowej",
+          "looking_for": "Szukamy pracowników specjalistycznych",
+          "salary": "25-30 PLN / godzina netto.",
+          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
+          "work_schedule": "10-godzinne zmiany, od poniedziałku do soboty",
+          "location": "Łódź",
+          "responsibilities": ["układanie kostki brukowej"],
+          "what_we_offer": [
+            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
+            "Zakwaterowanie w cenie 350 PLN miesięcznie",
+            "Pokój dla 4 osób",
+            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Robimy kartę pobytu",
+            "Darmowy transport do pracy",
+            "Darmowy strój roboczy",
+            "Temperatura wewnątrz nie jest niska, +15°C",
+            "Umowa Zlecenie"
+          ]
+        }
+      ],
+      "job_list_titles": {
+        "requirements": "wymagania",
+        "responsibilities": "obowiązki",
+        "location": "lokalizacja",
+        "salary": "wynagrodzenie",
+        "work_hours": "godziny pracy"
+      },
+      "btnText": "składaj podanie o pracę"
+    },
+    "vacancyOffer": {
+      "title": "Co oferujemy",
+      "subtitle": "Nasza firma zapewnia wszystko, czego potrzebujesz do pracy w Polsce"
+    },
+    "vacancyForm": {
+      "title": "Odpowiedz na ofertę pracy, wypełniając formularz!",
+      "subtitle": "Proszę podać tylko swoje prawidłowe dane kontaktowe"
+    }
+  },
+
   "contacts": {}
 }

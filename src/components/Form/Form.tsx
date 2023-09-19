@@ -10,6 +10,7 @@ import { CSSProperties, FC, useEffect, useState } from 'react';
 
 ////////////////////////////////////////////////////////////
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 const EMAIL_JS_USER_ID = 'cpL-disfPacYQD52J'; // Replace with your Email.js user ID
 const EMAIL_JS_SERVICE_ID = 'service_9yascik'; // Replace with your Email.js service ID
 const EMAIL_JS_TEMPLATE_ID = 'template_3qxcywm'; // Replace with your Email.js template ID
@@ -50,7 +51,9 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
   } = useForm<FormFields>({
     resolver: yupResolver(validationSchema),
   });
-
+  
+  console.log('errors: ', errors);
+  const { t } = useTranslation();
   const [isDisabled, setisDisabled] = useState(true);
 
   const allFieldsValue = watch();
@@ -102,7 +105,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           value={allFieldsValue.name}
           type="text"
           placeholder=""
-          label="Name *"
+          label={t('main.contactUs.form.fields.name')}
           {...register('name')}
           errors={errors}
           lightTheme={lightTheme}
@@ -112,7 +115,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           type="text"
           placeholder=""
           {...register('surname')}
-          label="Surname *"
+          label={t('main.contactUs.form.fields.surname')}
           value={allFieldsValue.surname}
           errors={errors}
           lightTheme={lightTheme}
@@ -124,7 +127,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           type="tel"
           placeholder=""
           {...register('phone')}
-          label="Phone Number *"
+          label={t('main.contactUs.form.fields.phone')}
           value={allFieldsValue.phone}
           errors={errors}
           lightTheme={lightTheme}
@@ -134,7 +137,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           type="email"
           placeholder=""
           {...register('email')}
-          label="Email *"
+          label={t('main.contactUs.form.fields.email')}
           value={allFieldsValue.email}
           errors={errors}
           lightTheme={lightTheme}
@@ -146,7 +149,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
         placeholder=""
         {...register('comment')}
         value={allFieldsValue.comment}
-        label="Comment or Review"
+        label={t('main.contactUs.form.fields.comment')}
         errors={errors}
         lightTheme={lightTheme}
       />
@@ -173,8 +176,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
             cursor: 'pointer',
           }}
         >
-          I consent to the processing of the personal data provided by me in the
-          contact form for the purposes of recruiting for the agency AJ Serwis
+          {t('main.contactUs.form.fields.policy')}
         </label>
       </div>
       <Button
@@ -186,7 +188,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           margin: '0 auto',
         }}
       >
-        Submit Form
+        {t('main.contactUs.form.btnText')}
       </Button>
     </StyledForm>
   );
