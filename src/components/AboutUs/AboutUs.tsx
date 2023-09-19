@@ -2,6 +2,7 @@ import { Container, ImageEl, LeftBox, RightBox, Text } from './AboutUs.styled';
 import aboutUs from '../../images/aboutUs.jpg';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import AnimateOnScroll from '../AnimateOnScroll/AnimateOnScroll';
 
 const AboutUs = () => {
   return (
@@ -22,7 +23,9 @@ const AboutUs = () => {
           </Text>
         </LeftBox>
         <RightBox>
-          <ImageEl src={aboutUs} alt="about us" />
+          <AnimateOnScroll>
+            <ImageEl src={aboutUs} alt="about us" />
+          </AnimateOnScroll>
         </RightBox>
       </Container>
     </SectionContainer>
