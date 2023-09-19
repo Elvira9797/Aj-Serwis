@@ -6,6 +6,7 @@ import { StyledWhyAjSection } from './WhyAjSerwis.styled';
 
 const WhyAjSerwis: React.FC = () => {
   const { t } = useTranslation();
+
   return (
     <StyledWhyAjSection>
       <SectionContainer>
