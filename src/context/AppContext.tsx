@@ -5,6 +5,8 @@ interface AppContextProps {
   isOpenModal: boolean;
   openModal: () => void;
   closeModal: () => void;
+  saveScrollPosition: () => void;
+  restoreScrollPosition: () => void;
 }
 
 const AppContext = createContext<AppContextProps | undefined>(undefined);

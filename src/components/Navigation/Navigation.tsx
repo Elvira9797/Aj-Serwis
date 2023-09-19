@@ -26,6 +26,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
+            state={{ languageChange: false }}
           >
             {t('main.nav.home')}
           </NavLink>
@@ -37,6 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
+            state={{ languageChange: false }}
           >
             {t('main.nav.vacancies')}
           </NavLink>
@@ -48,6 +50,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
+            state={{ languageChange: false }}
           >
             {t('main.nav.contacts')}
           </NavLink>

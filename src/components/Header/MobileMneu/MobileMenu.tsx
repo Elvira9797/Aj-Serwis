@@ -58,18 +58,18 @@ const Modal: React.FC<ModalProps> = ({ theme }) => {
           <motion.div
             onClick={handleOverlayClick}
             className="modal-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            initial={{ translateX: '100%' }}
+            animate={{ translateX: '0%' }}
+            exit={{ translateX: '100%' }}
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
             {...swipeHandlers}
           >
             <motion.div
               className="modal-content"
-              initial={{ x: '100%' }}
-              animate={{ x: '44% ' }}
-              exit={{ x: '100%' }}
-              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              initial={{ translateX: '100%' }}
+              animate={{ translateX: '44%' }}
+              exit={{ translateX: '100%' }}
+              transition={{ duration: 0.7, ease: 'easeInOut' }}
             >
               <ModalMobileMenu>
                 <CloseButton type="button" onClick={closeModal}>

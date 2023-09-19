@@ -5,7 +5,7 @@ export const Overlay = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: flex-start;
   z-index: 999;

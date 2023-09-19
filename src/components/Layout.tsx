@@ -1,15 +1,17 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 
 const Layout = () => {
   const location = useLocation();
 
-  useEffect(() => {
+  const isLanguageChange = location.state?.languageChange || false;
+
+  if (!isLanguageChange) {
     window.scrollTo(0, 0);
-  }, [location]);
+  }
 
   return (
     <>
