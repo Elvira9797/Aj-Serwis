@@ -1,3 +1,4 @@
+import AnimateOnScroll from '../AnimateOnScroll/AnimateOnScroll';
 import { Title } from './SectionTitle.styled';
 
 interface SectionTitleProps {
@@ -6,7 +7,11 @@ interface SectionTitleProps {
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ children, style }) => {
-  return <Title style={style}>{children}</Title>;
+  return (
+    <AnimateOnScroll>
+      <Title style={style}>{children}</Title>;
+    </AnimateOnScroll>
+  );
 };
 
 export default SectionTitle;

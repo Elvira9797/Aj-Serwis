@@ -12,6 +12,7 @@ import { ReactComponent as HomeSvg } from '../../../assets/svg/home.svg';
 import { ReactComponent as JobSvg } from '../../../assets/svg/job.svg';
 import { ReactComponent as InfoSvg } from '../../../assets/svg/info.svg';
 import { useTranslation } from 'react-i18next';
+import AnimateOnScroll from '../../AnimateOnScroll/AnimateOnScroll';
 
 export interface SvgItem {
   icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
@@ -47,12 +48,14 @@ function BenefitsList() {
   return (
     <StyledBenefitsList>
       {benefitsArr.map(item => (
-        <StyledBenefitItem key={item.perk}>
-          <StyledBenefitIcoContainer>
-            <item.icon />
-          </StyledBenefitIcoContainer>
-          <StyledBenefitText>{item.perk}</StyledBenefitText>
-        </StyledBenefitItem>
+        <AnimateOnScroll>
+          <StyledBenefitItem key={item.perk}>
+            <StyledBenefitIcoContainer>
+              <item.icon />
+            </StyledBenefitIcoContainer>
+            <StyledBenefitText>{item.perk}</StyledBenefitText>
+          </StyledBenefitItem>
+        </AnimateOnScroll>
       ))}
     </StyledBenefitsList>
   );

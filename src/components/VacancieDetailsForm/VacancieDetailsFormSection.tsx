@@ -6,27 +6,31 @@ import {
   StyledFormInfo,
   StyledFormSection,
 } from './VacancieDetailsFormSection-styled';
+import { useTranslation } from 'react-i18next';
+import AnimateOnScroll from '../AnimateOnScroll/AnimateOnScroll';
 
 const VacancieDetailsFormSection = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledFormSection>
       <SectionContainer>
         <StyledFormContainer>
           <StyledFormInfo>
-            <SectionTitle>
-              Respond to the vacancy by filling out the form!
-            </SectionTitle>
-            <p>Please provide only your valid contact details</p>
+            <SectionTitle>{t('vacancyDetails.vacancyForm.title')}</SectionTitle>
+            <p>{t('vacancyDetails.vacancyForm.subtitle')}</p>
           </StyledFormInfo>
-          <Form
-            lightTheme={true}
-            style={{
-              padding: '2rem',
-              border: '2px solid transparent',
-              boxShadow: '0px 12px 27px -3px rgba(0,0,0,0.74)',
-              borderRadius: '2rem',
-            }}
-          />
+          <AnimateOnScroll>
+            <Form
+              lightTheme={true}
+              style={{
+                padding: '2rem',
+                border: '2px solid transparent',
+                boxShadow: '0px 12px 27px -3px rgba(0,0,0,0.74)',
+                borderRadius: '2rem',
+              }}
+            />
+          </AnimateOnScroll>
         </StyledFormContainer>
       </SectionContainer>
     </StyledFormSection>
