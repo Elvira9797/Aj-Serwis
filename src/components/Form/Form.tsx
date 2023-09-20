@@ -4,21 +4,13 @@ import Button from '../Button/Button';
 import { StyledForm, Wrapper } from './Form-styled';
 import { StyledCheckbox } from './Input/Input-styled';
 import { yupResolver } from '@hookform/resolvers/yup';
-import validationSchema from './validationSchema';
+import useValidationSchema from './useValidationSchema';
 import { nanoid } from 'nanoid';
 import { CSSProperties, FC, useEffect, useState } from 'react';
-
-////////////////////////////////////////////////////////////
-import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
-const EMAIL_JS_USER_ID = 'cpL-disfPacYQD52J'; // Replace with your Email.js user ID
-const EMAIL_JS_SERVICE_ID = 'service_9yascik'; // Replace with your Email.js service ID
-const EMAIL_JS_TEMPLATE_ID = 'template_3qxcywm'; // Replace with your Email.js template ID
-emailjs.init(EMAIL_JS_USER_ID);
-export { EMAIL_JS_USER_ID, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID };
-////////////////////////////////////////////////////////////
+import sendEmail from './sendEmail';
 
-interface FormFields {
+export interface FormFields {
   name: string;
   surname: string;
   phone: string;
@@ -42,6 +34,7 @@ const inputIds = {
 };
 
 const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
+  const { validationSchema } = useValidationSchema();
   const {
     register,
     handleSubmit,
@@ -51,8 +44,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
   } = useForm<FormFields>({
     resolver: yupResolver(validationSchema),
   });
-  
-  console.log('errors: ', errors);
+
   const { t } = useTranslation();
   const [isDisabled, setisDisabled] = useState(true);
 
@@ -69,31 +61,10 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
 
     setBtnDisabled();
   }, [allFieldsValue]);
+
   const onSubmit = async (data: FormFields) => {
-    console.log(data);
+    await sendEmail(data);
 
-    ///////////////////////////////////////////////////////////////////////////////////
-    const emailData = {
-      to_email: 'dev6012@meta.ua', // Replace with the recipient's email address
-      subject: 'Welcome',
-      message: `
-      Name: ${data.name}
-      Surname: ${data.surname}
-      Phone: ${data.phone}
-      Email: ${data.email}
-      Comment or Review: ${data.comment}
-    `,
-    };
-
-    try {
-      // Send email using Email.js
-      await emailjs.send(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, emailData);
-      alert('Email sent successfully!');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email.');
-    }
-    ///////////////////////////////////////////////////////////////////////////////
     reset();
   };
 

@@ -6,6 +6,7 @@ import { Section, SubTitle } from './ContactUs.styled';
 
 const ContactUs = () => {
   const { t } = useTranslation();
+
   return (
     <Section>
       <SectionContainer>
