@@ -5,7 +5,11 @@
       "vacancies": "Wakaty",
       "contacts": "Łączność"
     },
-    "hero": {},
+    "hero": {
+      "title": "Aj Serwis",
+      "heroUnderTitle": "Łatwo znajdź możliwości pracy w Polsce. Doświadcz szybkiego i efektywnego procesu poszukiwania pracy",
+      "button": "Zobacz wolne miejsca pracy"
+    },
     "aboutUs": {},
     "vacancies": {
       "title": "Wakaty",
@@ -395,6 +399,23 @@
   },
 
   "contacts": {
+    "hero": {
+      "title": "Połącz się z nami",
+      "heroUnderTitle": "Pozwól nam pomóc ci ekspertyczną radą i znaleźć odpowiednią wolną posadę dla ciebie",
+      "button": "Skontaktować się"
+    },
+    "contactDetails": {
+      "title": "Dane kontaktowe",
+      "address": "Adres",
+      "phone": "Dzisiaj zadzwoń",
+      "email": "Email",
+      "hours": "Godziny pracy",
+      "days": "Pn - Pt:",
+      "time": "8:00 - 19:00"
+    },
+    "contactForm": {
+      "title": "Skontaktuj się z nami!"
+    },
     "workHoursTitle": "Godziny pracy: ",
     "workingTime": "Poniedziałek-piątek od 8:00 rano do 19:00",
     "namePhoneContact": "MOISEIKO VASYL",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSpring, animated } from 'react-spring';
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
@@ -7,6 +8,7 @@ import SocialMediaLink from '../SocialMediaLink/SocialMediaLink';
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const titleSpring = useSpring({
     from: { opacity: 0, transform: 'translateY(20px)' },
@@ -33,17 +35,14 @@ const Hero: React.FC = () => {
   return (
     <Overlay>
       <animated.div style={titleSpring}>
-        <HeroTitle>Aj Serwis</HeroTitle>
+        <HeroTitle>{t('main.hero.title')}</HeroTitle>
       </animated.div>
       <animated.div style={underTitleSpring}>
-        <HeroUnderTitle>
-          Effortlessly find job opportunities in Poland. Experience a fast and
-          efficient job search process.
-        </HeroUnderTitle>
+        <HeroUnderTitle>{t('main.hero.heroUnderTitle')}</HeroUnderTitle>
       </animated.div>
       <animated.div style={buttonSpring}>
         <Button variant="hero" type="button" onClick={handleButtonClick}>
-          View job vacancies
+          {t('main.hero.button')}
         </Button>
       </animated.div>
       <SocialMediaLink />
