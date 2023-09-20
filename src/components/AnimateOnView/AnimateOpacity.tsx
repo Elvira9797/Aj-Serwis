@@ -13,9 +13,9 @@ const textAnimation = {
     // scale: 1,
 
     transition: {
-      delay: 0.2,
+      delay: 0.15,
       ease: 'easeOut',
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };

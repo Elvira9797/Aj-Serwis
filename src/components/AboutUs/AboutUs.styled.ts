@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  align-items: center;
   padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
   padding-bottom: ${({ theme }) => theme.section.padding.small.paddingBottom};
   @media (min-width: 1236px) {
