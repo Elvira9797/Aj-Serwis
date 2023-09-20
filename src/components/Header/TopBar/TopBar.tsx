@@ -4,11 +4,12 @@ import { StyledNavWrader, StyledTopBar } from './TopBar.styled';
 
 import { BiMailSend } from 'react-icons/bi';
 
-import { workEmail, workingTime } from '../../../common/dataContacts';
+import { useTranslation } from 'react-i18next';
 
 const TopBar: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
   const [visible, setVisible] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () =>
@@ -28,10 +29,11 @@ const TopBar: React.FC = () => {
     <StyledTopBar isVisible={isTop}>
       <StyledNavWrader>
         <BiMailSend />
-        <a href={`mailto:${workEmail}`}>{workEmail}</a>
+        <a href={`mailto:${t('contacts.email')}`}>{t('contacts.email')}</a>
       </StyledNavWrader>
       <p>
-        {workingTime.workH} {workingTime.time}
+        {t('contacts.workHoursTitle')}
+        {t('contacts.workingTime')}
       </p>
     </StyledTopBar>
   );

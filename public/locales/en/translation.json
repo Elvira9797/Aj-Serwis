@@ -402,5 +402,11 @@
       "subtitle": "Please provide only your valid contact details"
     }
   },
-  "contacts": {}
+  "contacts": {
+    "workHoursTitle": "Working hours: ",
+    "workingTime": "Mon-Fri from 8:00 AM to 7:00 PM",
+    "namePhoneContact": "MOISEIKO VASYL",
+    "email": "aj.serwis.spzoo@gmail.com",
+    "tel": "+48 539 649 808"
+  }
 }

@@ -10,17 +10,15 @@ import { BiMailSend } from 'react-icons/bi';
 
 import { theme } from '../../common/theme';
 
-import {
-  dataContacts,
-  workEmail,
-  workingTime,
-} from '../../common/dataContacts';
+import { useTranslation } from 'react-i18next';
 
 interface ContactsDisplayProps {
   displayName: 'visible' | 'none';
 }
 
 const ContactsDisplay: React.FC<ContactsDisplayProps> = ({ displayName }) => {
+  const { t } = useTranslation();
+
   return (
     <ContactsContainer>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -34,30 +32,28 @@ const ContactsDisplay: React.FC<ContactsDisplayProps> = ({ displayName }) => {
             fontSize: '0.6rem',
           }}
         >
-          {workingTime.time}
+          {t('contacts.workingTime')}
         </span>
       </div>
       <ContactBox>
-        {dataContacts.map(({ name, tel }) => (
-          <ContactWraper displayName={displayName} key={tel}>
-            <span>{name}</span>
-            <a href={`tel:${tel}`}>
-              <FaPhone />
-              {tel}
-            </a>
-          </ContactWraper>
-        ))}
+        <ContactWraper displayName={displayName}>
+          <span>{t('contacts.namePhoneContact')}</span>
+          <a href={`tel:{t('contacts.workingTime')}`}>
+            <FaPhone />
+            {t('contacts.tel')}
+          </a>
+        </ContactWraper>
       </ContactBox>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <BiMailSend size={36} style={{ color: theme.colors.accentColor }} />
         <a
-          href={`mailto:${workEmail}`}
+          href={`mailto:${t('contacts.email')}`}
           style={{
             color: theme.colors.accentColor,
             fontSize: '0.8rem',
           }}
         >
-          {workEmail}
+          {t('contacts.email')}
         </a>
       </div>
     </ContactsContainer>

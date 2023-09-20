@@ -394,5 +394,11 @@
     }
   },
 
-  "contacts": {}
+  "contacts": {
+    "workHoursTitle": "Godziny pracy: ",
+    "workingTime": "Poniedziałek-piątek od 8:00 rano do 19:00",
+    "namePhoneContact": "MOISEIKO VASYL",
+    "email": "aj.serwis.spzoo@gmail.com",
+    "tel": "+48 539 649 808"
+  }
 }
