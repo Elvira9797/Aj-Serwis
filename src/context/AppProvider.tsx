@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from 'react';
+import React, { useState, ReactNode, useEffect } from 'react';
 import AppContext from './AppContext';
 
 interface AppProviderProps {
@@ -19,14 +19,22 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   };
 
   const openModal = () => {
+    saveScrollPosition();
     setModalOpen(true);
     setIsOpenModal(true);
   };
 
   const closeModal = () => {
+    restoreScrollPosition();
     setModalOpen(false);
     setIsOpenModal(false);
   };
+
+  useEffect(() => {
+    return () => {
+      window.removeEventListener('scroll', saveScrollPosition);
+    };
+  }, []);
 
   const appContextValue = {
     saveScrollPosition,
