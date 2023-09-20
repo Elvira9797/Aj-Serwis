@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { BsTelephoneFill, BsFillClockFill } from 'react-icons/bs';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import {
@@ -18,10 +19,11 @@ import contactsImg from '../../img/contacts-img.jpg';
 import { Link } from 'react-scroll';
 
 const ContactInfoList: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <SectionStyled>
       <SectionContainer>
-        <Title>Contact Details</Title>
+        <Title>{t('contacts.contactDetails.title')}</Title>
       </SectionContainer>
       <BackgroundStyled>
         <SectionContainer>
@@ -34,7 +36,7 @@ const ContactInfoList: React.FC = () => {
               <Link to="contactUs" smooth={true} duration={1000}>
                 <MdLocationOn size={60} color="#c3a069" />
 
-                <h3>Address</h3>
+                <h3>{t('contacts.contactDetails.address')}</h3>
                 <p>
                   ul. Kościelnicka 29,
                   <br /> 99-210 Uniejów
@@ -45,25 +47,25 @@ const ContactInfoList: React.FC = () => {
             <ContactInfoItem>
               <ContactLink href="tel:+487979931830">
                 <BsTelephoneFill size={60} color="#c3a069" />
-                <h3>Call today</h3>
-                <p>+48 797 993 183</p>
+                <h3>{t('contacts.contactDetails.phone')}</h3>
+                <p>+48 539 649 808</p>
               </ContactLink>
             </ContactInfoItem>
 
             <ContactInfoItem>
-              <ContactLink href="mailto:biuro@ajserwis.com">
+              <ContactLink href="mailto:aj.serwis.sp@gmail.com">
                 <MdEmail size={60} color="#c3a069" />
-                <h3>Email</h3>
-                <p>biuro@ajserwis.com</p>
+                <h3>{t('contacts.contactDetails.email')}</h3>
+                <p>aj.serwis.sp@gmail.com</p>
               </ContactLink>
             </ContactInfoItem>
 
             <ContactInfoItem>
               <BsFillClockFill size={60} color="#c3a069" />
-              <h3>Working hours</h3>
+              <h3>{t('contacts.contactDetails.hours')}</h3>
               <p>
-                Mon - Fri:
-                <br /> 8:00 AM - 7:00 PM
+                {t('contacts.contactDetails.days')}
+                <br /> {t('contacts.contactDetails.time')}
               </p>
             </ContactInfoItem>
           </ContactInfoListStyled>

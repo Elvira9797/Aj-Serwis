@@ -5,7 +5,13 @@
       "vacancies": "Wakaty",
       "contacts": "Łączność"
     },
-    "hero": {},
+
+    "hero": {
+      "title": "Aj Serwis",
+      "heroUnderTitle": "Łatwo znajdź możliwości pracy w Polsce. Doświadcz szybkiego i efektywnego procesu poszukiwania pracy",
+      "button": "Zobacz wolne miejsca pracy"
+    },
+
     "aboutUs": {
       "title": "Kim jesteśmy?",
       "main_text": "Jesteśmy wiodącą polską firmą doradczą, wyspecjalizowaną w outsourcing pracowników.Naszą działalność rozpoczęliśmy w 2017 roku, widząc możliwość pomocy firmom w zaspokojeniu ich niedoborów kadrowych, głównie w oparciu o pracowników zza wschodniej granicy.W 2022 roku jako jedna z pierwszych firm na rynku polskim rozszerzyliśmy naszą działalność o pracowników z Filipin. Pozwoliło nam to na zmniejszenie rotacji personelu, a pracownicy z  Filipin stali się jedną z najbardziej pożądanych grup pracowników. Naszą ambicją jest najwyższy poziom świadczonych usług, który wyprzedza rynek i tworzy nowy standard. Nieustannie dbamy o wysoki poziom kompetencji naszego zespołu, który jest gwarancją jakości, sprawności i efektywności prowadzonych procesów. ",
@@ -399,6 +405,23 @@
   },
 
   "contacts": {
+    "hero": {
+      "title": "Połącz się z nami",
+      "heroUnderTitle": "Pozwól nam pomóc ci ekspertyczną radą i znaleźć odpowiednią wolną posadę dla ciebie",
+      "button": "Skontaktować się"
+    },
+    "contactDetails": {
+      "title": "Dane kontaktowe",
+      "address": "Adres",
+      "phone": "Dzisiaj zadzwoń",
+      "email": "Email",
+      "hours": "Godziny pracy",
+      "days": "Pn - Pt:",
+      "time": "8:00 - 19:00"
+    },
+    "contactForm": {
+      "title": "Skontaktuj się z nami!"
+    },
     "workHoursTitle": "Godziny pracy: ",
     "workingTime": "Poniedziałek-piątek od 8:00 rano do 19:00",
     "namePhoneContact": "MOISEIKO VASYL",
