@@ -20,7 +20,7 @@ export const StyledVacancyItem = styled.li`
 `;
 
 export const StyledVacancyItemImg = styled.img`
-  filter: brightness(70%);
+  filter: brightness(80%);
 
   position: relative;
   z-index: 2;
