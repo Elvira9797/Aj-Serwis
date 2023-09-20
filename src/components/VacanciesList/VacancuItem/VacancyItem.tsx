@@ -15,6 +15,7 @@ import Button from '../../Button/Button';
 import { FaLocationDot } from 'react-icons/fa6';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { GiCash } from 'react-icons/gi';
+import AnimateOpacity from '../../AnimateOnView/AnimateOpacity';
 
 interface IVacancyItem {
   vacancy: IVacancieData;
@@ -31,7 +32,9 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         <StyledGradientWrap>
           <StyledVacancyItemImg src={image} alt={job_title} />
           <StyledImgGradient>
-            <StyledVacancyJobTitle>{job_title}</StyledVacancyJobTitle>
+            <AnimateOpacity>
+              <StyledVacancyJobTitle>{job_title}</StyledVacancyJobTitle>
+            </AnimateOpacity>
           </StyledImgGradient>
         </StyledGradientWrap>
 
