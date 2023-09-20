@@ -9,6 +9,7 @@ import { nanoid } from 'nanoid';
 import { CSSProperties, FC, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import sendEmail from './sendEmail';
+import AnimateOpacity from '../AnimateOnView/AnimateOpacity';
 
 export interface FormFields {
   name: string;
@@ -69,99 +70,101 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
   };
 
   return (
-    <StyledForm onSubmit={handleSubmit(onSubmit)} style={style}>
-      <Wrapper style={{ display: 'flex', gap: '2rem' }}>
+    <AnimateOpacity>
+      <StyledForm onSubmit={handleSubmit(onSubmit)} style={style}>
+        <Wrapper style={{ display: 'flex', gap: '2rem' }}>
+          <Input
+            id={inputIds.name}
+            value={allFieldsValue.name}
+            type="text"
+            placeholder=""
+            label={t('main.contactUs.form.fields.name')}
+            {...register('name')}
+            errors={errors}
+            lightTheme={lightTheme}
+          />
+          <Input
+            id={inputIds.surname}
+            type="text"
+            placeholder=""
+            {...register('surname')}
+            label={t('main.contactUs.form.fields.surname')}
+            value={allFieldsValue.surname}
+            errors={errors}
+            lightTheme={lightTheme}
+          />
+        </Wrapper>
+        <Wrapper>
+          <Input
+            id={inputIds.phone}
+            type="tel"
+            placeholder=""
+            {...register('phone')}
+            label={t('main.contactUs.form.fields.phone')}
+            value={allFieldsValue.phone}
+            errors={errors}
+            lightTheme={lightTheme}
+          />
+          <Input
+            id={inputIds.email}
+            type="email"
+            placeholder=""
+            {...register('email')}
+            label={t('main.contactUs.form.fields.email')}
+            value={allFieldsValue.email}
+            errors={errors}
+            lightTheme={lightTheme}
+          />
+        </Wrapper>
         <Input
-          id={inputIds.name}
-          value={allFieldsValue.name}
+          id={inputIds.comment}
           type="text"
           placeholder=""
-          label={t('main.contactUs.form.fields.name')}
-          {...register('name')}
+          {...register('comment')}
+          value={allFieldsValue.comment}
+          label={t('main.contactUs.form.fields.comment')}
           errors={errors}
           lightTheme={lightTheme}
         />
-        <Input
-          id={inputIds.surname}
-          type="text"
-          placeholder=""
-          {...register('surname')}
-          label={t('main.contactUs.form.fields.surname')}
-          value={allFieldsValue.surname}
-          errors={errors}
-          lightTheme={lightTheme}
-        />
-      </Wrapper>
-      <Wrapper>
-        <Input
-          id={inputIds.phone}
-          type="tel"
-          placeholder=""
-          {...register('phone')}
-          label={t('main.contactUs.form.fields.phone')}
-          value={allFieldsValue.phone}
-          errors={errors}
-          lightTheme={lightTheme}
-        />
-        <Input
-          id={inputIds.email}
-          type="email"
-          placeholder=""
-          {...register('email')}
-          label={t('main.contactUs.form.fields.email')}
-          value={allFieldsValue.email}
-          errors={errors}
-          lightTheme={lightTheme}
-        />
-      </Wrapper>
-      <Input
-        id={inputIds.comment}
-        type="text"
-        placeholder=""
-        {...register('comment')}
-        value={allFieldsValue.comment}
-        label={t('main.contactUs.form.fields.comment')}
-        errors={errors}
-        lightTheme={lightTheme}
-      />
-      <div
-        style={{
-          width: '1005',
-          display: 'flex',
-          gap: '1rem',
-          alignItems: 'center',
-          padding: '0 1rem',
-        }}
-      >
-        <StyledCheckbox
-          type="checkbox"
-          id={inputIds.policy}
-          {...register('policy')}
-          lightTheme={lightTheme}
-        ></StyledCheckbox>
-        <label
-          htmlFor={inputIds.policy}
+        <div
           style={{
-            fontSize: '0.8rem',
-            color: !lightTheme ? '#fff' : '#000',
-            cursor: 'pointer',
+            width: '1005',
+            display: 'flex',
+            gap: '1rem',
+            alignItems: 'center',
+            padding: '0 1rem',
           }}
         >
-          {t('main.contactUs.form.fields.policy')}
-        </label>
-      </div>
-      <Button
-        type="submit"
-        disabled={isDisabled}
-        variant="form"
-        lightTheme={lightTheme}
-        style={{
-          margin: '0 auto',
-        }}
-      >
-        {t('main.contactUs.form.btnText')}
-      </Button>
-    </StyledForm>
+          <StyledCheckbox
+            type="checkbox"
+            id={inputIds.policy}
+            {...register('policy')}
+            lightTheme={lightTheme}
+          ></StyledCheckbox>
+          <label
+            htmlFor={inputIds.policy}
+            style={{
+              fontSize: '0.8rem',
+              color: !lightTheme ? '#fff' : '#000',
+              cursor: 'pointer',
+            }}
+          >
+            {t('main.contactUs.form.fields.policy')}
+          </label>
+        </div>
+        <Button
+          type="submit"
+          disabled={isDisabled}
+          variant="form"
+          lightTheme={lightTheme}
+          style={{
+            margin: '0 auto',
+          }}
+        >
+          {t('main.contactUs.form.btnText')}
+        </Button>
+      </StyledForm>
+    </AnimateOpacity>
   );
 };
 

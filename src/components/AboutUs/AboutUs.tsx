@@ -3,23 +3,18 @@ import aboutUs from '../../images/aboutUs.jpg';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import AnimateOnScroll from '../AnimateOnScroll/AnimateOnScroll';
+import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <SectionContainer>
       <Container>
         <LeftBox>
-          <SectionTitle>About us</SectionTitle>
-          <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          <SectionTitle>{t('main.aboutUs.title')}</SectionTitle>
+          <Text>{t('main.aboutUs.main_text')}</Text>
+          <Text style={{ marginTop: '1rem' }}>
+            {t('main.aboutUs.sub_text')}
           </Text>
         </LeftBox>
         <RightBox>

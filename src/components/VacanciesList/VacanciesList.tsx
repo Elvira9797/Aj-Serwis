@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import GoBackBtn from '../GoBackBtn/GoBackBtn';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import VacancyItem from './VacancuItem/VacancyItem';
@@ -10,11 +10,14 @@ import {
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { useTranslation } from 'react-i18next';
 import { IVacancieData } from '../../common/vacanciesArr';
+import { useRef } from 'react';
 
 function VacanciesList() {
-  const navigate = useNavigate();
-
+  const location = useLocation();
   const { t } = useTranslation();
+
+  const prevPath = useRef(location.state?.from ?? `/`);
+
   const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
     returnObjects: true,
   });
@@ -25,11 +28,7 @@ function VacanciesList() {
         <SectionTitle style={{ marginBottom: '10px' }}>
           {t('vacancies.title')}
         </SectionTitle>
-
-        <GoBackBtn
-          onClick={() => navigate(-1)}
-          style={{ marginBottom: '2rem' }}
-        >
+        <GoBackBtn prevPath={prevPath.current} style={{ marginBottom: '2rem' }}>
           {t('vacancies.back')}
         </GoBackBtn>
         <StyledVacancyList>
