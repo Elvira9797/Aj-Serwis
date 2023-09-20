@@ -5,12 +5,19 @@
       "vacancies": "Vacancies",
       "contacts": "Contacts"
     },
-    "hero": {},
+
+    "hero": {
+      "title": "Aj Serwis",
+      "heroUnderTitle": "Effortlessly find job opportunities in Poland. Experience a fast and efficient job search process",
+      "button": "View job vacancies"
+    },
+
     "aboutUs": {
       "title": "About Us",
       "main_text": "We are a leading Polish advisory company specialized in employee outsourcing. We started our operations in 2017, recognizing the opportunity to help companies meet their staffing needs, primarily by sourcing employees from Eastern Europe. In 2022, as one of the first companies in the Polish market, we expanded our operations to include employees from the Philippines. This allowed us to reduce staff turnover, and Filipino workers have become one of the most sought-after groups of employees. Our ambition is to provide the highest level of services that surpass the market and set a new standard. We continuously focus on the high competence of our team, which guarantees quality, efficiency, and effectiveness in the processes we manage.",
       "sub_text": "Why should you trust us? Over 100 companies, including leaders in the FMCG industry, have placed their trust in us.We have employed over 10,000 workers, and our differentiator is speed of action. Orders for up to 200 employees are most commonly fulfilled within 2 weeks from signing the contract."
     },
+
     "vacancies": {
       "title": "Vacancies",
       "job_listing": [
@@ -407,6 +414,23 @@
     }
   },
   "contacts": {
+    "hero": {
+      "title": "Connect with us",
+      "heroUnderTitle": "Let us assist you with expert advice and find the right vacancy for you",
+      "button": "Contact Us"
+    },
+    "contactDetails": {
+      "title": "Contact Details",
+      "address": "Address",
+      "phone": "Call today",
+      "email": "Email",
+      "hours": "Working hours",
+      "days": "Mon - Fri:",
+      "time": "8:00 AM - 7:00 PM"
+    },
+    "contactForm": {
+      "title": "Contact us!"
+    },
     "workHoursTitle": "Working hours: ",
     "workingTime": "Mon-Fri from 8:00 AM to 7:00 PM",
     "namePhoneContact": "MOISEIKO VASYL",
