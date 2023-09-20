@@ -68,7 +68,7 @@ function BenefitsList() {
       key={languageKey}
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ amount: 0.2, once: true }}
     >
       {benefits.length > 0 &&
         benefits.map((item, index) => (
