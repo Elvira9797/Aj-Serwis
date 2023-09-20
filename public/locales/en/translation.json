@@ -5,12 +5,19 @@
       "vacancies": "Vacancies",
       "contacts": "Contacts"
     },
+
     "hero": {
       "title": "Aj Serwis",
       "heroUnderTitle": "Effortlessly find job opportunities in Poland. Experience a fast and efficient job search process",
       "button": "View job vacancies"
     },
-    "aboutUs": {},
+
+    "aboutUs": {
+      "title": "About Us",
+      "main_text": "We are a leading Polish advisory company specialized in employee outsourcing. We started our operations in 2017, recognizing the opportunity to help companies meet their staffing needs, primarily by sourcing employees from Eastern Europe. In 2022, as one of the first companies in the Polish market, we expanded our operations to include employees from the Philippines. This allowed us to reduce staff turnover, and Filipino workers have become one of the most sought-after groups of employees. Our ambition is to provide the highest level of services that surpass the market and set a new standard. We continuously focus on the high competence of our team, which guarantees quality, efficiency, and effectiveness in the processes we manage.",
+      "sub_text": "Why should you trust us? Over 100 companies, including leaders in the FMCG industry, have placed their trust in us.We have employed over 10,000 workers, and our differentiator is speed of action. Orders for up to 200 employees are most commonly fulfilled within 2 weeks from signing the contract."
+    },
+
     "vacancies": {
       "title": "Vacancies",
       "job_listing": [

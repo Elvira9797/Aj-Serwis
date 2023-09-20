@@ -11,6 +11,7 @@ const WhyAjSerwis: React.FC = () => {
     <StyledWhyAjSection>
       <SectionContainer>
         <SectionTitle>{t('main.whyAj.title')}</SectionTitle>
+        <p style={{ marginBottom: '1rem' }}>{t('main.aboutUs.sub_text')}</p>
         <BenefitsList />
       </SectionContainer>
     </StyledWhyAjSection>
