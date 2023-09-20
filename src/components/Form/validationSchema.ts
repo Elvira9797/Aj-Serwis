@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import * as yup from 'yup';
 
-const validationSchema = yup.object({
+const formSchema = yup.object().shape({
   name: yup
     .string()
     .required(i18next.t('main.contactUs.form.errors.name.required'))
@@ -46,4 +46,4 @@ const validationSchema = yup.object({
   policy: yup.boolean().oneOf([true]),
 });
 
-export default validationSchema;
+export { formSchema };
