@@ -3,16 +3,18 @@ import { motion } from 'framer-motion';
 
 const titleAnimation = {
   hidden: {
-    x: -200,
+    x: -50,
+    // y: 20,
     opacity: 0,
   },
   visible: (custom: number) => ({
     x: 0,
+    // y: 0,
     opacity: 1,
     transition: {
-      delay: custom * 0.2,
+      delay: 0.2,
       ease: 'easeOut',
-      duration: 0.5,
+      duration: 0.7,
     },
   }),
 };
@@ -27,7 +29,6 @@ const AnimateOnView: FC<IAnimateOnView> = ({ children }) => {
       whileInView="visible"
       viewport={{ amount: 0.5, once: true }}
       variants={titleAnimation}
-      custom={1}
     >
       {children}
     </motion.div>
