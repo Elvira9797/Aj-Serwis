@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { theme } from '../../../common/theme';
+import { motion } from 'framer-motion';
 
-export const StyledBenefitsList = styled.ul`
+export const StyledBenefitsList = styled(motion.ul)`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -9,7 +10,7 @@ export const StyledBenefitsList = styled.ul`
   row-gap: 30px;
 `;
 
-export const StyledBenefitItem = styled.li`
+export const StyledBenefitItem = styled(motion.li)`
   width: 200px;
   text-align: center;
   display: flex;
@@ -18,7 +19,7 @@ export const StyledBenefitItem = styled.li`
   gap: 10px;
 `;
 
-export const StyledBenefitIcoContainer = styled.div`
+export const StyledBenefitIcoContainer = styled(motion.div)`
   padding: 30px;
   width: 120px;
   height: 120px;
@@ -26,7 +27,7 @@ export const StyledBenefitIcoContainer = styled.div`
   border-radius: 50%;
 `;
 
-export const StyledBenefitText = styled.p`
+export const StyledBenefitText = styled(motion.p)`
   color: rgb(130, 130, 130);
   font-size: 16px;
 `;

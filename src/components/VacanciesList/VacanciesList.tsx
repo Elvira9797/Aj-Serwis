@@ -8,8 +8,6 @@ import {
 } from './VacancyList.styled';
 
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { useSpring, animated } from 'react-spring';
-
 import { useTranslation } from 'react-i18next';
 import { IVacancieData } from '../../common/vacanciesArr';
 
@@ -21,19 +19,13 @@ function VacanciesList() {
     returnObjects: true,
   });
 
-  const titleSpring = useSpring({
-    from: { opacity: 0, transform: 'translateY(20px)' },
-    to: { opacity: 1, transform: 'translateY(0)' },
-    delay: 200,
-  });
   return (
     <StyledVacanciesSection style={{ paddingTop: '110px' }}>
       <SectionContainer>
-        <animated.div style={titleSpring}>
-          <SectionTitle style={{ marginBottom: '10px' }}>
-            {t('vacancies.title')}
-          </SectionTitle>
-        </animated.div>
+        <SectionTitle style={{ marginBottom: '10px' }}>
+          {t('vacancies.title')}
+        </SectionTitle>
+
         <GoBackBtn
           onClick={() => navigate(-1)}
           style={{ marginBottom: '2rem' }}
