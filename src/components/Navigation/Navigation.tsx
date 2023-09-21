@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { StyledNavList } from './Navigation.styled';
 
@@ -13,6 +13,7 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
   const { closeModal } = useAppContext();
   const { t } = useTranslation();
+  const location = useLocation();
 
   const res = i18n.resolvedLanguage;
 
@@ -38,7 +39,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
             }
-            state={{ languageChange: false }}
+            state={{ from: location, languageChange: false }}
           >
             {t('main.nav.vacancies')}
           </NavLink>

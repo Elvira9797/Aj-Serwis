@@ -17,6 +17,10 @@ function VacanciesList() {
   const { t } = useTranslation();
 
   const prevPath = useRef(location.state?.from ?? `/`);
+  
+  if (location.state) {
+    prevPath.current.search = location.search;
+  }
 
   const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
     returnObjects: true,

@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { Suspense } from 'react';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
+import { ToastContainer } from 'react-toastify';
 
 const Layout = () => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const Layout = () => {
       </main>
       <ScrollToTopButton />
       <Footer />
+      <ToastContainer theme="colored" hideProgressBar={true} style={{zIndex: '100000'}}/>
     </>
   );
 };

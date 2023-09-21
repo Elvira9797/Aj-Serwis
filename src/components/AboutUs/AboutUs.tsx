@@ -8,7 +8,6 @@ import AnimateOpacity from '../AnimateOnView/AnimateOpacity';
 
 const AboutUs = () => {
   const { t } = useTranslation();
-  console.log(t('main.aboutUs.list_titles'));
   return (
     <SectionContainer>
       <Container>
