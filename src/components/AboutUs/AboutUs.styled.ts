@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 import { theme } from '../../common/theme';
 
 export const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   gap: 15px;
+  height: 100%;
   align-items: center;
   padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
   padding-bottom: ${({ theme }) => theme.section.padding.small.paddingBottom};
@@ -14,35 +15,42 @@ export const Container = styled.div`
       theme.section.padding.medium.paddingBottom};
   }
 `;
-export const LeftBox = styled.div`
-  display: flex;
-  flex-direction: column;
+export const List = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+
+  margin-top: 2.5rem;
   justify-content: center;
   margin-bottom: 15px;
-  @media (min-width: 1200px) {
-    flex: 1;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+    text-align: center;
   }
 `;
 export const RightBox = styled.div`
-  @media (min-width: 1200px) {
-    width: 60%;
-  }
+  height: 80%;
 `;
 export const Title = styled.h2`
   width: 100%;
+  margin-bottom: 0.5rem;
   text-align: left;
-  &::after {
-    content: '';
-    width: 70%;
-    height: 2px;
-    background-color: #ffffff;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: ${theme.colors.accentColor};
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 export const Text = styled.p`
   text-align: left;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
-export const ImageEl = styled.img``;
+export const ImageEl = styled.img`
+  max-width: 100%;
+  @media (max-width: 440яpx) {
+    display: none;
+  }
+`;
