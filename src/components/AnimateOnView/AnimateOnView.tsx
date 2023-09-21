@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 const titleAnimation = {
   hidden: {
-    x: -50,
-    // y: 20,
+    // x: -50,
+    y: 20,
     opacity: 0,
   },
   visible: (custom: number) => ({
-    x: 0,
-    // y: 0,
+    // x: 0,
+    y: 0,
     opacity: 1,
     transition: {
       delay: 0.2,
