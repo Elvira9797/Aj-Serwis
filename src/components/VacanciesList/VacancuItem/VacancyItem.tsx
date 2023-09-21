@@ -27,7 +27,6 @@ const VacancyItem: React.FC<IVacancyItem> = ({
 }) => {
   const location = useLocation();
   const res = i18n.resolvedLanguage;
-  console.log('res: ', res);
 
   return (
     <StyledVacancyItem>

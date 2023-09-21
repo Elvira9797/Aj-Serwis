@@ -1,14 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSpring, animated } from 'react-spring';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Button from '../Button/Button';
 import { HeroTitle, HeroUnderTitle, Overlay } from './Hero.styled';
 import SocialMediaLink from '../SocialMediaLink/SocialMediaLink';
 
 const Hero: React.FC = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const location = useLocation();
 
   const titleSpring = useSpring({
     from: { opacity: 0, transform: 'translateY(20px)' },
@@ -28,10 +29,6 @@ const Hero: React.FC = () => {
     delay: 600,
   });
 
-  const handleButtonClick = () => {
-    navigate('/vacancies');
-  };
-
   return (
     <Overlay>
       <animated.div style={titleSpring}>
@@ -41,8 +38,14 @@ const Hero: React.FC = () => {
         <HeroUnderTitle>{t('main.hero.heroUnderTitle')}</HeroUnderTitle>
       </animated.div>
       <animated.div style={buttonSpring}>
-        <Button variant="hero" type="button" onClick={handleButtonClick}>
-          {t('main.hero.button')}
+        <Button variant="hero" type="button">
+          <NavLink
+            style={{ color: 'inherit', textDecoration: 'none' }}
+            to={'/vacancies'}
+            state={{ from: location }}
+          >
+            {t('main.hero.button')}
+          </NavLink>
         </Button>
       </animated.div>
       <SocialMediaLink />

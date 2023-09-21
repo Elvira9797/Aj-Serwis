@@ -9,7 +9,6 @@ import { nanoid } from 'nanoid';
 import { CSSProperties, FC, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import sendEmail from './sendEmail';
-import AnimateOpacity from '../AnimateOnView/AnimateOpacity';
 
 export interface FormFields {
   name: string;
@@ -23,6 +22,7 @@ export interface FormFields {
 interface FormProps {
   style?: CSSProperties;
   lightTheme?: boolean;
+  vacancyName?: string | undefined;
 }
 
 const inputIds = {
@@ -34,7 +34,11 @@ const inputIds = {
   policy: nanoid(),
 };
 
-const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
+const Form: FC<FormProps> = ({
+  style,
+  lightTheme = false,
+  vacancyName = '',
+}) => {
   const { validationSchema } = useValidationSchema();
   const {
     register,
@@ -64,13 +68,12 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
   }, [allFieldsValue]);
 
   const onSubmit = async (data: FormFields) => {
-    await sendEmail(data);
-
+    await sendEmail(data, vacancyName);
     reset();
   };
 
   return (
-    <AnimateOpacity>
+    <>
       <StyledForm onSubmit={handleSubmit(onSubmit)} style={style}>
         <Wrapper style={{ display: 'flex', gap: '2rem' }}>
           <Input
@@ -164,7 +167,7 @@ const Form: FC<FormProps> = ({ style, lightTheme = false }) => {
           {t('main.contactUs.form.btnText')}
         </Button>
       </StyledForm>
-    </AnimateOpacity>
+    </>
   );
 };
 

@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
-import { theme } from '../../common/theme';
 
 export const Container = styled.div`
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   gap: 15px;
   height: 100%;
   align-items: center;
@@ -18,7 +15,6 @@ export const Container = styled.div`
 export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // flex-direction: column;
   gap: 1rem;
   text-align: left;
 
