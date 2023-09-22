@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.734a605d.css",
-    "main.js": "/Aj-Serwis/static/js/main.84e2a85d.js",
-    "static/js/998.6c3df71e.chunk.js": "/Aj-Serwis/static/js/998.6c3df71e.chunk.js",
-    "static/js/398.31cac4ca.chunk.js": "/Aj-Serwis/static/js/398.31cac4ca.chunk.js",
-    "static/js/52.55dfb27a.chunk.js": "/Aj-Serwis/static/js/52.55dfb27a.chunk.js",
+    "main.js": "/Aj-Serwis/static/js/main.721acfbc.js",
+    "static/js/998.909b46e2.chunk.js": "/Aj-Serwis/static/js/998.909b46e2.chunk.js",
+    "static/js/398.996cc230.chunk.js": "/Aj-Serwis/static/js/398.996cc230.chunk.js",
+    "static/js/52.34c5e633.chunk.js": "/Aj-Serwis/static/js/52.34c5e633.chunk.js",
     "static/js/325.ccbdb67e.chunk.js": "/Aj-Serwis/static/js/325.ccbdb67e.chunk.js",
     "static/js/554.33cda05d.chunk.js": "/Aj-Serwis/static/js/554.33cda05d.chunk.js",
     "static/js/203.85f8628c.chunk.js": "/Aj-Serwis/static/js/203.85f8628c.chunk.js",
@@ -66,10 +66,10 @@
     "static/media/getFetch.cjs": "/Aj-Serwis/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
     "main.734a605d.css.map": "/Aj-Serwis/static/css/main.734a605d.css.map",
-    "main.84e2a85d.js.map": "/Aj-Serwis/static/js/main.84e2a85d.js.map",
-    "998.6c3df71e.chunk.js.map": "/Aj-Serwis/static/js/998.6c3df71e.chunk.js.map",
-    "398.31cac4ca.chunk.js.map": "/Aj-Serwis/static/js/398.31cac4ca.chunk.js.map",
-    "52.55dfb27a.chunk.js.map": "/Aj-Serwis/static/js/52.55dfb27a.chunk.js.map",
+    "main.721acfbc.js.map": "/Aj-Serwis/static/js/main.721acfbc.js.map",
+    "998.909b46e2.chunk.js.map": "/Aj-Serwis/static/js/998.909b46e2.chunk.js.map",
+    "398.996cc230.chunk.js.map": "/Aj-Serwis/static/js/398.996cc230.chunk.js.map",
+    "52.34c5e633.chunk.js.map": "/Aj-Serwis/static/js/52.34c5e633.chunk.js.map",
     "325.ccbdb67e.chunk.js.map": "/Aj-Serwis/static/js/325.ccbdb67e.chunk.js.map",
     "554.33cda05d.chunk.js.map": "/Aj-Serwis/static/js/554.33cda05d.chunk.js.map",
     "203.85f8628c.chunk.js.map": "/Aj-Serwis/static/js/203.85f8628c.chunk.js.map",
@@ -85,6 +85,6 @@
   },
   "entrypoints": [
     "static/css/main.734a605d.css",
-    "static/js/main.84e2a85d.js"
+    "static/js/main.721acfbc.js"
   ]
 }
