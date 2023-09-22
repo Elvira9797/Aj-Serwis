@@ -9,7 +9,7 @@ export const StyledGoBackBtn = styled.button`
   padding: 0.5rem 0;
   border-bottom: 1px #000 solid;
   font-size: 0.8rem;
-
+  color: #000;
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;

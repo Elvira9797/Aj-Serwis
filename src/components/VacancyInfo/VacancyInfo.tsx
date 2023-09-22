@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC } from 'react';
 import {
   VacancyContainer,
   VacancyImg,
@@ -11,7 +11,7 @@ import {
 } from './VacancyInfo-styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import GoBackBtn from '../GoBackBtn/GoBackBtn';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Button from '../Button/Button';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
@@ -35,34 +35,14 @@ interface VacansyInfoProps {
 
 const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
   const { t } = useTranslation();
-
-  const navigate = useNavigate();
   const location = useLocation();
 
-  const prevPath = useRef(location.state?.from);
-
-  const handleBackButtonClick = () => {
-    const queryParams = new URLSearchParams(location.search);
-    const langParam = queryParams.get('lang');
-
-    if (langParam) {
-      queryParams.set('lang', langParam);
-      const updatedSearch = queryParams.toString();
-      const updatedUrl = `${prevPath.current.pathname}?${updatedSearch}`;
-
-      navigate(updatedUrl, { replace: true });
-      return;
-    }
-    navigate('/');
-  };
+  const fromPath = location.state ? location.state.from.pathname : '/';
 
   return (
     <VacancySection>
       <SectionContainer>
-        <GoBackBtn
-          style={{ marginBottom: '2rem' }}
-          onClick={handleBackButtonClick}
-        >
+        <GoBackBtn style={{ marginBottom: '2rem' }} state={fromPath}>
           {t('vacancies.back')}
         </GoBackBtn>
         <VacancyContainer>
