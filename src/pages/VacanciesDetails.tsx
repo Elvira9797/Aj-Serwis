@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import VacancyInfo from '../components/VacancyInfo/VacancyInfo';
 import { Element } from 'react-scroll';
 import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
@@ -13,6 +13,9 @@ import {
 
 const VacanciesDetails = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { id } = useParams();
+
   const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
     returnObjects: true,
   });
@@ -28,8 +31,6 @@ const VacanciesDetails = () => {
     }
   );
 
-  const { id } = useParams();
-
   const getCurrentVacancy = () => {
     return vacanciesFullInfo.find(vacancy => vacancy.id === id);
   };
@@ -38,6 +39,10 @@ const VacanciesDetails = () => {
     return vacaciesShort.filter(vacancy => vacancy.id !== id);
   };
   const currentVacancy = getCurrentVacancy();
+  
+  if (!currentVacancy) {
+    navigate('/not-found');
+  }
 
   const filteredVacancies = getFilteredVacancies();
 
