@@ -7,6 +7,13 @@ export interface IVacancieData {
   job_title: string;
 }
 
+export interface ICardFields {
+  city: string;
+  position: string;
+  salary: string;
+  more_info: string;
+}
+
 export interface IFullVacancieData {
   id: string;
   job_title: string;

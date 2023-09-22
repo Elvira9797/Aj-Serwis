@@ -28,7 +28,12 @@
 
     "vacancies": {
       "title": "Вакансії",
-
+      "card_fields": {
+        "city": "Місто",
+        "position": "Посада",
+        "salary": "Зарплата",
+        "more_info": "Більше інформації"
+      },
       "job_listing": [
         {
           "id": "001",

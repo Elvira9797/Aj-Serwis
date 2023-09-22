@@ -5,11 +5,14 @@ import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import WhyAjSerwis from '../components/WhyAjSerwis/WhyAjSerwis';
 
 import { useTranslation } from 'react-i18next';
-import { IVacancieData } from '../common/vacanciesArr';
+import { ICardFields, IVacancieData } from '../common/vacanciesArr';
 
 const Home = () => {
   const { t } = useTranslation();
   const jobListings: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
+  const cardFields: ICardFields = t('main.vacancies.card_fields', {
     returnObjects: true,
   });
   return (
@@ -19,6 +22,7 @@ const Home = () => {
       <VacanciesSlider
         title={t('main.vacancies.title')}
         vacancies={jobListings}
+        cardFields={cardFields}
       />
       <WhyAjSerwis />
       <ContactUs />

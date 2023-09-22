@@ -3,12 +3,10 @@ import { motion } from 'framer-motion';
 
 const titleAnimation = {
   hidden: {
-    // x: -50,
     y: 20,
     opacity: 0,
   },
-  visible: (custom: number) => ({
-    // x: 0,
+  visible: {
     y: 0,
     opacity: 1,
     transition: {
@@ -16,7 +14,7 @@ const titleAnimation = {
       ease: 'easeOut',
       duration: 0.7,
     },
-  }),
+  },
 };
 interface IAnimateOnView {
   children: ReactNode;
