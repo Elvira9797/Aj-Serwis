@@ -16,6 +16,9 @@ export const Title = styled.h2`
     margin-bottom: 20px;
     background-color: #c3a069;
   }
+  @media (max-width: 1160px) {
+    align-items: flex-start !important;
+  }
   @media (min-width: 1236px) {
     font-size: 32px;
     align-items: flex-start;
