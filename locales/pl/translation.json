@@ -27,6 +27,12 @@
     },
     "vacancies": {
       "title": "Wakaty",
+      "card_fields": {
+        "city": "Miasto",
+        "position": "Stanowisko",
+        "salary": "Wynagrodzenie",
+        "more_info": "Więcej informacji"
+      },
       "job_listing": [
         {
           "id": "001",
