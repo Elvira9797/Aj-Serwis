@@ -430,11 +430,13 @@
     },
     "contactForm": {
       "title": "Зв'яжіться з нами!"
-    },
+    }
+  },
+  "info": {
     "workHoursTitle": "Робочий час: ",
     "workingTime": "Пн-Пт з 8:00 ранку до 19:00",
     "namePhoneContact": "МОЇСЕЙКО ВАСИЛЬ",
-    "email": "aj.serwis.spzoo@gmail.com",
+    "email": "aj.serwis.sp@gmail.com",
     "tel": "+48 539 649 808"
   }
 }

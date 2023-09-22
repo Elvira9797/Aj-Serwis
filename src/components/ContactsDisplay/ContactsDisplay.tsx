@@ -32,28 +32,28 @@ const ContactsDisplay: React.FC<ContactsDisplayProps> = ({ displayName }) => {
             fontSize: '0.6rem',
           }}
         >
-          {t('contacts.workingTime')}
+          {t('info.workingTime')}
         </span>
       </div>
       <ContactBox>
         <ContactWraper displayName={displayName}>
-          <span>{t('contacts.namePhoneContact')}</span>
-          <a href={`tel:{t('contacts.workingTime')}`}>
+          <span>{t('info.namePhoneContact')}</span>
+          <a href={`tel:{t('info.workingTime')}`}>
             <FaPhone />
-            {t('contacts.tel')}
+            {t('info.tel')}
           </a>
         </ContactWraper>
       </ContactBox>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <BiMailSend size={36} style={{ color: theme.colors.accentColor }} />
         <a
-          href={`mailto:${t('contacts.email')}`}
+          href={`mailto:${t('info.email')}`}
           style={{
             color: theme.colors.accentColor,
             fontSize: '0.8rem',
           }}
         >
-          {t('contacts.email')}
+          {t('info.email')}
         </a>
       </div>
     </ContactsContainer>

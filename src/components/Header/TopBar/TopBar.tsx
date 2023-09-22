@@ -29,11 +29,11 @@ const TopBar: React.FC = () => {
     <StyledTopBar isVisible={isTop}>
       <StyledNavWrader>
         <BiMailSend />
-        <a href={`mailto:${t('contacts.email')}`}>{t('contacts.email')}</a>
+        <a href={`mailto:${t('info.email')}`}>{t('info.email')}</a>
       </StyledNavWrader>
       <p>
-        {t('contacts.workHoursTitle')}
-        {t('contacts.workingTime')}
+        {t('info.workHoursTitle')}
+        {t('info.workingTime')}
       </p>
     </StyledTopBar>
   );
