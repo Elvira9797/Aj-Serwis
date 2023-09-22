@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { IVacancieData } from '../../../common/vacanciesArr';
+import { ICardFields, IVacancieData } from '../../../common/vacanciesArr';
 import {
   StyledGradientWrap,
   StyledImgGradient,
@@ -15,15 +15,17 @@ import Button from '../../Button/Button';
 import { FaLocationDot } from 'react-icons/fa6';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { GiCash } from 'react-icons/gi';
-import AnimateOpacity from '../../AnimateOnView/AnimateOpacity';
+import AnimateOnView from '../../AnimateOnView/AnimateOnView';
 import i18n from '../../../i18n';
 
 interface IVacancyItem {
   vacancy: IVacancieData;
+  cardFields: ICardFields;
 }
 
 const VacancyItem: React.FC<IVacancyItem> = ({
   vacancy: { id, image, job_title, city, position, salary },
+  cardFields,
 }) => {
   const location = useLocation();
   const res = i18n.resolvedLanguage;
@@ -37,24 +39,26 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         <StyledGradientWrap>
           <StyledVacancyItemImg src={image} alt={job_title} />
           <StyledImgGradient>
-            <AnimateOpacity>
+            <AnimateOnView>
               <StyledVacancyJobTitle>{job_title}</StyledVacancyJobTitle>
-            </AnimateOpacity>
+            </AnimateOnView>
           </StyledImgGradient>
         </StyledGradientWrap>
 
         <StyledTextContainer>
           <StyledVacancyText>
             <FaLocationDot size={24} color="#c3a069" />
-            <StyledVacancyTitle>City:</StyledVacancyTitle> {city}
+            <StyledVacancyTitle>{cardFields.city}:</StyledVacancyTitle> {city}
           </StyledVacancyText>
           <StyledVacancyText>
             <BsFillPersonFill size={24} color="#c3a069" />
-            <StyledVacancyTitle>Position:</StyledVacancyTitle> {position}
+            <StyledVacancyTitle>{cardFields.position}:</StyledVacancyTitle>
+            {position}
           </StyledVacancyText>
           <StyledVacancyText>
             <GiCash size={24} color="#c3a069" />
-            <StyledVacancyTitle>Salary:</StyledVacancyTitle> {salary}
+            <StyledVacancyTitle>{cardFields.salary}:</StyledVacancyTitle>
+            {salary}
           </StyledVacancyText>
         </StyledTextContainer>
       </StyledVacancyLink>
@@ -70,7 +74,7 @@ const VacancyItem: React.FC<IVacancyItem> = ({
             console.log('Navigate Vacancy Details');
           }}
         >
-          More Info
+          {cardFields.more_info}
         </Button>
       </StyledVacancyLink>
     </StyledVacancyItem>

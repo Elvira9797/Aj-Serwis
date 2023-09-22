@@ -5,11 +5,19 @@ import VacancyOffer from '../components/VacancyOffer/VacancyOffer';
 import VacancieDetailsFormSection from '../components/VacancieDetailsForm/VacancieDetailsFormSection';
 import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import { useTranslation } from 'react-i18next';
-import { IFullVacancieData, IVacancieData } from '../common/vacanciesArr';
+import {
+  ICardFields,
+  IFullVacancieData,
+  IVacancieData,
+} from '../common/vacanciesArr';
 
 const VacanciesDetails = () => {
   const { t } = useTranslation();
   const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
+
+  const cardFields: ICardFields = t('main.vacancies.card_fields', {
     returnObjects: true,
   });
 
@@ -43,6 +51,7 @@ const VacanciesDetails = () => {
       <VacanciesSlider
         title={t('vacancies.title')}
         vacancies={filteredVacancies}
+        cardFields={cardFields}
       />
     </>
   );

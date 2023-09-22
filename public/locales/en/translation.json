@@ -28,6 +28,12 @@
 
     "vacancies": {
       "title": "Vacancies",
+      "card_fields": {
+        "city": "City",
+        "position": "Position",
+        "salary": "Salary",
+        "more_info": "More info"
+      },
       "job_listing": [
         {
           "id": "001",

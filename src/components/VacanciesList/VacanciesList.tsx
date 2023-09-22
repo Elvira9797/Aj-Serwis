@@ -9,7 +9,7 @@ import {
 
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { useTranslation } from 'react-i18next';
-import { IVacancieData } from '../../common/vacanciesArr';
+import { ICardFields, IVacancieData } from '../../common/vacanciesArr';
 import { useRef } from 'react';
 
 function VacanciesList() {
@@ -17,12 +17,16 @@ function VacanciesList() {
   const { t } = useTranslation();
 
   const prevPath = useRef(location.state?.from ?? `/`);
-  
+
   if (location.state) {
     prevPath.current.search = location.search;
   }
 
   const vacaciesShort: IVacancieData[] = t('main.vacancies.job_listing', {
+    returnObjects: true,
+  });
+
+  const cardFields: ICardFields = t('main.vacancies.card_fields', {
     returnObjects: true,
   });
 
@@ -38,7 +42,11 @@ function VacanciesList() {
         <StyledVacancyList>
           {vacaciesShort.length > 0 &&
             vacaciesShort.map(vacancy => (
-              <VacancyItem key={vacancy.id} vacancy={vacancy} />
+              <VacancyItem
+                key={vacancy.id}
+                vacancy={vacancy}
+                cardFields={cardFields}
+              />
             ))}
         </StyledVacancyList>
       </SectionContainer>
