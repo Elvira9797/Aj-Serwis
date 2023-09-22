@@ -7,9 +7,15 @@ interface GoBackBtnProps {
   style?: CSSProperties;
   children: ReactNode;
   prevPath?: Location;
+  onClick?: () => void;
 }
 
-const GoBackBtn: FC<GoBackBtnProps> = ({ style, children, prevPath }) => {
+const GoBackBtn: FC<GoBackBtnProps> = ({
+  style,
+  children,
+  prevPath,
+  onClick,
+}) => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -21,7 +27,7 @@ const GoBackBtn: FC<GoBackBtnProps> = ({ style, children, prevPath }) => {
   };
 
   return (
-    <StyledGoBackBtn style={style} onClick={handleGoBack}>
+    <StyledGoBackBtn style={style} onClick={onClick}>
       <span>
         <BsArrowLeftShort size={'1rem'} />
       </span>

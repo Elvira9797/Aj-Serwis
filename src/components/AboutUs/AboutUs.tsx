@@ -19,7 +19,7 @@ const AboutUs = () => {
           <AnimateOnView>
             <li>
               <Title>{t('main.aboutUs.list_titles.who_are_we')}</Title>
-              <Text>{t('main.aboutUs.list_text.who_are_we__text')}</Text>
+              <Text>{t('main.aboutUs.list_text.who_are_we_text')}</Text>
             </li>
           </AnimateOnView>
           <AnimateOnView>
