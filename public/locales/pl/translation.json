@@ -20,13 +20,19 @@
         "why_trust": "Dlaczego nam zaufać?"
       },
       "list_text": {
-        "who_are_we__text": "Jesteśmy wiodącą polską firmą doradczą, wyspecjalizowaną w outsourcing pracowników. Naszą działalność rozpoczęliśmy w 2017 roku, widząc możliwość pomocy firmom w zaspokojeniu ich niedoborów kadrowych, głównie w oparciu o pracowników zza wschodniej granicy.",
+        "who_are_we_text": "Jesteśmy wiodącą polską firmą doradczą, wyspecjalizowaną w outsourcing pracowników. Naszą działalność rozpoczęliśmy w 2017 roku, widząc możliwość pomocy firmom w zaspokojeniu ich niedoborów kadrowych, głównie w oparciu o pracowników zza wschodniej granicy.",
         "our_goals_text": "W 2022 roku jako jedna z pierwszych firm na rynku polskim rozszerzyliśmy naszą działalność o pracowników z Filipin. Pozwoliło nam to na zmniejszenie rotacji personelu, a pracownicy z Filipin stali się jedną z najbardziej pożądanych grup pracowników.",
         "why_trust_text": "Zaufało nam ponad 100 firm w tym liderzy branży FMCG. Zatrudniliśmy ponad 10 000 pracowników, a naszym wyróżnikiem jest czas działania. Zlecenia do 200 pracowników, najczęściej realizujemy w terminie 2 tygodni od podpisania umowy."
       }
     },
     "vacancies": {
       "title": "Wakaty",
+      "card_fields": {
+        "city": "Miasto",
+        "position": "Stanowisko",
+        "salary": "Wynagrodzenie",
+        "more_info": "Więcej informacji"
+      },
       "job_listing": [
         {
           "id": "001",
@@ -124,6 +130,7 @@
       "title": "Skontaktuj się z nami",
       "subtitle": "Będziemy wdzięczni, jeśli podzielisz się swoimi danymi kontaktowymi!",
       "form": {
+        "toast": "Twoje dane zostały pomyślnie przesłane",
         "fields": {
           "name": "Imię *",
           "surname": "Nazwisko *",

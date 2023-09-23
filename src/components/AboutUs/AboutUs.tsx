@@ -4,7 +4,7 @@ import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import AnimateOnScroll from '../AnimateOnScroll/AnimateOnScroll';
 import { useTranslation } from 'react-i18next';
-import AnimateOpacity from '../AnimateOnView/AnimateOpacity';
+import AnimateOnView from '../AnimateOnView/AnimateOnView';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -16,24 +16,24 @@ const AboutUs = () => {
           <ImageEl src={aboutUs} alt="about us" />
         </AnimateOnScroll>
         <List>
-          <AnimateOpacity>
+          <AnimateOnView>
             <li>
               <Title>{t('main.aboutUs.list_titles.who_are_we')}</Title>
-              <Text>{t('main.aboutUs.list_text.who_are_we__text')}</Text>
+              <Text>{t('main.aboutUs.list_text.who_are_we_text')}</Text>
             </li>
-          </AnimateOpacity>
-          <AnimateOpacity>
+          </AnimateOnView>
+          <AnimateOnView>
             <li>
               <Title>{t('main.aboutUs.list_titles.our_goals')}</Title>
               <Text>{t('main.aboutUs.list_text.our_goals_text')}</Text>
             </li>
-          </AnimateOpacity>
-          <AnimateOpacity>
+          </AnimateOnView>
+          <AnimateOnView>
             <li>
               <Title>{t('main.aboutUs.list_titles.why_trust')}</Title>
               <Text>{t('main.aboutUs.list_text.why_trust_text')}</Text>
             </li>
-          </AnimateOpacity>
+          </AnimateOnView>
         </List>
       </Container>
     </SectionContainer>

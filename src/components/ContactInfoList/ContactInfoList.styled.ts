@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const SectionStyled = styled.section`
   padding-top: ${({ theme }) => theme.section.padding.small.paddingTop};
@@ -10,38 +11,7 @@ export const SectionStyled = styled.section`
   }
 `;
 
-export const Title = styled.h2`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 26px;
-  margin-bottom: 30px;
-  &::after {
-    content: '';
-    width: 240px;
-    height: 2px;
-    background-color: #ffffff;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: #c3a069;
-  }
-  @media (min-width: 1160px) {
-    align-items: flex-end;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 1190px) {
-    &::after {
-      width: 300px;
-    }
-  }
-  @media (min-width: 1236px) {
-    font-size: 32px;
-  }
-`;
-
-export const BackgroundStyled = styled.div`
+export const BackgroundStyled = styled(motion.div)`
   display: none;
   @media (min-width: 1160px) {
     height: 374px;
@@ -52,7 +22,7 @@ export const BackgroundStyled = styled.div`
   }
 `;
 
-export const ContactInfoListStyled = styled.ul`
+export const ContactInfoListStyled = styled(motion.ul)`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -68,7 +38,7 @@ export const ContactInfoListStyled = styled.ul`
   }
 `;
 
-export const ContactInfoItem = styled.li`
+export const ContactInfoItem = styled(motion.li)`
   text-align: center;
   padding: 10px;
   width: 100%;

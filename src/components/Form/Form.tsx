@@ -14,7 +14,6 @@ export interface FormFields {
   name: string;
   surname: string;
   phone: string;
-  email: string;
   comment: string | undefined;
   policy: boolean | undefined;
 }
@@ -97,28 +96,16 @@ const Form: FC<FormProps> = ({
             lightTheme={lightTheme}
           />
         </Wrapper>
-        <Wrapper>
-          <Input
-            id={inputIds.phone}
-            type="tel"
-            placeholder=""
-            {...register('phone')}
-            label={t('main.contactUs.form.fields.phone')}
-            value={allFieldsValue.phone}
-            errors={errors}
-            lightTheme={lightTheme}
-          />
-          <Input
-            id={inputIds.email}
-            type="email"
-            placeholder=""
-            {...register('email')}
-            label={t('main.contactUs.form.fields.email')}
-            value={allFieldsValue.email}
-            errors={errors}
-            lightTheme={lightTheme}
-          />
-        </Wrapper>
+        <Input
+          id={inputIds.phone}
+          type="tel"
+          placeholder=""
+          {...register('phone')}
+          label={t('main.contactUs.form.fields.phone')}
+          value={allFieldsValue.phone}
+          errors={errors}
+          lightTheme={lightTheme}
+        />
         <Input
           id={inputIds.comment}
           type="text"

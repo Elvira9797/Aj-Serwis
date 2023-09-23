@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC } from 'react';
 import {
   VacancyContainer,
   VacancyImg,
@@ -35,21 +35,14 @@ interface VacansyInfoProps {
 
 const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
   const { t } = useTranslation();
-
   const location = useLocation();
 
-  const prevPath = useRef(location.state?.from ?? `/`);
-
-  prevPath.current.search = location.search;
+  const fromPath = location.state ? location.state.from.pathname : '/';
 
   return (
     <VacancySection>
       <SectionContainer>
-        <GoBackBtn
-          style={{ marginBottom: '2rem' }}
-          prevPath={prevPath.current}
-          // onClick={handleGoBack}
-        >
+        <GoBackBtn style={{ marginBottom: '2rem' }} state={fromPath}>
           {t('vacancies.back')}
         </GoBackBtn>
         <VacancyContainer>

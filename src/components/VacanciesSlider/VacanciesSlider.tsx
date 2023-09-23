@@ -13,16 +13,18 @@ import { StyledSliderSection, StyledSwiper } from './VacanciesSlider.styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-import { IVacancieData } from '../../common/vacanciesArr';
+import { ICardFields, IVacancieData } from '../../common/vacanciesArr';
 
 interface VacanciesSliderShortProps {
   title: string;
   vacancies: IVacancieData[];
+  cardFields: ICardFields;
 }
 
 const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
   title,
   vacancies,
+  cardFields,
 }) => {
   return (
     <StyledSliderSection>
@@ -54,7 +56,7 @@ const VacanciesSlider: React.FC<VacanciesSliderShortProps> = ({
         >
           {vacancies.map(vacancy => (
             <SwiperSlide key={vacancy.id}>
-              <VacancyItem vacancy={vacancy} />
+              <VacancyItem vacancy={vacancy} cardFields={cardFields} />
             </SwiperSlide>
           ))}
         </StyledSwiper>
