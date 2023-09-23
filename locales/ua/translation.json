@@ -38,7 +38,7 @@
         {
           "id": "001",
           "job_title": "Виробництво побутової хімії",
-          "city": "Zwierzyniec-Pierwszy",
+          "city": "Zwierzyniec Pierwszy",
           "position": "пакувальник сортувальник",
           "salary": "20 PLN / година чистими.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
@@ -188,7 +188,8 @@
           "salary": "20 злотих за годину (чистими).",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
           "work_schedule": "8-годинні зміни з можливістю понадгодин, від понеділка до суботи (неділі за запитом), дві зміни",
-          "location": "Zwierzyniec - Pierwszy",
+          "location": ["Zwierzyniec Pierwszy"],
+          "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
           "responsibilities": ["Упаковка та сортування"],
           "what_we_offer": [
             "Можливість працювати як із візою, так і безвізово",
@@ -208,7 +209,8 @@
           "salary": "23 злотих за годину (чистими).",
           "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
           "work_schedule": "8-годинні зміни, від понеділка до суботи, дві зміни",
-          "location": "Turek",
+          "location": ["Turek"],
+          "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
           "responsibilities": ["Монтаж компонентів для встановлення стільців"],
           "requirements": ["Розуміння польської мови"],
           "what_we_offer": [
@@ -230,7 +232,8 @@
           "salary": "19 злотих за годину (чистими).",
           "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
           "work_schedule": "12-годинні зміни, від понеділка до п'ятниці (2 робочі суботи на місяць), дві зміни",
-          "location": "Zabierzów",
+          "location": ["Zabierzów"],
+          "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
           "responsibilities": ["Упаковка та сортування"],
           "what_we_offer": [
             "Можливість працювати як із візою, так і безвізово",
@@ -250,7 +253,8 @@
           "salary": "18 злотих за годину (чистими).",
           "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи, дві зміни",
-          "location": "Uniejów",
+          "location": ["Uniejów"],
+          "location_map": "https://maps.app.goo.gl/gXU6umTp2vWiBoob9",
           "responsibilities": ["Упаковка та сортування"],
           "what_we_offer": [
             "Можливість працювати як із візою, так і безвізово",
@@ -270,7 +274,9 @@
           "salary": "25 злотих за годину (чистими).",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-годинні зміни, 260-320 годин на місяць, дві зміни",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/Lp4VcpGSRfwpirun9",
           "requirements": [
             "Досвід роботи на вантажному автомобілі",
             "Сертифікація UDT"
@@ -296,7 +302,8 @@
           "salary": "19 злотих за годину (чистими).",
           "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи (неділі за запитом), дві зміни",
-          "location": "Niepołomice",
+          "location": ["Niepołomice"],
+          "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
           "responsibilities": ["Упаковка та сортування"],
           "what_we_offer": [
             "Можливість працювати як із візою, так і безвізово",
@@ -316,7 +323,9 @@
           "salary": "19.5 злотих за годину (чистими).",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-годинні зміни, 1 зміна: 6:00-14:00 + понадгодини, 2 зміна: 14:00-22:00 + понадгодини, 3 зміна: 22:00-6:00 + понадгодини",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "Забезпечення правильного маркування, упаковки та запечатування пляшок з пивом"
           ],
@@ -339,7 +348,9 @@
           "salary": "25 злотих за годину (чистими).",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-годинні зміни, 1 зміна: 6:00-14:00 + понадгодини, 2 зміна: 14:00-22:00 + понадгодини, 3 зміна: 22:00-6:00 + понадгодини",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "Виконання різних лабораторних випробувань та експериментів зі зразками"
           ],
@@ -362,7 +373,8 @@
           "salary": "19 злотих за годину (чистими) + бонуси",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи, дві зміни",
-          "location": "Kalisz",
+          "location": ["Kalisz"],
+          "location_map": "https://maps.app.goo.gl/5Cx6DDzDSe85YJ2q6",
           "responsibilities": [
             "Упаковка морозивних продуктів в контейнери або упаковочні матеріали, забезпечення правильного запечатування та маркування",
             "Перевірка та інспекція морозивних виробів на якість, включаючи перевірку на відсутність дефектів або неправильностей"
@@ -386,7 +398,8 @@
           "salary": "25-30 злотих за годину (чистими).",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "10-годинні зміни, від понеділка до суботи",
-          "location": "Łódź",
+          "location": ["Łódź"],
+          "location_map": "https://maps.app.goo.gl/jrPm6e2JZfDcJfEc8",
           "responsibilities": ["Покладання тротуарних плит"],
           "what_we_offer": [
             "Можливість працювати як із візою, так і безвізово",

@@ -37,7 +37,7 @@
         {
           "id": "001",
           "job_title": "Produkcja środków do czyszczenia domu",
-          "city": "Zwierzyniec-Pierwszy",
+          "city": "Zwierzyniec Pierwszy",
           "position": "pakowacz i sortownik",
           "salary": "20 PLN / godzinę netto.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
@@ -187,7 +187,8 @@
           "salary": "20 PLN / godzina netto.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
           "work_schedule": "8-godzinne zmiany z możliwością nadgodzin, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
-          "location": "Zwierzyniec - Pierwszy",
+          "location": ["Zwierzyniec Pierwszy"],
+          "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
           "responsibilities": ["pakowanie i sortowanie"],
           "what_we_offer": [
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
@@ -207,7 +208,8 @@
           "salary": "23 PLN / godzina netto.",
           "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
           "work_schedule": "8-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
-          "location": "Turek",
+          "location": ["Turek"],
+          "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
           "responsibilities": ["montaż komponentów do instalacji krzeseł"],
           "requirements": ["wymagana umiejętność zrozumienia języka polskiego"],
           "what_we_offer": [
@@ -229,7 +231,8 @@
           "salary": "19 PLN / godzina netto.",
           "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do piątku (2 soboty pracy w miesiącu), obejmujące dwie zmiany",
-          "location": "Zabierzów",
+          "location": ["Zabierzów"],
+          "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
           "responsibilities": ["pakowanie i sortowanie"],
           "what_we_offer": [
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
@@ -249,7 +252,8 @@
           "salary": "18 PLN / godzina netto.",
           "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do sobót, obejmujące dwie zmiany",
-          "location": "Uniejów",
+          "location": ["Uniejów"],
+          "location_map": "https://maps.app.goo.gl/gXU6umTp2vWiBoob9",
           "responsibilities": ["pakowanie i sortowanie"],
           "what_we_offer": [
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
@@ -269,7 +273,9 @@
           "salary": "25 PLN / godzina netto.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-godzinne zmiany, 260-320 godzin miesięcznie, obejmujące dwie zmiany",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/Lp4VcpGSRfwpirun9",
           "requirements": [
             "doświadczenie w obszarze obsługi wózka widłowego",
             "posiadany certyfikat UDT"
@@ -295,7 +301,8 @@
           "salary": "19 PLN / godzina netto.",
           "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
-          "location": "Niepołomice",
+          "location": ["Niepołomice"],
+          "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
           "responsibilities": ["pakowanie i sortowanie"],
           "what_we_offer": [
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
@@ -315,7 +322,9 @@
           "salary": "19.5 PLN / godzina netto.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "zapewnienie prawidłowego etykietowania, pakowania i zamykania butelek z piwem"
           ],
@@ -338,7 +347,9 @@
           "salary": "25 PLN / godzina netto.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "wykonywanie różnych testów laboratoryjnych i eksperymentów na próbkach"
           ],
@@ -361,7 +372,8 @@
           "salary": "19 PLN / godzina netto. + premie",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
-          "location": "Kalisz",
+          "location": ["Kalisz"],
+          "location_map": "https://maps.app.goo.gl/5Cx6DDzDSe85YJ2q6",
           "responsibilities": [
             "pakowanie produktów lodowych do pojemników lub materiałów opakowaniowych, zapewnienie właściwego zamykania i etykietowania",
             "sprawdzanie i kontrolowanie produktów lodowych pod kątem jakości, w tym sprawdzanie ewentualnych wad lub nieprawidłowości"
@@ -385,7 +397,8 @@
           "salary": "25-30 PLN / godzina netto.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "10-godzinne zmiany, od poniedziałku do soboty",
-          "location": "Łódź",
+          "location": ["Łódź"],
+          "location_map": "https://maps.app.goo.gl/jrPm6e2JZfDcJfEc8",
           "responsibilities": ["układanie kostki brukowej"],
           "what_we_offer": [
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
