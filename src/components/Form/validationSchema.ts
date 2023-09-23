@@ -32,11 +32,6 @@ const formSchema = yup.object().shape({
     .min(6, i18next.t('main.contactUs.form.errors.phone.min'))
     .max(18, i18next.t('main.contactUs.form.errors.phone.max'))
     .trim(),
-  email: yup
-    .string()
-    .required(i18next.t('main.contactUs.form.errors.email.required'))
-    .email(i18next.t('main.contactUs.form.errors.email.matches'))
-    .trim(),
   comment: yup
     .string()
     .optional()
