@@ -16,15 +16,19 @@ const Layout = () => {
 
   return (
     <>
-      <Header />
-      <main>
-        <Suspense fallback={null}>
+      <Suspense fallback={null}>
+        <Header />
+        <main>
           <Outlet />
-        </Suspense>
-      </main>
+        </main>
+        <Footer />
+      </Suspense>
       <ScrollToTopButton />
-      <Footer />
-      <ToastContainer theme="colored" hideProgressBar={true} style={{zIndex: '100000'}}/>
+      <ToastContainer
+        theme="colored"
+        hideProgressBar={true}
+        style={{ zIndex: '100000' }}
+      />
     </>
   );
 };
