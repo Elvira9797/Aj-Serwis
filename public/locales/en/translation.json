@@ -38,7 +38,7 @@
         {
           "id": "001",
           "job_title": "Household chemicals production",
-          "city": "Zwierzyniec-Pierwszy",
+          "city": "Zwierzyniec Pierwszy",
           "position": "packer and sorter",
           "salary": "20 PLN / hour net.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
@@ -186,7 +186,8 @@
           "salary": "20 PLN / hour net.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
           "work_schedule": "8-hour shifts with the potential for overtime, from Monday to Saturday (Sundays upon request), spanning two shifts",
-          "location": "Zwierzyniec - Pierwszy",
+          "location": ["Zwierzyniec Pierwszy"],
+          "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
           "responsibilities": ["packing and sorting"],
           "what_we_offer": [
             "Opportunity to work both on a visa and visa-free regime",
@@ -206,7 +207,8 @@
           "salary": "23 PLN / hour net.",
           "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
           "work_schedule": "8-hour shifts, from Monday to Saturday, spanning two shifts",
-          "location": "Turek",
+          "location": ["Turek"],
+          "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
           "responsibilities": ["assembly of components for chair installation"],
           "requirements": [
             "required ability to understand the Polish language"
@@ -231,7 +233,8 @@
           "salary": "19 PLN / hour net.",
           "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
           "work_schedule": "12-hour shifts, from Monday to Friday (2 work Saturdays per month), spanning two shifts",
-          "location": "Zabierzów",
+          "location": ["Zabierzów"],
+          "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
           "responsibilities": ["packing and sorting"],
           "what_we_offer": [
             "Opportunity to work both on a visa and visa-free regime",
@@ -252,7 +255,8 @@
           "salary": "18 PLN / hour net.",
           "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
           "work_schedule": "12-hour shifts, from Monday to Saturdays, spanning two shifts",
-          "location": "Uniejów",
+          "location": ["Uniejów"],
+          "location_map": "https://maps.app.goo.gl/gXU6umTp2vWiBoob9",
           "responsibilities": ["packing and sorting"],
           "what_we_offer": [
             "Opportunity to work both on a visa and visa-free regime",
@@ -272,7 +276,9 @@
           "salary": "25 PLN / hour net.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-hour shifts, 260-320 hours per month, spanning two shifts",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "requirements": [
             "forklift operating experience",
             "UDT certification held"
@@ -299,7 +305,8 @@
           "salary": "19 PLN / hour net.",
           "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
           "work_schedule": "12-hour shifts, from Monday to Saturday (Sundays on request), spanning two shifts",
-          "location": "Niepołomice",
+          "location": ["Niepołomice"],
+          "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
           "responsibilities": ["packing and sorting"],
           "what_we_offer": [
             "Opportunity to work both on a visa and visa-free regime",
@@ -320,7 +327,9 @@
           "salary": "19.5 PLN/hour net.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-hour shifts, 1 shift: 6:00-14:00 + overtime, 2nd shift: 14:00-22:00 + overtime, 3rd shift: 22:00-6:00 + overtime",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "ensuring the proper labeling, packaging, and sealing of beer bottles"
           ],
@@ -345,7 +354,9 @@
           "salary": "25 PLN/hour net.",
           "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-hour shifts, 1 shift: 6:00-14:00 + overtime, 2nd shift: 14:00-22:00 + overtime, 3rd shift: 22:00-6:00 + overtime",
-          "location": "Rakszawa, Jędrzejów",
+          "location": ["Rakszawa", "Jędrzejów"],
+          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
+          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
           "responsibilities": [
             "performing various laboratory tests and experiments on samples"
           ],
@@ -371,7 +382,8 @@
           "salary": "19 PLN / hour net. + bonuses",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-hour shifts, from Monday to Saturday, spanning two shifts",
-          "location": "Kalisz",
+          "location": ["Kalisz"],
+          "location_map": "https://maps.app.goo.gl/5Cx6DDzDSe85YJ2q6",
           "responsibilities": [
             "packaging ice cream products in containers or packaging materials, ensuring proper sealing and labeling",
             "porting and inspecting ice cream items for quality, including checking for any defects or irregularities"
@@ -395,7 +407,8 @@
           "salary": "25-30 PLN / hour net.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "10-hour shifts, from Monday to Saturday",
-          "location": "Łódź",
+          "location": ["Łódź"],
+          "location_map": "https://maps.app.goo.gl/jrPm6e2JZfDcJfEc8",
           "responsibilities": ["laying pavement tiles"],
           "what_we_offer": [
             "Opportunity to work both on a visa and visa-free regime",
