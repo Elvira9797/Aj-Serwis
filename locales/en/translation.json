@@ -131,6 +131,7 @@
       "title": "Contact Us",
       "subtitle": "We will be glad if you leave your info to contact with us!",
       "form": {
+        "toast": "Your credentials has been sent successfully",
         "fields": {
           "name": "Name *",
           "surname": "Surname *",

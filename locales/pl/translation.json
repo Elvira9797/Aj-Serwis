@@ -130,6 +130,7 @@
       "title": "Skontaktuj się z nami",
       "subtitle": "Będziemy wdzięczni, jeśli podzielisz się swoimi danymi kontaktowymi!",
       "form": {
+        "toast": "Twoje dane zostały pomyślnie przesłane",
         "fields": {
           "name": "Imię *",
           "surname": "Nazwisko *",
