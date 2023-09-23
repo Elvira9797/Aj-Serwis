@@ -15,6 +15,7 @@ import { useLocation } from 'react-router-dom';
 import Button from '../Button/Button';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import { FaLocationDot } from 'react-icons/fa6';
 
 interface VacansyInfoProps {
   vacancy:
@@ -25,7 +26,9 @@ interface VacansyInfoProps {
         salary: string;
         image: string;
         work_schedule: string;
-        location: string;
+        location: string[];
+        location_map: string;
+        location_map2?: string;
         responsibilities: string[];
         what_we_offer: string[];
         requirements?: string[];
@@ -58,7 +61,6 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
                 <VacancyItem>
                   <VacancyText>
                     <VacancySpan>
-                      {' '}
                       {t(
                         'vacancyDetails.vacancyInfo.job_list_titles.requirements'
                       )}
@@ -71,9 +73,7 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
               {vacancy?.responsibilities && (
                 <VacancyItem>
                   <VacancyText>
-                    {' '}
                     <VacancySpan>
-                      {' '}
                       {t(
                         'vacancyDetails.vacancyInfo.job_list_titles.responsibilities'
                       )}
@@ -87,16 +87,33 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
               <VacancyItem>
                 <VacancyText>
                   <VacancySpan>
-                    {' '}
                     {t('vacancyDetails.vacancyInfo.job_list_titles.location')}:
                   </VacancySpan>
-                  {vacancy?.location}
+                  <a
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    href={vacancy?.location_map}
+                  >
+                    <FaLocationDot size={16} color="#c3a069" />
+
+                    {vacancy?.location[0]}
+                  </a>
+                  {vacancy?.location.length === 2 && (
+                    <a
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      href={vacancy?.location_map2}
+                    >
+                      <FaLocationDot size={16} color="#c3a069" />
+
+                      {vacancy?.location[1]}
+                    </a>
+                  )}
                 </VacancyText>
               </VacancyItem>
               <VacancyItem>
                 <VacancyText>
                   <VacancySpan>
-                    {' '}
                     {t('vacancyDetails.vacancyInfo.job_list_titles.salary')}:
                   </VacancySpan>
                   {vacancy?.salary}
@@ -105,7 +122,6 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
               <VacancyItem>
                 <VacancyText>
                   <VacancySpan>
-                    {' '}
                     {t('vacancyDetails.vacancyInfo.job_list_titles.work_hours')}
                     :
                   </VacancySpan>

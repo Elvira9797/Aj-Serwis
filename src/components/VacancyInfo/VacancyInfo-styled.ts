@@ -60,4 +60,8 @@ export const VacancyText = styled.p`
   :first-of-type {
     text-transform: none;
   }
+
+  > a {
+    color: inherit;
+  }
 `;

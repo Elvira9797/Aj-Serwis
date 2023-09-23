@@ -21,7 +21,9 @@ export interface IFullVacancieData {
   salary: string;
   image: string;
   work_schedule: string;
-  location: string;
+  location: string[];
+  location_map: string;
+  location_map2?: string;
   responsibilities: string[];
   what_we_offer: string[];
 }
