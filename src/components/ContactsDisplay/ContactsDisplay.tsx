@@ -1,5 +1,6 @@
 import {
   ContactBox,
+  ContactPhone,
   ContactWraper,
   ContactsContainer,
 } from './ContactsDisplay.styled';
@@ -38,10 +39,14 @@ const ContactsDisplay: React.FC<ContactsDisplayProps> = ({ displayName }) => {
       <ContactBox>
         <ContactWraper displayName={displayName}>
           <span>{t('info.namePhoneContact')}</span>
-          <a href={`tel:{t('info.workingTime')}`}>
+          <ContactPhone
+            href="https://wa.me/48539649808"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaPhone />
             {t('info.tel')}
-          </a>
+          </ContactPhone>
         </ContactWraper>
       </ContactBox>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>

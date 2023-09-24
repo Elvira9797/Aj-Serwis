@@ -68,14 +68,18 @@ const ContactInfoList: React.FC = () => {
 
                 <h3>{t('contacts.contactDetails.address')}</h3>
                 <p>
-                  ul. Kościelnicka 29,
-                  <br /> 99-210 Uniejów
+                  ul. Targowa 15,
+                  <br /> 99-200 Poddębice
                 </p>
               </Link>
             </ContactInfoItem>
 
             <ContactInfoItem variants={listAnimation} custom={2}>
-              <ContactLink href="tel:+487979931830">
+              <ContactLink
+                href="https://wa.me/+48539649808"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <BsTelephoneFill size={60} color="#c3a069" />
                 <h3>{t('contacts.contactDetails.phone')}</h3>
                 <p>+48 539 649 808</p>
@@ -117,13 +121,17 @@ const ContactInfoList: React.FC = () => {
                 </Wrapper>
                 <h3>{t('contacts.contactDetails.address')}</h3>
                 <p>
-                  ul. Kościelnicka 29,
-                  <br /> 99-210 Uniejów
+                  ul. Targowa 15,
+                  <br /> 99-200 Poddębice
                 </p>
               </Link>
             </ContactInfoItem>
             <ContactInfoItem variants={listAnimation} custom={2}>
-              <ContactLink href="tel:+487979931830">
+              <ContactLink
+                href="https://wa.me/+48539649808"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Wrapper>
                   <BsTelephoneFill size={60} color="#c3a069" />
                 </Wrapper>
