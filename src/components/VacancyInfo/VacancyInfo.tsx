@@ -3,10 +3,12 @@ import {
   VacancyContainer,
   VacancyImg,
   VacancyItem,
+  VacancyLink,
   VacancyList,
   VacancySection,
   VacancySpan,
   VacancyText,
+  VacancyTextLocation,
   VacancyTitle,
 } from './VacancyInfo-styled';
 import SectionContainer from '../SectionContainer/SectionContainer';
@@ -85,11 +87,11 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
               )}
 
               <VacancyItem>
-                <VacancyText>
+                <VacancyTextLocation>
                   <VacancySpan>
                     {t('vacancyDetails.vacancyInfo.job_list_titles.location')}:
                   </VacancySpan>
-                  <a
+                  <VacancyLink
                     target="_blank"
                     rel="noopener nofollow noreferrer"
                     href={vacancy?.location_map}
@@ -97,9 +99,9 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
                     <FaLocationDot size={16} color="#c3a069" />
 
                     {vacancy?.location[0]}
-                  </a>
+                  </VacancyLink>
                   {vacancy?.location.length === 2 && (
-                    <a
+                    <VacancyLink
                       target="_blank"
                       rel="noopener nofollow noreferrer"
                       href={vacancy?.location_map2}
@@ -107,9 +109,9 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
                       <FaLocationDot size={16} color="#c3a069" />
 
                       {vacancy?.location[1]}
-                    </a>
+                    </VacancyLink>
                   )}
-                </VacancyText>
+                </VacancyTextLocation>
               </VacancyItem>
               <VacancyItem>
                 <VacancyText>

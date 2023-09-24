@@ -40,3 +40,9 @@ export const ContactBox = styled.ul`
   flex-direction: column;
   margin: 0 auto;
 `;
+
+export const ContactPhone = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 3px;
+`;

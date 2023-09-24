@@ -42,9 +42,15 @@ export const VacancyItem = styled.li`
 
 export const VacancySpan = styled.span`
   font-weight: 700;
-  margin-right: 12px;
+  margin-right: 8px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+`;
+
+export const VacancyLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 2px;
 `;
 
 export const VacancySection = styled.section`
@@ -52,6 +58,18 @@ export const VacancySection = styled.section`
   padding-top: 8rem;
   @media (max-width: 768px) {
     padding: 70px 0;
+  }
+`;
+
+export const VacancyTextLocation = styled.p`
+  display: flex;
+  text-transform: lowercase;
+  :first-of-type {
+    text-transform: none;
+  }
+
+  > a {
+    color: inherit;
   }
 `;
 
