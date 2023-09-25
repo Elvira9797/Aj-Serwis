@@ -16,7 +16,8 @@ export const StyledNavWraper = styled.div`
   gap: 4rem;
 
   @media (max-width: 767px) {
-    display: none;
+    margin-left: auto;
+    margin-right: 1rem;
   }
 `;
 
@@ -27,6 +28,12 @@ export const BurgerButton = styled.button`
   cursor: pointer;
 
   @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeaderNav = styled.div`
+  @media (max-width: 767px) {
     display: none;
   }
 `;

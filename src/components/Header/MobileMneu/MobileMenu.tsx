@@ -61,7 +61,7 @@ const Modal: React.FC<ModalProps> = ({ theme }) => {
             initial={{ translateX: '100%' }}
             animate={{ translateX: '0%' }}
             exit={{ translateX: '100%' }}
-            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            transition={{ duration: 0.4, ease: 'easeInOut' }}
             {...swipeHandlers}
           >
             <motion.div
@@ -69,7 +69,7 @@ const Modal: React.FC<ModalProps> = ({ theme }) => {
               initial={{ translateX: '100%' }}
               animate={{ translateX: '44%' }}
               exit={{ translateX: '100%' }}
-              transition={{ duration: 0.7, ease: 'easeInOut' }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
               <ModalMobileMenu>
                 <CloseButton type="button" onClick={closeModal}>

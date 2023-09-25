@@ -4,7 +4,12 @@ import Logo from '../../Logo/Logo';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { BurgerButton, StyledAppBar, StyledNavWraper } from './AppBar.styled';
+import {
+  BurgerButton,
+  HeaderNav,
+  StyledAppBar,
+  StyledNavWraper,
+} from './AppBar.styled';
 import { useAppContext } from '../../../context/AppContext';
 
 interface AppBarProps {
@@ -21,9 +26,10 @@ const AppBar: React.FC<AppBarProps> = ({ theme }) => {
       <Logo loc="header" size="md" />
 
       <StyledNavWraper>
-        <Navigation flexDirection="row" />
-
-        <LangSelect />
+        <HeaderNav>
+          <Navigation flexDirection="row" />
+        </HeaderNav>
+        {!isOpenModal && <LangSelect />}
       </StyledNavWraper>
 
       <BurgerButton onClick={openModal} type="button">
