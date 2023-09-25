@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aj-Serwis/static/css/main.734a605d.css",
-    "main.js": "/Aj-Serwis/static/js/main.f0e8fc2f.js",
+    "main.js": "/Aj-Serwis/static/js/main.f177e00b.js",
     "static/js/998.909b46e2.chunk.js": "/Aj-Serwis/static/js/998.909b46e2.chunk.js",
     "static/js/398.996cc230.chunk.js": "/Aj-Serwis/static/js/398.996cc230.chunk.js",
     "static/js/52.6a9bd186.chunk.js": "/Aj-Serwis/static/js/52.6a9bd186.chunk.js",
@@ -66,7 +66,7 @@
     "static/media/getFetch.cjs": "/Aj-Serwis/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/chevron-up.svg": "/Aj-Serwis/static/media/chevron-up.1d3af4c0b12eb9b3f70628d8395d045a.svg",
     "main.734a605d.css.map": "/Aj-Serwis/static/css/main.734a605d.css.map",
-    "main.f0e8fc2f.js.map": "/Aj-Serwis/static/js/main.f0e8fc2f.js.map",
+    "main.f177e00b.js.map": "/Aj-Serwis/static/js/main.f177e00b.js.map",
     "998.909b46e2.chunk.js.map": "/Aj-Serwis/static/js/998.909b46e2.chunk.js.map",
     "398.996cc230.chunk.js.map": "/Aj-Serwis/static/js/398.996cc230.chunk.js.map",
     "52.6a9bd186.chunk.js.map": "/Aj-Serwis/static/js/52.6a9bd186.chunk.js.map",
@@ -85,6 +85,6 @@
   },
   "entrypoints": [
     "static/css/main.734a605d.css",
-    "static/js/main.f0e8fc2f.js"
+    "static/js/main.f177e00b.js"
   ]
 }
