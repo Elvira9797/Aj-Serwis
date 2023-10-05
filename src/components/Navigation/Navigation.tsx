@@ -11,7 +11,7 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
-  const { closeModal } = useAppContext();
+  const { closeModal, setScrollPosition } = useAppContext();
   const { t } = useTranslation();
 
   const res = i18n.resolvedLanguage;
@@ -21,7 +21,10 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
       <StyledNavList flexDirection={flexDirection}>
         <li>
           <NavLink
-            onClick={closeModal}
+            onClick={() => {
+              closeModal();
+              setScrollPosition(0);
+            }}
             to={`/?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
@@ -33,7 +36,10 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         </li>
         <li>
           <NavLink
-            onClick={closeModal}
+            onClick={() => {
+              closeModal();
+              setScrollPosition(0);
+            }}
             to={`/vacancies?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
@@ -45,7 +51,10 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         </li>
         <li>
           <NavLink
-            onClick={closeModal}
+            onClick={() => {
+              closeModal();
+              setScrollPosition(0);
+            }}
             to={`/contacts?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''

@@ -15,13 +15,7 @@ const LangSelect = () => {
   const { i18n } = useTranslation();
   const res = i18n.resolvedLanguage;
   const query = searchParams.get('lang') || '';
-  const { closeModal, saveScrollPosition, restoreScrollPosition } =
-    useAppContext();
-
-  useEffect(() => {
-    const currentScrollPosition = localStorage.getItem('scrollPosition') || 0;
-    window.scrollTo(0, Number(currentScrollPosition));
-  }, []);
+  const { saveScrollPosition, restoreScrollPosition } = useAppContext();
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
@@ -29,8 +23,6 @@ const LangSelect = () => {
     saveScrollPosition();
 
     setSearchParams({ lang: selectedLanguage });
-
-    closeModal();
   };
 
   useEffect(() => {
