@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Aj-Serwis">
       <AppProvider>
         <ThemeProvider theme={theme}>
           <App />
