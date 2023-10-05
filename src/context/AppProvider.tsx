@@ -25,7 +25,7 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   };
 
   const closeModal = () => {
-    restoreScrollPosition();
+    setScrollPosition(0);
     setModalOpen(false);
     setIsOpenModal(false);
   };

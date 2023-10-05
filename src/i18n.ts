@@ -12,7 +12,7 @@ i18n
     fallbackLng: 'en',
     supportedLngs: ['en', 'pl', 'ua'],
     backend: {
-      loadPath: '/Aj-Serwis/locales/{{lng}}/translation.json',
+      loadPath: 'locales/{{lng}}/translation.json',
     },
     detection: {
       order: ['localStorage', 'navigator', 'querystring', 'htmlTag'],
