@@ -16,15 +16,17 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
 
   const res = i18n.resolvedLanguage;
 
+  const handleCloseModal = () => {
+    closeModal();
+    setScrollPosition(0);
+  };
+
   return (
     <nav>
       <StyledNavList flexDirection={flexDirection}>
         <li>
           <NavLink
-            onClick={() => {
-              closeModal();
-              setScrollPosition(0);
-            }}
+            onClick={handleCloseModal}
             to={`/?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
@@ -36,10 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         </li>
         <li>
           <NavLink
-            onClick={() => {
-              closeModal();
-              setScrollPosition(0);
-            }}
+            onClick={handleCloseModal}
             to={`/vacancies?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
@@ -51,10 +50,7 @@ const Navigation: React.FC<NavigationProps> = ({ flexDirection }) => {
         </li>
         <li>
           <NavLink
-            onClick={() => {
-              closeModal();
-              setScrollPosition(0);
-            }}
+            onClick={handleCloseModal}
             to={`/contacts?lang=${res}`}
             className={({ isActive, isPending }) =>
               isPending ? 'pending' : isActive ? 'active' : ''
