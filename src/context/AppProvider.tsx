@@ -25,7 +25,6 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   };
 
   const closeModal = () => {
-    setScrollPosition(0);
     setModalOpen(false);
     setIsOpenModal(false);
   };
@@ -43,6 +42,7 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     openModal,
     closeModal,
     isOpenModal,
+    setScrollPosition,
   };
 
   return (

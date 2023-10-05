@@ -7,6 +7,7 @@ interface AppContextProps {
   closeModal: () => void;
   saveScrollPosition: () => void;
   restoreScrollPosition: () => void;
+  setScrollPosition: (position: number) => void;
 }
 
 const AppContext = createContext<AppContextProps | undefined>(undefined);
