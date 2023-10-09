@@ -26,7 +26,6 @@ interface VacansyInfoProps {
         job_title: string;
         looking_for: string;
         salary: string;
-        image: string;
         work_schedule: string;
         location: string[];
         location_map: string;
@@ -36,9 +35,10 @@ interface VacansyInfoProps {
         requirements?: string[];
       }
     | undefined;
+  image: string;
 }
 
-const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
+const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy, image }) => {
   const { t } = useTranslation();
   const location = useLocation();
 
@@ -51,7 +51,7 @@ const VacancyInfo: FC<VacansyInfoProps> = ({ vacancy }) => {
           {t('vacancies.back')}
         </GoBackBtn>
         <VacancyContainer>
-          <VacancyImg src={vacancy?.image} />
+          <VacancyImg src={image} />
           <div>
             <VacancyTitle>{vacancy?.job_title}</VacancyTitle>
             <VacancyList>

@@ -21,11 +21,13 @@ import i18n from '../../../i18n';
 interface IVacancyItem {
   vacancy: IVacancieData;
   cardFields: ICardFields;
+  image: string;
 }
 
 const VacancyItem: React.FC<IVacancyItem> = ({
-  vacancy: { id, image, job_title, city, position, salary },
+  vacancy: { id, job_title, city, position, salary },
   cardFields,
+  image,
 }) => {
   const location = useLocation();
   const res = i18n.resolvedLanguage;
@@ -67,13 +69,7 @@ const VacancyItem: React.FC<IVacancyItem> = ({
         to={`/vacancies/${id}?lang=${res}`}
         state={{ from: location }}
       >
-        <Button
-          variant={'card'}
-          type={'button'}
-          onClick={() => {
-            console.log('Navigate Vacancy Details');
-          }}
-        >
+        <Button variant={'card'} type={'button'} onClick={() => {}}>
           {cardFields.more_info}
         </Button>
       </StyledVacancyLink>
