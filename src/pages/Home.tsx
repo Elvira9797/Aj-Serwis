@@ -5,7 +5,11 @@ import VacanciesSlider from '../components/VacanciesSlider/VacanciesSlider';
 import WhyAjSerwis from '../components/WhyAjSerwis/WhyAjSerwis';
 
 import { useTranslation } from 'react-i18next';
-import { ICardFields, IVacancieData } from '../common/vacanciesArr';
+import {
+  ICardFields,
+  IVacancieData,
+  vacanciesImages,
+} from '../common/vacanciesArr';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -23,6 +27,7 @@ const Home = () => {
         title={t('main.vacancies.title')}
         vacancies={jobListings}
         cardFields={cardFields}
+        vacanciesImages={vacanciesImages}
       />
       <WhyAjSerwis />
       <ContactUs />

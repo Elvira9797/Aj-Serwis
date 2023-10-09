@@ -9,6 +9,7 @@ import {
   ICardFields,
   IFullVacancieData,
   IVacancieData,
+  vacanciesImages,
 } from '../common/vacanciesArr';
 import NotFound from './NotFound';
 
@@ -38,15 +39,29 @@ const VacanciesDetails = () => {
   const getFilteredVacancies = () => {
     return vacaciesShort.filter(vacancy => vacancy.id !== id);
   };
+
+  const getCurrentVacancyIdx = () => {
+    return vacaciesShort.findIndex(vacancy => vacancy.id === id);
+  };
+
+  const getFilteredImages = (idx: number) => {
+    const filteredArr = vacanciesImages.filter((_, index) => index !== idx);
+    return filteredArr;
+  };
+
   const currentVacancy = getCurrentVacancy();
 
   const filteredVacancies = getFilteredVacancies();
+
+  const idx = getCurrentVacancyIdx();
+
+  const filteredImages = getFilteredImages(idx);
 
   return (
     <>
       {currentVacancy ? (
         <>
-          <VacancyInfo vacancy={currentVacancy} />
+          <VacancyInfo vacancy={currentVacancy} image={vacanciesImages[idx]} />
           <VacancyOffer vacancyOffers={currentVacancy?.what_we_offer} />
           <Element name="form">
             <VacancieDetailsFormSection
@@ -57,6 +72,7 @@ const VacanciesDetails = () => {
             title={t('vacancies.title')}
             vacancies={filteredVacancies}
             cardFields={cardFields}
+            vacanciesImages={filteredImages}
           />
         </>
       ) : (

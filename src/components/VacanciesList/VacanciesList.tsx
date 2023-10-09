@@ -7,7 +7,11 @@ import {
 
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { useTranslation } from 'react-i18next';
-import { ICardFields, IVacancieData } from '../../common/vacanciesArr';
+import {
+  ICardFields,
+  IVacancieData,
+  vacanciesImages,
+} from '../../common/vacanciesArr';
 
 function VacanciesList() {
   const { t } = useTranslation();
@@ -28,10 +32,11 @@ function VacanciesList() {
         </SectionTitle>
         <StyledVacancyList>
           {vacaciesShort.length > 0 &&
-            vacaciesShort.map(vacancy => (
+            vacaciesShort.map((vacancy, index) => (
               <VacancyItem
                 key={vacancy.id}
                 vacancy={vacancy}
+                image={vacanciesImages[index]}
                 cardFields={cardFields}
               />
             ))}

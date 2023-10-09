@@ -40,80 +40,64 @@
           "job_title": "Виробництво побутової хімії",
           "city": "Zwierzyniec Pierwszy",
           "position": "пакувальник сортувальник",
-          "salary": "20 PLN / година чистими.",
-          "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
+          "salary": "20 PLN / година чистими."
         },
         {
           "id": "002",
           "job_title": "Робітники по збірці меблів (стільців)",
           "city": "Turek",
           "position": "збирач",
-          "salary": "23 PLN / година чистими.",
-          "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png"
+          "salary": "23 PLN / година чистими."
         },
         {
           "id": "003",
           "job_title": "Виробництво какао, кави, желейки",
           "city": "Zabierzów",
           "position": "пакувальник сортувальник",
-          "salary": "19 PLN / година чистими.",
-          "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png"
+          "salary": "19 PLN / година чистими."
         },
         {
           "id": "004",
           "job_title": "Виробництво ізоляційних матеріалів",
           "city": "Uniejów",
           "position": "пакувальник",
-          "salary": "18 PLN / година чистими.",
-          "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg"
+          "salary": "18 PLN / година чистими."
         },
         {
           "id": "005",
           "job_title": "Оператор відмостки з УДТ",
           "city": "Rakszawa, Jędrzejów",
           "position": "оператор відмостки",
-          "salary": "25 PLN / година чистими.",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+          "salary": "25 PLN / година чистими."
         },
         {
           "id": "006",
           "job_title": "Виробництво енергетичних напоїв та соків",
           "city": "Niepołomice",
           "position": "пакувальник сортувальник",
-          "salary": "19 PLN / година чистими.",
-          "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg"
+          "salary": "19 PLN / година чистими."
         },
         {
           "id": "007",
           "job_title": "Виробництво пива",
           "city": "Rakszawa, Jędrzejów",
           "position": "пивовар на лінії",
-          "salary": "19.5 PLN / година чистими.",
-          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
+          "salary": "19.5 PLN / година чистими."
         },
-        {
-          "id": "008",
-          "job_title": "Виробництво пива",
-          "city": "Rakszawa, Jędrzejów",
-          "position": "асистенти лабораторії",
-          "salary": "25 PLN / година чистими.",
-          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
-        },
+
         {
           "id": "009",
           "job_title": "Виробництво морозива",
           "city": "Kalisz",
           "position": "пакувальник маркувальник",
-          "salary": "19 PLN / година чистими.",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+          "salary": "19 PLN / година чистими."
         },
         {
           "id": "010",
           "job_title": "Укладка тротуарних плит",
           "city": "Łódź",
           "position": "бруківник",
-          "salary": "25-30 PLN / година чистими.",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
+          "salary": "25-30 PLN / година чистими."
         }
       ]
     },
@@ -186,7 +170,6 @@
           "job_title": "Виробництво побутової хімії",
           "looking_for": "Шукаємо жінок, чоловіків або подружні пари",
           "salary": "20 злотих за годину (чистими).",
-          "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg",
           "work_schedule": "8-годинні зміни з можливістю понадгодин, від понеділка до суботи (неділі за запитом), дві зміни",
           "location": ["Zwierzyniec Pierwszy"],
           "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
@@ -207,7 +190,6 @@
           "job_title": "Робітники по монтажу меблів (стільців)",
           "looking_for": "Шукаємо жінок і чоловіків",
           "salary": "23 злотих за годину (чистими).",
-          "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png",
           "work_schedule": "8-годинні зміни, від понеділка до суботи, дві зміни",
           "location": ["Turek"],
           "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
@@ -230,7 +212,6 @@
           "job_title": "Виробництво какао, кави та желе",
           "looking_for": "Шукаємо жінок, чоловіків або подружні пари",
           "salary": "19 злотих за годину (чистими).",
-          "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png",
           "work_schedule": "12-годинні зміни, від понеділка до п'ятниці (2 робочі суботи на місяць), дві зміни",
           "location": ["Zabierzów"],
           "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
@@ -251,7 +232,6 @@
           "job_title": "Виробництво теплоізоляційних матеріалів",
           "looking_for": "Шукаємо жінок і чоловіків",
           "salary": "18 злотих за годину (чистими).",
-          "image": "https://www.apptree.com/wp-content/uploads/2022/05/top-10-highest-paying-manufacturing-jobs-in-the-us-united-states-2022-banner-apptree-1024x576.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи, дві зміни",
           "location": ["Uniejów"],
           "location_map": "https://maps.app.goo.gl/gXU6umTp2vWiBoob9",
@@ -272,7 +252,6 @@
           "job_title": "Оператор вантажного автомобіля з сертифікацією UDT",
           "looking_for": "Шукаємо жінок і чоловіків",
           "salary": "25 злотих за годину (чистими).",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-годинні зміни, 260-320 годин на місяць, дві зміни",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -300,7 +279,6 @@
           "job_title": "Виробництво енергетичних напоїв та соків",
           "looking_for": "Шукаємо жінок, чоловіків або подружні пари",
           "salary": "19 злотих за годину (чистими).",
-          "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи (неділі за запитом), дві зміни",
           "location": ["Niepołomice"],
           "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
@@ -321,7 +299,6 @@
           "job_title": "Виробництво пива",
           "looking_for": "Шукаємо жінок і чоловіків",
           "salary": "19.5 злотих за годину (чистими).",
-          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
           "work_schedule": "8-12-годинні зміни, 1 зміна: 6:00-14:00 + понадгодини, 2 зміна: 14:00-22:00 + понадгодини, 3 зміна: 22:00-6:00 + понадгодини",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -341,37 +318,12 @@
             "Умова злеценя"
           ]
         },
-        {
-          "id": "008",
-          "job_title": "Виробництво пива",
-          "looking_for": "Шукаємо жінок і чоловіків",
-          "salary": "25 злотих за годину (чистими).",
-          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg",
-          "work_schedule": "8-12-годинні зміни, 1 зміна: 6:00-14:00 + понадгодини, 2 зміна: 14:00-22:00 + понадгодини, 3 зміна: 22:00-6:00 + понадгодини",
-          "location": ["Rakszawa", "Jędrzejów"],
-          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
-          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
-          "responsibilities": [
-            "Виконання різних лабораторних випробувань та експериментів зі зразками"
-          ],
-          "requirements": ["Потрібна можливість розуміти польську мову"],
-          "what_we_offer": [
-            "Можливість працювати як із візою, так і безвізово",
-            "Проживання надається за 350 злотих на місяць",
-            "Кімната для 2-3 осіб",
-            "Виплата заробітної плати з 15 по 20 число кожного місяця",
-            "Видаємо карту перебування",
-            "Безкоштовний транспорт на роботу",
-            "Безкоштовний спецодяг",
-            "Умова злеценя"
-          ]
-        },
+
         {
           "id": "009",
           "job_title": "Виробництво морозива",
           "looking_for": "Шукаємо жінок і чоловіків",
           "salary": "19 злотих за годину (чистими) + бонуси",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "12-годинні зміни, від понеділка до суботи, дві зміни",
           "location": ["Kalisz"],
           "location_map": "https://maps.app.goo.gl/5Cx6DDzDSe85YJ2q6",
@@ -396,7 +348,6 @@
           "job_title": "Покладання тротуарних плит",
           "looking_for": "Шукаємо спеціалістів",
           "salary": "25-30 злотих за годину (чистими).",
-          "image": "https://www.oeffa.org/graphics/farmjobs.jpg",
           "work_schedule": "10-годинні зміни, від понеділка до суботи",
           "location": ["Łódź"],
           "location_map": "https://maps.app.goo.gl/jrPm6e2JZfDcJfEc8",
