@@ -3,7 +3,7 @@
     "nav": {
       "home": "Główny",
       "vacancies": "Wakaty",
-      "contacts": "Łączność"
+      "contacts": "Kontakt"
     },
 
     "hero": {
@@ -36,7 +36,7 @@
       "job_listing": [
         {
           "id": "001",
-          "job_title": "Produkcja środków do czyszczenia domu",
+          "job_title": "Produkcja środków czystości",
           "city": "Zwierzyniec Pierwszy",
           "position": "pakowacz i sortownik",
           "salary": "20 PLN / godzinę netto."
@@ -392,7 +392,7 @@
     "contactDetails": {
       "title": "Dane kontaktowe",
       "address": "Adres",
-      "phone": "Dzisiaj zadzwoń",
+      "phone": "Szukasz pracy? Zadzwoń",
       "email": "Email",
       "hours": "Godziny pracy",
       "days": "Pn - Pt:",

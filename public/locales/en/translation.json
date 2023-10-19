@@ -20,9 +20,9 @@
         "why_trust": "Why should you trust us?"
       },
       "list_text": {
-        "who_are_we_text": "We are a leading Polish advisory company specialized in employee outsourcing. We started our operations in 2017, recognizing the opportunity to help companies meet their staffing needs,primarily by sourcing employees from Eastern Europe.",
-        "our_goals_text": "In 2022, as one of the first companies in the Polish market, weexpanded our operations to include employees from the Philippines. Our ambition is to provide the highest level of services that surpass the market and set a new standard. We continuously focus on the high competence of our team, which guarantees quality, efficiency, and effectiveness in the processes we manage",
-        "why_trust_text": "Why should you trust us? Over 100 companies, including leaders in the FMCG industry, have placed their trust in us.We have employed over 10,000 workers, and our differentiator is speed of action. Orders for up to 200 employees are most commonly fulfilled within 2 weeks from signing the contract."
+        "who_are_we_text": "We are a leading Polish advisory company specialized in employee outsourcing. We started our operations in 2017, recognizing the opportunity to help companies meet their staffing needs, primarily by sourcing employees from Eastern Europe.",
+        "our_goals_text": "In 2022, as one of the first companies in the Polish market, we expanded our operations to include employees from the Philippines. Our ambition is to provide the highest level of services that surpass the market and set a new standard. We continuously focus on the high competence of our team, which guarantees quality, efficiency, and effectiveness in the processes we manage",
+        "why_trust_text": "Why should you trust us? Over 100 companies, including leaders in the FMCG industry, have placed their trust in us. We have employed over 10,000 workers, and our differentiator is speed of action. Orders for up to 200 employees are most commonly fulfilled within 2 weeks from signing the contract."
       }
     },
 
@@ -115,7 +115,7 @@
       "benefits": {
         "job": "Help in finding a job",
         "doc": "Assistance in filing documents",
-        "live": "Free place of life near work",
+        "live": "Free housing near work",
         "bilingual": "Assistance of a bilingual coordinator",
         "transfer": "Free transfer to the place of work"
       }
@@ -131,7 +131,7 @@
           "phone": "Phone *",
           "email": "Email *",
           "comment": "Comment or review",
-          "policy": "I consent to the processing of the personal data provided by me in the contact form for the purposes of recruiting for the agency AJ Serwis"
+          "policy": "I agree to the processing of personal data for the purposes of recruiting for the agency AJ Serwis"
         },
         "btnText": "Submit form",
         "errors": {
