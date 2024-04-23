@@ -30,7 +30,7 @@
       "card_fields": {
         "city": "Miasto",
         "position": "Stanowisko",
-        "salary": "Wynagrodzenie",
+        "salary": "Pensja",
         "more_info": "Więcej informacji"
       },
       "job_listing": [
@@ -39,49 +39,49 @@
           "job_title": "Produkcja środków czystości",
           "city": "Zwierzyniec Pierwszy",
           "position": "pakowacz i sortownik",
-          "salary": "20 PLN / godzinę netto."
+          "salary": "22 PLN / godz. netto."
         },
         {
           "id": "002",
           "job_title": "Monterzy mebli (krzesła)",
           "city": "Turek",
           "position": "montażysta",
-          "salary": "23 PLN / godzinę netto."
+          "salary": "23 PLN / godz. netto."
         },
         {
           "id": "003",
           "job_title": "Produkcja kakao, kawy, galaretek",
           "city": "Zabierzów",
           "position": "pakowacz i sortownik",
-          "salary": "19 PLN / godzinę netto."
+          "salary": "21.50 - 22 PLN / godz. netto."
         },
         {
           "id": "004",
           "job_title": "Produkcja materiałów izolacyjnych",
           "city": "Uniejów",
           "position": "pakowacz",
-          "salary": "18 PLN / godzinę netto."
+          "salary": "21.50 - 24 PLN / godz. netto."
         },
         {
           "id": "005",
           "job_title": "Operator wózka widłowego z UDT",
           "city": "Rakszawa, Jędrzejów",
           "position": "operator wózka widłowego",
-          "salary": "25 PLN / godzinę netto."
+          "salary": "21.50 - 27.50 PLN / godz. netto."
         },
         {
           "id": "006",
           "job_title": "Produkcja napojów energetycznych i soków",
           "city": "Niepołomice",
           "position": "pakowacz i sortownik",
-          "salary": "19 PLN / godzinę netto."
+          "salary": "21.50 - 22 PLN / godz. netto."
         },
         {
           "id": "007",
           "job_title": "Produkcja piwa",
           "city": "Rakszawa, Jędrzejów",
           "position": "butelkowanie piwa na linii",
-          "salary": "19.5 PLN/godzinę netto."
+          "salary": "21.50 - 22 PLN / godz. netto."
         },
 
         {
@@ -89,14 +89,14 @@
           "job_title": "Produkcja lodów",
           "city": "Kalisz",
           "position": "pakowacz i etykietowacz",
-          "salary": "19 PLN / godzinę netto."
+          "salary": "22.60 - 25 PLN / godz. netto."
         },
         {
           "id": "010",
           "job_title": "Układanie kostki brukowej",
           "city": "Łódź",
           "position": "instalator kostki brukowej",
-          "salary": "25-30 PLN / godzinę netto."
+          "salary": "30 PLN / godz. netto."
         }
       ]
     },
@@ -168,7 +168,7 @@
           "id": "001",
           "job_title": "Produkcja chemii gospodarczej",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "20 PLN / godzina netto.",
+          "salary": "22 PLN / godzina netto.",
           "work_schedule": "8-godzinne zmiany z możliwością nadgodzin, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
           "location": ["Zwierzyniec Pierwszy"],
           "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
@@ -177,7 +177,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -198,7 +198,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -210,7 +210,7 @@
           "id": "003",
           "job_title": "Produkcja kakao, kawy i galaretek",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "19 PLN / godzina netto.",
+          "salary": "21.50 - 22 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do piątku (2 soboty pracy w miesiącu), obejmujące dwie zmiany",
           "location": ["Zabierzów"],
           "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
@@ -219,7 +219,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -230,7 +230,7 @@
           "id": "004",
           "job_title": "Produkcja materiałów izolacyjnych",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "18 PLN / godzina netto.",
+          "salary": "21.50 - 24 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do sobót, obejmujące dwie zmiany",
           "location": ["Uniejów"],
           "location_map": "https://maps.app.goo.gl/gXU6umTp2vWiBoob9",
@@ -239,7 +239,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 3-4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -250,7 +250,7 @@
           "id": "005",
           "job_title": "Operator wózka widłowego z certyfikatem UDT",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "25 PLN / godzina netto.",
+          "salary": "21.50 - 27.50 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, 260-320 godzin miesięcznie, obejmujące dwie zmiany",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -266,7 +266,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 3-4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -277,7 +277,7 @@
           "id": "006",
           "job_title": "Produkcja napojów energetycznych i soków",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "19 PLN / godzina netto.",
+          "salary": "21.50 - 22 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
           "location": ["Niepołomice"],
           "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
@@ -286,7 +286,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -297,7 +297,7 @@
           "id": "007",
           "job_title": "Produkcja piwa",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "19.5 PLN / godzina netto.",
+          "salary": "21.50 - 22 PLN / godzina netto.",
           "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -310,7 +310,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 2-3 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -322,7 +322,7 @@
           "id": "009",
           "job_title": "Produkcja lodów",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "19 PLN / godzina netto. + premie",
+          "salary": "22.60 - 25 PLN / godzina netto. + premie",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
           "location": ["Kalisz"],
           "location_map": "https://maps.app.goo.gl/5Cx6DDzDSe85YJ2q6",
@@ -334,7 +334,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
@@ -346,7 +346,7 @@
           "id": "010",
           "job_title": "Układanie kostki brukowej",
           "looking_for": "Szukamy pracowników specjalistycznych",
-          "salary": "25-30 PLN / godzina netto.",
+          "salary": "30 PLN / godzina netto.",
           "work_schedule": "10-godzinne zmiany, od poniedziałku do soboty",
           "location": ["Łódź"],
           "location_map": "https://maps.app.goo.gl/jrPm6e2JZfDcJfEc8",
@@ -355,7 +355,7 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15. do 20. dnia każdego miesiąca",
+            "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",
             "Darmowy strój roboczy",
