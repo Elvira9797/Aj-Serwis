@@ -40,7 +40,7 @@
           "job_title": "Household chemicals production",
           "city": "Zwierzyniec Pierwszy",
           "position": "packer and sorter",
-          "salary": "22 PLN / hour net.",
+          "salary": "23.94 PLN / hour net.",
           "image": "https://jobganic.com/wp-content/uploads/2017/12/young-female-organic-farmer.jpg"
         },
         {
@@ -48,7 +48,7 @@
           "job_title": "Furniture assembly workers (chairs)",
           "city": "Turek",
           "position": "assembler",
-          "salary": "23 PLN / hour net.",
+          "salary": "23.94 PLN / hour net.",
           "image": "https://www.icims.com/wp-content/uploads/2020/12/manufacturing-industry-blog-header-1.png"
         },
         {
@@ -56,7 +56,7 @@
           "job_title": "Cocoa, coffee, jelly production",
           "city": "Zabierzów",
           "position": "packer and sorter",
-          "salary": "21.50 - 22 PLN / hour net.",
+          "salary": "24.50 PLN / hour net.",
           "image": "https://www.acceptrec.co.uk/images/factory_job_leicester.png"
         },
         {
@@ -72,7 +72,7 @@
           "job_title": "Forklift Operator with UDT",
           "city": "Rakszawa, Jędrzejów",
           "position": "forklift operator",
-          "salary": "21.50 - 27.50 PLN / hour net.",
+          "salary": "28.50 PLN / hour net.",
           "image": "https://www.oeffa.org/graphics/farmjobs.jpg"
         },
         {
@@ -80,16 +80,8 @@
           "job_title": "Energy drinks and juices production",
           "city": "Niepołomice",
           "position": "packer and sorter",
-          "salary": "21.50 - 22 PLN / hour net.",
+          "salary": "24.50 PLN / hour net.",
           "image": "https://tbcdn.talentbrew.com/company/1187/v4_0_gst/img/who-are-the-ups-warehouse-workers-m.jpg"
-        },
-        {
-          "id": "007",
-          "job_title": "Beer production",
-          "city": "Rakszawa, Jędrzejów",
-          "position": "beer bottler on the line",
-          "salary": "21.50 - 22 PLN/hour net.",
-          "image": "https://www.currentschoolnews.com/wp-content/uploads/2022/05/assembly.jpg"
         },
 
         {
@@ -176,7 +168,7 @@
           "id": "001",
           "job_title": "Household chemicals production",
           "looking_for": "We are looking for women, men, or married couples",
-          "salary": "22 PLN / hour net.",
+          "salary": "23.94 PLN / hour net.",
           "work_schedule": "8-hour shifts with the potential for overtime, from Monday to Saturday (Sundays upon request), spanning two shifts",
           "location": ["Zwierzyniec Pierwszy"],
           "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
@@ -196,7 +188,7 @@
           "id": "002",
           "job_title": "Furniture assembly workers (chairs)",
           "looking_for": "We are looking for women and men",
-          "salary": "23 PLN / hour net.",
+          "salary": "23.94 PLN / hour net.",
           "work_schedule": "8-hour shifts, from Monday to Saturday, spanning two shifts",
           "location": ["Turek"],
           "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
@@ -221,7 +213,7 @@
           "id": "003",
           "job_title": "Cocoa, coffee, jelly production",
           "looking_for": "We are looking for women, men, or married couples",
-          "salary": "21.50 - 22 PLN / hour net.",
+          "salary": "24.50 PLN / hour net.",
           "work_schedule": "12-hour shifts, from Monday to Friday (2 work Saturdays per month), spanning two shifts",
           "location": ["Zabierzów"],
           "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
@@ -262,7 +254,7 @@
           "id": "005",
           "job_title": "Forklift Operator with UDT",
           "looking_for": "We are looking for women and men",
-          "salary": "21.50 - 27.50 PLN / hour net.",
+          "salary": "28.50 PLN / hour net.",
           "work_schedule": "12-hour shifts, 260-320 hours per month, spanning two shifts",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -290,7 +282,7 @@
           "id": "006",
           "job_title": "Energy drinks and juices production",
           "looking_for": "We are looking for women, men, or married couples",
-          "salary": "21.50 - 22 PLN / hour net.",
+          "salary": "24.50 PLN / hour net.",
           "work_schedule": "12-hour shifts, from Monday to Saturday (Sundays on request), spanning two shifts",
           "location": ["Niepołomice"],
           "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
@@ -299,33 +291,6 @@
             "Opportunity to work both on a visa and visa-free regime",
             "Accommodation is provided for 350 PLN per month",
             "Room for 4 people",
-            "Payment from the 15th to the 20th of each month",
-            "We make a TRC card",
-            "Free transportation to work",
-            "Free work attire/clothing",
-            "Umowa Zlecenie"
-          ]
-        },
-
-        {
-          "id": "007",
-          "job_title": "Beer production",
-          "looking_for": "We are looking for women and men",
-          "salary": "21.50 - 22 PLN/hour net.",
-          "work_schedule": "8-12-hour shifts, 1 shift: 6:00-14:00 + overtime, 2nd shift: 14:00-22:00 + overtime, 3rd shift: 22:00-6:00 + overtime",
-          "location": ["Rakszawa", "Jędrzejów"],
-          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
-          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
-          "responsibilities": [
-            "ensuring the proper labeling, packaging, and sealing of beer bottles"
-          ],
-          "requirements": [
-            "required ability to understand the Polish language"
-          ],
-          "what_we_offer": [
-            "Opportunity to work both on a visa and visa-free regime",
-            "Accommodation is provided for 350 PLN per month",
-            "Room for 2-3 people",
             "Payment from the 15th to the 20th of each month",
             "We make a TRC card",
             "Free transportation to work",

@@ -39,21 +39,21 @@
           "job_title": "Produkcja środków czystości",
           "city": "Zwierzyniec Pierwszy",
           "position": "pakowacz i sortownik",
-          "salary": "22 PLN / godz. netto."
+          "salary": "23.94 PLN / godz. netto."
         },
         {
           "id": "002",
           "job_title": "Monterzy mebli (krzesła)",
           "city": "Turek",
           "position": "montażysta",
-          "salary": "23 PLN / godz. netto."
+          "salary": "23.94 PLN / godz. netto."
         },
         {
           "id": "003",
           "job_title": "Produkcja kakao, kawy, galaretek",
           "city": "Zabierzów",
           "position": "pakowacz i sortownik",
-          "salary": "21.50 - 22 PLN / godz. netto."
+          "salary": "24.50 PLN / godz. netto."
         },
         {
           "id": "004",
@@ -67,21 +67,14 @@
           "job_title": "Operator wózka widłowego z UDT",
           "city": "Rakszawa, Jędrzejów",
           "position": "operator wózka widłowego",
-          "salary": "21.50 - 27.50 PLN / godz. netto."
+          "salary": "28.50 PLN / godz. netto."
         },
         {
           "id": "006",
           "job_title": "Produkcja napojów energetycznych i soków",
           "city": "Niepołomice",
           "position": "pakowacz i sortownik",
-          "salary": "21.50 - 22 PLN / godz. netto."
-        },
-        {
-          "id": "007",
-          "job_title": "Produkcja piwa",
-          "city": "Rakszawa, Jędrzejów",
-          "position": "butelkowanie piwa na linii",
-          "salary": "21.50 - 22 PLN / godz. netto."
+          "salary": "24.50 PLN / godz. netto."
         },
 
         {
@@ -168,7 +161,7 @@
           "id": "001",
           "job_title": "Produkcja chemii gospodarczej",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "22 PLN / godzina netto.",
+          "salary": "23.94 PLN / godzina netto.",
           "work_schedule": "8-godzinne zmiany z możliwością nadgodzin, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
           "location": ["Zwierzyniec Pierwszy"],
           "location_map": "https://maps.app.goo.gl/QRHyUNDnnQdtyDf1A",
@@ -188,7 +181,7 @@
           "id": "002",
           "job_title": "Pracownicy do montażu mebli (krzesła)",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "23 PLN / godzina netto.",
+          "salary": "23.94 PLN / godzina netto.",
           "work_schedule": "8-godzinne zmiany, od poniedziałku do soboty, obejmujące dwie zmiany",
           "location": ["Turek"],
           "location_map": "https://maps.app.goo.gl/CrkfmbhzgrvBFwMX6",
@@ -210,7 +203,7 @@
           "id": "003",
           "job_title": "Produkcja kakao, kawy i galaretek",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "21.50 - 22 PLN / godzina netto.",
+          "salary": "24.50 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do piątku (2 soboty pracy w miesiącu), obejmujące dwie zmiany",
           "location": ["Zabierzów"],
           "location_map": "https://maps.app.goo.gl/4dL1ApEop1D8GgT18",
@@ -250,7 +243,7 @@
           "id": "005",
           "job_title": "Operator wózka widłowego z certyfikatem UDT",
           "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "21.50 - 27.50 PLN / godzina netto.",
+          "salary": "28.50 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, 260-320 godzin miesięcznie, obejmujące dwie zmiany",
           "location": ["Rakszawa", "Jędrzejów"],
           "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
@@ -277,7 +270,7 @@
           "id": "006",
           "job_title": "Produkcja napojów energetycznych i soków",
           "looking_for": "Szukamy kobiet, mężczyzn lub par małżeńskich",
-          "salary": "21.50 - 22 PLN / godzina netto.",
+          "salary": "24.50 PLN / godzina netto.",
           "work_schedule": "12-godzinne zmiany, od poniedziałku do soboty (niedziele na życzenie), obejmujące dwie zmiany",
           "location": ["Niepołomice"],
           "location_map": "https://maps.app.goo.gl/rvLFDaWysQFjVPQEA",
@@ -286,30 +279,6 @@
             "Możliwość pracy zarówno na wizie, jak i bezwizowo",
             "Zakwaterowanie w cenie 350 PLN miesięcznie",
             "Pokój dla 4 osób",
-            "Wypłata od 15 do 20 dnia każdego miesiąca",
-            "Robimy kartę pobytu",
-            "Darmowy transport do pracy",
-            "Darmowy strój roboczy",
-            "Umowa Zlecenie"
-          ]
-        },
-        {
-          "id": "007",
-          "job_title": "Produkcja piwa",
-          "looking_for": "Szukamy kobiet i mężczyzn",
-          "salary": "21.50 - 22 PLN / godzina netto.",
-          "work_schedule": "8-12-godzinne zmiany, 1 zmiana: 6:00-14:00 + nadgodziny, 2 zmiana: 14:00-22:00 + nadgodziny, 3 zmiana: 22:00-6:00 + nadgodziny",
-          "location": ["Rakszawa", "Jędrzejów"],
-          "location_map": "https://maps.app.goo.gl/qQ6QFd46peCdDK1x7",
-          "location_map2": "https://maps.app.goo.gl/LhTX8FTFo7FVNMrY6",
-          "responsibilities": [
-            "zapewnienie prawidłowego etykietowania, pakowania i zamykania butelek z piwem"
-          ],
-          "requirements": ["wymagana umiejętność zrozumienia języka polskiego"],
-          "what_we_offer": [
-            "Możliwość pracy zarówno na wizie, jak i bezwizowo",
-            "Zakwaterowanie w cenie 350 PLN miesięcznie",
-            "Pokój dla 2-3 osób",
             "Wypłata od 15 do 20 dnia każdego miesiąca",
             "Robimy kartę pobytu",
             "Darmowy transport do pracy",

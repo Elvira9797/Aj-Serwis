@@ -4,7 +4,7 @@ import jelly from '../assets/img/vacanciesIMG/jelly.jpg';
 import insulation from '../assets/img/vacanciesIMG/insulation.jpg';
 import forklift from '../assets/img/vacanciesIMG/forklift.jpg';
 import energyDrinks from '../assets/img/vacanciesIMG/energy-drinks.jpg';
-import beer from '../assets/img/vacanciesIMG/beer.jpg';
+// import beer from '../assets/img/vacanciesIMG/beer.jpg';
 import iceCream from '../assets/img/vacanciesIMG/ice-cream.jpg';
 import pavement from '../assets/img/vacanciesIMG/pavement.jpg';
 
@@ -43,7 +43,7 @@ export const vacanciesImages = [
   insulation,
   forklift,
   energyDrinks,
-  beer,
+  // beer,
   iceCream,
   pavement,
 ];
